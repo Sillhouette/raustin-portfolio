@@ -1,14 +1,13 @@
 //Start imports
-import React, { Component } from "react";
+import React from "react";
 import { Link } from "react-router-dom";
-import { Menu, Container, Segment } from "semantic-ui-react";
+import { Menu } from "semantic-ui-react";
 
 const Header = props => (
-  <Menu borderless compact pointing secondary inverted>
+  <Menu compact pointing secondary inverted>
     <Menu.Item
       as={Link}
       to="/"
-      borderless
       fitted
       name="home"
       active={props.activeItem === "home"}
@@ -17,7 +16,6 @@ const Header = props => (
     <Menu.Item
       as={Link}
       to="/projects"
-      borderless
       fitted
       name="projects"
       active={props.activeItem === "projects"}
@@ -26,7 +24,6 @@ const Header = props => (
     <Menu.Item
       as={Link}
       to="/about"
-      borderless
       fitted
       name="about"
       active={props.activeItem === "about"}
@@ -35,7 +32,6 @@ const Header = props => (
     <Menu.Item
       as={Link}
       to="/blog"
-      borderless
       fitted
       name="blog"
       active={props.activeItem === "blog"}
@@ -45,7 +41,6 @@ const Header = props => (
     <Menu.Item
       as={Link}
       to="/contact"
-      borderless
       fitted
       name="contact"
       active={props.activeItem === "contact"}

@@ -1,25 +1,11 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import project from "./MTG-Project-Preview.png";
-import {
-  Container,
-  Grid,
-  Label,
-  Image,
-  Header,
-  Menu,
-  Item
-} from "semantic-ui-react";
+import { Container, Grid, Header, Menu } from "semantic-ui-react";
 import Filler from "./common/Filler";
 
 const HomePage = props => (
   <Container>
-    <Grid
-      style={{ width: "100vw", height: "100vh" }}
-      container
-      padded="false"
-      columns={4}
-    >
+    <Grid style={{ width: "100vw", height: "100vh" }} container columns={4}>
       <Grid.Row textAlign="center" stretched>
         <Grid.Column textAlign="center" verticalAlign="middle">
           <Menu.Item

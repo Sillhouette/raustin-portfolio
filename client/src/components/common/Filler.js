@@ -8,7 +8,7 @@ const Filler = props => {
 const createFiller = props => {
   let lines = [];
   for (let i = 0; i < props.num; i++) {
-    lines.push(<br />);
+    lines.push(<br key={i} />);
   }
   return lines;
 };

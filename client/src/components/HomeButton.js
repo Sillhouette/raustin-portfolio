@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { Button, Segment, Header, Card, Menu } from "semantic-ui-react";
+import { Segment, Menu } from "semantic-ui-react";
 
 const HomeButton = props => (
   <Menu.Item as={Link} to="/" name="home" onClick={props.handleItemClick}>
