@@ -1,17 +1,25 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { Segment, Menu } from "semantic-ui-react";
+import { Segment, Menu, Button } from "semantic-ui-react";
+import LinkButton from "./common/LinkButton";
 
 const HomeButton = props => (
-  <Menu.Item as={Link} to="/" name="home" onClick={props.handleItemClick}>
-    <Segment compact basic clearing floated="right">
-      <div className="content">
-        <div className="ui inverted header">
-          Austin Melchior <br /> Full Stack Engineer
+  <div>
+    <Menu icon inverted secondary floated="right">
+      <Menu.Item
+        as={LinkButton}
+        to="/"
+        name="home"
+        onClick={props.handleItemClick}
+      >
+        <div className="content">
+          <div className="ui inverted header">
+            Austin Melchior <br /> Full Stack Engineer
+          </div>
         </div>
-      </div>
-    </Segment>
-  </Menu.Item>
+      </Menu.Item>
+    </Menu>
+  </div>
 );
 
 export default HomeButton;

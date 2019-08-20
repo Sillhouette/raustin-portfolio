@@ -8,11 +8,12 @@ import ProjectPage from "./ProjectPage";
 import AboutPage from "./AboutPage";
 import BlogPage from "./BlogPage";
 import ContactPage from "./ContactPage";
+import ResumePage from "./ResumePage";
 import history from "../history";
 import "./App.css";
 
 export default class App extends Component {
-  state = { activeItem: "home" };
+  state = { activeItem: window.location.pathname.split("/")[1] };
 
   handleItemClick = (e, { name }) => {
     this.setState({ activeItem: name });
@@ -34,10 +35,28 @@ export default class App extends Component {
               exact
               render={() => <HomePage handleItemClick={this.handleItemClick} />}
             />
-            <Route path="/projects" exact component={ProjectPage} />
+            <Route
+              path="/projects"
+              exact
+              render={() => (
+                <ProjectPage handleItemClick={this.handleItemClick} />
+              )}
+            />
+            <Route
+              path="/projects/MTG-Manager-Pro"
+              exact
+              component={AboutPage}
+            />
+            <Route
+              path="/projects/Crowder-News-CLI"
+              exact
+              component={AboutPage}
+            />
+            <Route path="/projects/Stream-Source" exact component={AboutPage} />
             <Route path="/about" exact component={AboutPage} />
             <Route path="/blog" exact component={BlogPage} />
             <Route path="/contact" exact component={ContactPage} />
+            <Route path="/resume" exact component={ResumePage} />
           </Switch>
         </Router>
       </div>

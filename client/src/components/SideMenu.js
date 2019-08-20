@@ -1,5 +1,7 @@
 import React from "react";
-import { Icon, Menu } from "semantic-ui-react";
+import { Link } from "react-router-dom";
+import { Icon, Menu, Button } from "semantic-ui-react";
+import LinkButton from "./common/LinkButton";
 
 const SideMenu = () => (
   <Menu icon vertical inverted secondary floated>
@@ -27,6 +29,9 @@ const SideMenu = () => (
       className="ui icon large button"
     >
       <Icon fitted size="large" name="linkedin" />
+    </Menu.Item>
+    <Menu.Item as={LinkButton} to="/resume" className="ui button icon large">
+      <Icon fitted size="large" name="file alternate outline" />
     </Menu.Item>
   </Menu>
 );
