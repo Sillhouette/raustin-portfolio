@@ -9,6 +9,7 @@ const HomePage = props => (
     container
     divided="vertically"
     columns={4}
+    stackable
   >
     <Grid.Row stretched>
       <Grid.Column textAlign="center" verticalAlign="middle">

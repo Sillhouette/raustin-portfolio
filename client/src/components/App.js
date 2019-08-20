@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { Router, Route, Switch } from "react-router-dom";
+import { Container } from "semantic-ui-react";
 import Header from "./Header";
 import SideMenu from "./SideMenu";
 import HomeButton from "./HomeButton";
@@ -25,39 +26,47 @@ export default class App extends Component {
         <Router history={history}>
           <SideMenu />
           <HomeButton handleItemClick={this.handleItemClick} />
-          <Header
-            activeItem={this.state.activeItem}
-            handleItemClick={this.handleItemClick}
-          />
-          <Switch>
-            <Route
-              path="/"
-              exact
-              render={() => <HomePage handleItemClick={this.handleItemClick} />}
+          <Container fluid>
+            <Header
+              activeItem={this.state.activeItem}
+              handleItemClick={this.handleItemClick}
             />
-            <Route
-              path="/projects"
-              exact
-              render={() => (
-                <ProjectPage handleItemClick={this.handleItemClick} />
-              )}
-            />
-            <Route
-              path="/projects/MTG-Manager-Pro"
-              exact
-              component={AboutPage}
-            />
-            <Route
-              path="/projects/Crowder-News-CLI"
-              exact
-              component={AboutPage}
-            />
-            <Route path="/projects/Stream-Source" exact component={AboutPage} />
-            <Route path="/about" exact component={AboutPage} />
-            <Route path="/blog" exact component={BlogPage} />
-            <Route path="/contact" exact component={ContactPage} />
-            <Route path="/resume" exact component={ResumePage} />
-          </Switch>
+            <Switch>
+              <Route
+                path="/"
+                exact
+                render={() => (
+                  <HomePage handleItemClick={this.handleItemClick} />
+                )}
+              />
+              <Route
+                path="/projects"
+                exact
+                render={() => (
+                  <ProjectPage handleItemClick={this.handleItemClick} />
+                )}
+              />
+              <Route
+                path="/projects/MTG-Manager-Pro"
+                exact
+                component={AboutPage}
+              />
+              <Route
+                path="/projects/Crowder-News-CLI"
+                exact
+                component={AboutPage}
+              />
+              <Route
+                path="/projects/Stream-Source"
+                exact
+                component={AboutPage}
+              />
+              <Route path="/about" exact component={AboutPage} />
+              <Route path="/blog" exact component={BlogPage} />
+              <Route path="/contact" exact component={ContactPage} />
+              <Route path="/resume" exact component={ResumePage} />
+            </Switch>
+          </Container>
         </Router>
       </div>
     );

@@ -10,6 +10,7 @@ const ProjectPage = props => (
     container
     divided="vertically"
     columns={3}
+    stackable
   >
     <Grid.Row stretched>
       <Grid.Column textAlign="center" verticalAlign="middle">

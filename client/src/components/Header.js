@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import { Menu } from "semantic-ui-react";
 
 const Header = props => (
-  <Menu compact pointing secondary inverted>
+  <Menu compact stackable pointing secondary inverted>
     <Menu.Item
       as={Link}
       to="/"
