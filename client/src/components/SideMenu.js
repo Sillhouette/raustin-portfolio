@@ -4,7 +4,7 @@ import { Icon, Menu, Button } from "semantic-ui-react";
 import LinkButton from "./common/LinkButton";
 
 const SideMenu = () => (
-  <Menu icon vertical inverted secondary floated>
+  <Menu fixed="top" icon vertical inverted secondary floated>
     <Menu.Item
       as="button"
       onClick={() => window.open("https://github.com/Sillhouette", "_blank")}

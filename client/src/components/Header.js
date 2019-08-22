@@ -40,10 +40,10 @@ const Header = props => (
 
     <Menu.Item
       as={Link}
-      to="/contact"
+      to="/resume"
       fitted
-      name="contact"
-      active={props.activeItem === "contact"}
+      name="resume"
+      active={props.activeItem === "resume"}
       onClick={props.handleItemClick}
     />
   </Menu>

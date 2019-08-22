@@ -71,13 +71,13 @@ const AboutPage = () => {
                 venenatis. Nullam pretium at nibh at commodo.
                 <br />
                 <br />
-                Mauris neque arcu, feugiat eu sapien eu, tincidunt fermentum
+                {/* Mauris neque arcu, feugiat eu sapien eu, tincidunt fermentum
                 massa. Aliquam tincidunt quam sit amet odio aliquam convallis.
                 Nulla facilisi. Proin ultrices ultricies purus eu posuere.
                 Curabitur efficitur sollicitudin sem, a euismod quam hendrerit
                 non. Nunc vestibulum lectus a convallis pharetra. Aliquam
                 finibus libero sit amet lectus scelerisque pulvinar. Donec
-                consequat tincidunt leo, ac bibendum elit sodales non.
+                consequat tincidunt leo, ac bibendum elit sodales non. */}
               </Header>
             </Container>
             <Filler num="3" />
@@ -90,6 +90,7 @@ const AboutPage = () => {
                 container
                 divided="vertically"
                 stackable
+                doubling
                 columns="equal"
               >
                 <Grid.Row>
@@ -211,7 +212,7 @@ const AboutPage = () => {
                     <Image
                       //Git
                       verticalAlign="middle"
-                      src={"https://i.imgur.com/U5tLYjX.png"}
+                      src={"https://i.imgur.com/cURXLc6.png"}
                       size="small"
                     />
                   </Grid.Column>

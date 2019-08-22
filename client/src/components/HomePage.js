@@ -10,6 +10,7 @@ const HomePage = props => (
     divided="vertically"
     columns={4}
     stackable
+    relaxed="very"
   >
     <Grid.Row stretched>
       <Grid.Column textAlign="center" verticalAlign="middle">
@@ -51,12 +52,12 @@ const HomePage = props => (
       <Grid.Column textAlign="center" verticalAlign="middle">
         <Menu.Item
           as={Link}
-          to="/contact"
-          name="contact"
+          to="/resume"
+          name="resume"
           onClick={props.handleItemClick}
         >
           <Header inverted as="h1" textAlign="center">
-            Contact
+            Resume
           </Header>
         </Menu.Item>
       </Grid.Column>

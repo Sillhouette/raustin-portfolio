@@ -8,7 +8,7 @@ import HomePage from "./HomePage";
 import ProjectPage from "./ProjectPage";
 import AboutPage from "./AboutPage";
 import BlogPage from "./BlogPage";
-import ContactPage from "./ContactPage";
+// import ContactPage from "./ContactPage";
 import ResumePage from "./ResumePage";
 import history from "../history";
 import "./App.css";
@@ -24,7 +24,6 @@ export default class App extends Component {
     return (
       <div className="App">
         <Router history={history}>
-          <SideMenu />
           <HomeButton handleItemClick={this.handleItemClick} />
           <Container fluid>
             <Header
@@ -63,10 +62,11 @@ export default class App extends Component {
               />
               <Route path="/about" exact component={AboutPage} />
               <Route path="/blog" exact component={BlogPage} />
-              <Route path="/contact" exact component={ContactPage} />
+              {/* <Route path="/contact" exact component={ContactPage} /> */}
               <Route path="/resume" exact component={ResumePage} />
             </Switch>
           </Container>
+          <SideMenu />
         </Router>
       </div>
     );
