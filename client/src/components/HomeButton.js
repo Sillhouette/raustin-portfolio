@@ -5,7 +5,12 @@ import LinkButton from "./common/LinkButton";
 
 const HomeButton = props => (
   <div>
-    <Menu icon inverted secondary floated="right">
+    <Menu
+      icon
+      inverted
+      secondary
+      style={{ position: "fixed", top: 0, right: 0 }}
+    >
       <Menu.Item
         as={LinkButton}
         to="/"

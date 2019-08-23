@@ -23,6 +23,14 @@ const Header = props => (
     />
     <Menu.Item
       as={Link}
+      to="/resume"
+      fitted
+      name="resume"
+      active={props.activeItem === "resume"}
+      onClick={props.handleItemClick}
+    />
+    <Menu.Item
+      as={Link}
       to="/about"
       fitted
       name="about"
@@ -35,15 +43,6 @@ const Header = props => (
       fitted
       name="blog"
       active={props.activeItem === "blog"}
-      onClick={props.handleItemClick}
-    />
-
-    <Menu.Item
-      as={Link}
-      to="/resume"
-      fitted
-      name="resume"
-      active={props.activeItem === "resume"}
       onClick={props.handleItemClick}
     />
   </Menu>

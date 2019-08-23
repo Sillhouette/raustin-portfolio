@@ -24,7 +24,6 @@ export default class App extends Component {
     return (
       <div className="App">
         <Router history={history}>
-          <HomeButton handleItemClick={this.handleItemClick} />
           <Container fluid>
             <Header
               activeItem={this.state.activeItem}
@@ -66,6 +65,7 @@ export default class App extends Component {
               <Route path="/resume" exact component={ResumePage} />
             </Switch>
           </Container>
+          <HomeButton handleItemClick={this.handleItemClick} />
           <SideMenu />
         </Router>
       </div>
