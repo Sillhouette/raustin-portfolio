@@ -26,8 +26,8 @@ export default class App extends Component {
       <div
         className="App"
         style={{
-          "padding-bottom": "122px",
-          "min-height": "100vh",
+          paddingBottom: "122px",
+          minHeight: "100vh",
           overflow: "hidden",
           display: "block",
           position: "relative"

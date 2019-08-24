@@ -1,8 +1,7 @@
 import React from "react";
-import project from "./MTG-Project-Preview.png";
+import project from "./mtg.png";
 import { Link } from "react-router-dom";
 import { Grid, Image, Header, Menu, Container } from "semantic-ui-react";
-import Filler from "./common/Filler";
 
 const ProjectPage = props => (
   <Container fluid>
@@ -34,20 +33,20 @@ const ProjectPage = props => (
         <Grid.Column
           textAlign="center"
           verticalAlign="middle"
-          style={{ padding: 0 }}
+          style={{
+            padding: 0
+          }}
         >
-          <Image style={{ objectFit: "cover" }} fluid src={project}>
-            <Menu.Item
-              as={Link}
-              to="/projects/MTG-Manager-Pro"
-              name="projects"
-              onClick={props.handleItemClick}
-            >
-              <Header inverted as="h1" textAlign="center">
-                MTG Manager Pro
-              </Header>
-            </Menu.Item>
-          </Image>
+          <Menu.Item
+            as={Link}
+            to="/projects/MTG-Manager-Pro"
+            name="projects"
+            onClick={props.handleItemClick}
+          >
+            <Header inverted as="h1" textAlign="center">
+              MTG Manager Pro
+            </Header>
+          </Menu.Item>
         </Grid.Column>
         <Grid.Column
           textAlign="center"

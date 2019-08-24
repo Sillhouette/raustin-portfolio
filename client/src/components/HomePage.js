@@ -1,7 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { Container, Grid, Header, Menu } from "semantic-ui-react";
-import Filler from "./common/Filler";
 
 const HomePage = props => (
   <Container fluid>

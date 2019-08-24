@@ -1,6 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
-import { Icon, Menu, Button } from "semantic-ui-react";
+import { Icon, Menu } from "semantic-ui-react";
 import LinkButton from "./common/LinkButton";
 
 const SideMenu = () => (

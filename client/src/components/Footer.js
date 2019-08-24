@@ -6,7 +6,6 @@ import {
   Grid,
   Header,
   Segment,
-  Menu,
   Image,
   Icon,
   Divider
@@ -26,7 +25,7 @@ const Footer = props => (
               as="h3"
               inverted
               textAlign="left"
-              style={{ margin: "0rem", "padding-bottom": 5 }}
+              style={{ margin: "0rem", paddingBottom: 5 }}
             >
               Navigation
             </Header>

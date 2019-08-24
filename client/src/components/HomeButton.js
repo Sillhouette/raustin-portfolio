@@ -1,6 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
-import { Segment, Menu, Button } from "semantic-ui-react";
+import { Menu } from "semantic-ui-react";
 import LinkButton from "./common/LinkButton";
 
 const HomeButton = props => (
