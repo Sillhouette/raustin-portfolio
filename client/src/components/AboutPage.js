@@ -10,12 +10,7 @@ const AboutPage = () => {
         Austin Melchior - Full Stack Engineer
       </Header>
       <Filler num="3" />
-      <Grid
-        style={{ width: "100vw", height: "100vh" }}
-        container
-        divided="vertically"
-        columns="equal"
-      >
+      <Grid style={{ width: "100vw" }}>
         <Grid.Row stretched>
           <Grid.Column textAlign="center" verticalAlign="middle">
             <Container>
@@ -81,152 +76,154 @@ const AboutPage = () => {
               </Header>
             </Container>
             <Filler num="3" />
-            <Container>
-              <Header as="h1" inverted textAlign="center">
-                Skills
-              </Header>
-              <Grid
-                style={{ width: "100vw" }}
-                container
-                divided="vertically"
-                stackable
-                doubling
-                columns="equal"
-              >
-                <Grid.Row>
-                  <Grid.Column textAlign="center" verticalAlign="middle">
-                    <Image
-                      //ruby
-                      verticalAlign="middle"
-                      src={"https://i.imgur.com/zomT7rD.png"}
-                      size="small"
-                    />
-                  </Grid.Column>
-                  <Grid.Column textAlign="center" verticalAlign="middle">
-                    <Image
-                      //HTML 5
-                      verticalAlign="middle"
-                      src={"https://i.imgur.com/7RyiRb1.png"}
-                      size="small"
-                    />
-                  </Grid.Column>
-                  <Grid.Column textAlign="center" verticalAlign="middle">
-                    <Image
-                      //Java
-                      verticalAlign="middle"
-                      src={"https://i.imgur.com/aJy6fkj.png"}
-                      size="small"
-                    />
-                  </Grid.Column>
-                  <Grid.Column textAlign="center" verticalAlign="middle">
-                    <Image
-                      //react
-                      verticalAlign="middle"
-                      src={"https://i.imgur.com/hQ9PT4V.png"}
-                      size="small"
-                    />
-                  </Grid.Column>
-                  <Grid.Column textAlign="center" verticalAlign="middle">
-                    <Image
-                      //rails
-                      verticalAlign="middle"
-                      src={"https://i.imgur.com/xynxjpd.png"}
-                      size="small"
-                    />
-                  </Grid.Column>
-                  <Grid.Column textAlign="center" verticalAlign="middle">
-                    <Image
-                      //JS
-                      verticalAlign="middle"
-                      src={"https://i.imgur.com/Qd7AipT.png"}
-                      size="small"
-                    />
-                  </Grid.Column>
-                  <Grid.Column textAlign="center" verticalAlign="middle">
-                    <Image
-                      //SQL
-                      verticalAlign="middle"
-                      src={"https://i.imgur.com/PPz2u3d.png"}
-                      size="small"
-                    />
-                  </Grid.Column>
-                  <Grid.Column textAlign="center" verticalAlign="middle">
-                    <Image
-                      //Postgres
-                      verticalAlign="middle"
-                      src={"https://i.imgur.com/85GEmW8.png"}
-                      size="small"
-                    />
-                  </Grid.Column>
-                </Grid.Row>
-                <Grid.Row>
-                  <Grid.Column textAlign="center" verticalAlign="middle">
-                    <Image
-                      //Eclipse
-                      verticalAlign="middle"
-                      src={"https://i.imgur.com/AyUbKOk.png"}
-                      size="small"
-                    />
-                  </Grid.Column>
-                  <Grid.Column textAlign="center" verticalAlign="middle">
-                    <Image
-                      //Python
-                      verticalAlign="middle"
-                      src={"https://i.imgur.com/qf8GLPk.png"}
-                      size="small"
-                    />
-                  </Grid.Column>
-                  <Grid.Column textAlign="center" verticalAlign="middle">
-                    <Image
-                      //c++
-                      verticalAlign="middle"
-                      src={"https://i.imgur.com/RjWH8J4.png"}
-                      size="small"
-                    />
-                  </Grid.Column>
-                  <Grid.Column textAlign="center" verticalAlign="middle">
-                    <Image
-                      //React Native
-                      verticalAlign="middle"
-                      src={"https://i.imgur.com/wdzwsBA.png"}
-                      size="small"
-                    />
-                  </Grid.Column>
-                  <Grid.Column textAlign="center" verticalAlign="middle">
-                    <Image
-                      //Visual Basic
-                      verticalAlign="middle"
-                      src={"https://i.imgur.com/KHmN2E0.png"}
-                      size="small"
-                    />
-                  </Grid.Column>
-                  <Grid.Column textAlign="center" verticalAlign="middle">
-                    <Image
-                      //Redux
-                      verticalAlign="middle"
-                      src={"https://i.imgur.com/tqEWNUe.png"}
-                      size="small"
-                    />
-                  </Grid.Column>
-                  <Grid.Column textAlign="center" verticalAlign="middle">
-                    <Image
-                      //Git
-                      verticalAlign="middle"
-                      src={"https://i.imgur.com/cURXLc6.png"}
-                      size="small"
-                    />
-                  </Grid.Column>
-                  <Grid.Column textAlign="center" verticalAlign="middle">
-                    <Image
-                      //Github
-                      verticalAlign="middle"
-                      src={"https://i.imgur.com/WkyrtmR.png"}
-                      size="small"
-                    />
-                  </Grid.Column>
-                </Grid.Row>
-              </Grid>
-            </Container>
+          </Grid.Column>
+        </Grid.Row>
+        <Grid.Row>
+          <Grid.Column style={{ "padding-bottom": 35 }}>
+            <Header as="h1" inverted textAlign="center">
+              Skills
+            </Header>
+            <Grid
+              style={{ width: "100vw" }}
+              container
+              divided="vertically"
+              stackable
+              doubling
+              columns="equal"
+            >
+              <Grid.Row>
+                <Grid.Column textAlign="center" verticalAlign="middle">
+                  <Image
+                    //ruby
+                    verticalAlign="middle"
+                    src={"https://i.imgur.com/hRTeTK8.png"}
+                    size="small"
+                  />
+                </Grid.Column>
+                <Grid.Column textAlign="center" verticalAlign="middle">
+                  <Image
+                    //HTML 5
+                    verticalAlign="middle"
+                    src={"https://i.imgur.com/EF2fDDn.png"}
+                    size="small"
+                  />
+                </Grid.Column>
+                <Grid.Column textAlign="center" verticalAlign="middle">
+                  <Image
+                    //Java
+                    verticalAlign="middle"
+                    src={"https://i.imgur.com/A0ziWcH.png"}
+                    size="small"
+                  />
+                </Grid.Column>
+                <Grid.Column textAlign="center" verticalAlign="middle">
+                  <Image
+                    //react
+                    verticalAlign="middle"
+                    src={"https://i.imgur.com/NbwgUhc.png"}
+                    size="small"
+                  />
+                </Grid.Column>
+                <Grid.Column textAlign="center" verticalAlign="middle">
+                  <Image
+                    //rails
+                    verticalAlign="middle"
+                    src={"https://i.imgur.com/xynxjpd.png"}
+                    size="small"
+                  />
+                </Grid.Column>
+                <Grid.Column textAlign="center" verticalAlign="middle">
+                  <Image
+                    //JS
+                    verticalAlign="middle"
+                    src={"https://i.imgur.com/Qd7AipT.png"}
+                    size="small"
+                  />
+                </Grid.Column>
+                <Grid.Column textAlign="center" verticalAlign="middle">
+                  <Image
+                    //SQL
+                    verticalAlign="middle"
+                    src={"https://i.imgur.com/PPz2u3d.png"}
+                    size="small"
+                  />
+                </Grid.Column>
+                <Grid.Column textAlign="center" verticalAlign="middle">
+                  <Image
+                    //Postgres
+                    verticalAlign="middle"
+                    src={"https://i.imgur.com/85GEmW8.png"}
+                    size="small"
+                  />
+                </Grid.Column>
+              </Grid.Row>
+              <Grid.Row>
+                <Grid.Column textAlign="center" verticalAlign="middle">
+                  <Image
+                    //Eclipse
+                    verticalAlign="middle"
+                    src={"https://i.imgur.com/AyUbKOk.png"}
+                    size="small"
+                  />
+                </Grid.Column>
+                <Grid.Column textAlign="center" verticalAlign="middle">
+                  <Image
+                    //Python
+                    verticalAlign="middle"
+                    src={"https://i.imgur.com/qf8GLPk.png"}
+                    size="small"
+                  />
+                </Grid.Column>
+                <Grid.Column textAlign="center" verticalAlign="middle">
+                  <Image
+                    //c++
+                    verticalAlign="middle"
+                    src={"https://i.imgur.com/RjWH8J4.png"}
+                    size="small"
+                  />
+                </Grid.Column>
+                <Grid.Column textAlign="center" verticalAlign="middle">
+                  <Image
+                    //React Native
+                    verticalAlign="middle"
+                    src={"https://i.imgur.com/wdzwsBA.png"}
+                    size="small"
+                  />
+                </Grid.Column>
+                <Grid.Column textAlign="center" verticalAlign="middle">
+                  <Image
+                    //Visual Basic
+                    verticalAlign="middle"
+                    src={"https://i.imgur.com/KHmN2E0.png"}
+                    size="small"
+                  />
+                </Grid.Column>
+                <Grid.Column textAlign="center" verticalAlign="middle">
+                  <Image
+                    //Redux
+                    verticalAlign="middle"
+                    src={"https://i.imgur.com/tqEWNUe.png"}
+                    size="small"
+                  />
+                </Grid.Column>
+                <Grid.Column textAlign="center" verticalAlign="middle">
+                  <Image
+                    //Git
+                    verticalAlign="middle"
+                    src={"https://i.imgur.com/cURXLc6.png"}
+                    size="small"
+                  />
+                </Grid.Column>
+                <Grid.Column textAlign="center" verticalAlign="middle">
+                  <Image
+                    //Github
+                    verticalAlign="middle"
+                    src={"https://i.imgur.com/WkyrtmR.png"}
+                    size="small"
+                  />
+                </Grid.Column>
+              </Grid.Row>
+            </Grid>
           </Grid.Column>
         </Grid.Row>
       </Grid>

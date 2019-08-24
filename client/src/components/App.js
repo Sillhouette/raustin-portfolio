@@ -8,13 +8,14 @@ import HomePage from "./HomePage";
 import ProjectPage from "./ProjectPage";
 import AboutPage from "./AboutPage";
 import BlogPage from "./BlogPage";
+import Footer from "./Footer";
 // import ContactPage from "./ContactPage";
 import ResumePage from "./ResumePage";
 import history from "../history";
 import "./App.css";
 
 export default class App extends Component {
-  state = { activeItem: window.location.pathname.split("/")[1] };
+  state = { activeItem: window.location.pathname.split("/")[1] || "home" };
 
   handleItemClick = (e, { name }) => {
     this.setState({ activeItem: name });
@@ -22,7 +23,16 @@ export default class App extends Component {
 
   render() {
     return (
-      <div className="App">
+      <div
+        className="App"
+        style={{
+          "padding-bottom": "122px",
+          "min-height": "100vh",
+          overflow: "hidden",
+          display: "block",
+          position: "relative"
+        }}
+      >
         <Router history={history}>
           <Container fluid>
             <Header
@@ -67,6 +77,7 @@ export default class App extends Component {
           </Container>
           <HomeButton handleItemClick={this.handleItemClick} />
           <SideMenu />
+          <Footer handleItemClick={this.handleItemClick} />
         </Router>
       </div>
     );
