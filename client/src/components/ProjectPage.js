@@ -1,74 +1,176 @@
 import React from "react";
-import project from "./mtg.png";
+import mtg from "./mtg-wizards-colors.jpg";
+import laptop from "./newspaper.jpeg";
+import resume from "./gamer.jpeg";
 import { Link } from "react-router-dom";
 import { Grid, Image, Header, Menu, Container } from "semantic-ui-react";
+import "./ProjectPage.css";
+
+const handleTransition = id => {
+  let target = document.getElementById(id);
+  if (target.classList.contains("visible")) {
+    target.classList.remove("visible");
+  } else {
+    target.classList.add("visible");
+  }
+};
 
 const ProjectPage = props => (
-  <Container fluid>
+  <>
     <Grid
-      style={{ width: "100vw", height: "100vh" }}
-      divided="vertically"
-      columns={3}
+      stretched
       stackable
+      columns={3}
+      style={{
+        position: "absolute",
+        zIndex: "-2",
+        height: "100vh",
+        width: "100vw",
+        padding: 0,
+        top: "-1px"
+      }}
     >
-      <Grid.Row stretched>
-        <Grid.Column
-          textAlign="center"
-          verticalAlign="middle"
-          style={{ padding: 0 }}
-        >
-          <Image style={{ objectFit: "cover" }} fluid src={project}>
+      <Grid.Row style={{ width: "100vw" }} stretched>
+        <Grid.Column style={{ padding: 0 }} stretched>
+          <Container
+            fluid
+            style={{
+              display: "flex",
+              justifyContent: "center",
+              alignItems: "center",
+              overflow: "hidden"
+            }}
+          >
+            <Image
+              id="project1-img"
+              className="transition"
+              style={{
+                flexShrink: 0,
+                objectFit: "cover",
+                height: "100vh"
+              }}
+              fluid
+              src={laptop}
+            />
+          </Container>
+        </Grid.Column>
+        <Grid.Column style={{ padding: 0 }} stretched>
+          <Container
+            fluid
+            style={{
+              display: "flex",
+              justifyContent: "center",
+              alignItems: "center",
+              overflow: "hidden"
+            }}
+          >
+            <Image
+              id="project2-img"
+              className="transition"
+              style={{
+                flexShrink: 0,
+                objectFit: "cover",
+                height: "100vh"
+              }}
+              fluid
+              src={mtg}
+            />
+          </Container>
+        </Grid.Column>
+        <Grid.Column style={{ padding: 0 }} stretched>
+          <Container
+            fluid
+            style={{
+              display: "flex",
+              justifyContent: "center",
+              alignItems: "center",
+              overflow: "hidden"
+            }}
+          >
+            <Image
+              id="project3-img"
+              className="transition"
+              style={{
+                flexShrink: 0,
+                objectFit: "cover",
+                height: "100vh"
+              }}
+              fluid
+              src={resume}
+            />
+          </Container>
+        </Grid.Column>
+      </Grid.Row>
+    </Grid>
+    <Container fluid>
+      <Grid
+        style={{ width: "100vw", height: "100vh" }}
+        columns={3}
+        stretched
+        stackable
+      >
+        <Grid.Row style={{ width: "100vw" }} stretched>
+          <Grid.Column
+            style={{ padding: 0 }}
+            stretched
+            textAlign="center"
+            verticalAlign="middle"
+          >
             <Menu.Item
               as={Link}
               to="/projects/Crowder-News-CLI"
               name="projects"
+              onMouseOver={() => handleTransition(`project1-img`)}
+              onMouseOut={() => handleTransition(`project1-img`)}
               onClick={props.handleItemClick}
             >
               <Header inverted as="h1" textAlign="center">
                 Crowder News CLI
               </Header>
             </Menu.Item>
-          </Image>
-        </Grid.Column>
-        <Grid.Column
-          textAlign="center"
-          verticalAlign="middle"
-          style={{
-            padding: 0
-          }}
-        >
-          <Menu.Item
-            as={Link}
-            to="/projects/MTG-Manager-Pro"
-            name="projects"
-            onClick={props.handleItemClick}
+          </Grid.Column>
+          <Grid.Column
+            textAlign="center"
+            verticalAlign="middle"
+            style={{
+              padding: 0
+            }}
           >
-            <Header inverted as="h1" textAlign="center">
-              MTG Manager Pro
-            </Header>
-          </Menu.Item>
-        </Grid.Column>
-        <Grid.Column
-          textAlign="center"
-          verticalAlign="middle"
-          style={{ padding: 0 }}
-        >
-          <Image style={{ objectFit: "cover" }} fluid src={project}>
+            <Menu.Item
+              as={Link}
+              to="/projects/MTG-Manager-Pro"
+              name="projects"
+              onMouseOver={() => handleTransition(`project2-img`)}
+              onMouseOut={() => handleTransition(`project2-img`)}
+              onClick={props.handleItemClick}
+            >
+              <Header inverted as="h1" textAlign="center">
+                MTG Manager Pro
+              </Header>
+            </Menu.Item>
+          </Grid.Column>
+          <Grid.Column
+            textAlign="center"
+            verticalAlign="middle"
+            style={{ padding: 0 }}
+          >
             <Menu.Item
               as={Link}
               to="/projects/Stream-Source"
               name="projects"
+              onMouseOver={() => handleTransition(`project3-img`)}
+              onMouseOut={() => handleTransition(`project3-img`)}
               onClick={props.handleItemClick}
             >
               <Header inverted as="h1" textAlign="center">
                 Stream Source
               </Header>
             </Menu.Item>
-          </Image>
-        </Grid.Column>
-      </Grid.Row>
-    </Grid>
-  </Container>
+          </Grid.Column>
+        </Grid.Row>
+      </Grid>
+    </Container>
+  </>
 );
 
 export default ProjectPage;

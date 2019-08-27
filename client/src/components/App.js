@@ -9,8 +9,9 @@ import ProjectPage from "./ProjectPage";
 import AboutPage from "./AboutPage";
 import BlogPage from "./BlogPage";
 import Footer from "./Footer";
-// import ContactPage from "./ContactPage";
+import MtgShowPage from "./MtgShowPage";
 import ResumePage from "./ResumePage";
+import background from "../background.png";
 import history from "../history";
 import "./App.css";
 
@@ -27,6 +28,7 @@ export default class App extends Component {
         className="App"
         style={{
           paddingBottom: "122px",
+          width: "100%",
           minHeight: "100vh",
           overflow: "hidden",
           display: "block",
@@ -34,7 +36,7 @@ export default class App extends Component {
         }}
       >
         <Router history={history}>
-          <Container fluid>
+          <Container fluid style={{ marginLeft: 0 }}>
             <Header
               activeItem={this.state.activeItem}
               handleItemClick={this.handleItemClick}
@@ -57,7 +59,7 @@ export default class App extends Component {
               <Route
                 path="/projects/MTG-Manager-Pro"
                 exact
-                component={AboutPage}
+                component={MtgShowPage}
               />
               <Route
                 path="/projects/Crowder-News-CLI"
@@ -71,7 +73,6 @@ export default class App extends Component {
               />
               <Route path="/about" exact component={AboutPage} />
               <Route path="/blog" exact component={BlogPage} />
-              {/* <Route path="/contact" exact component={ContactPage} /> */}
               <Route path="/resume" exact component={ResumePage} />
             </Switch>
           </Container>

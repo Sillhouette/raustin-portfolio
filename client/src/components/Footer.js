@@ -8,8 +8,14 @@ import {
   Segment,
   Image,
   Icon,
-  Divider
+  Divider,
+  Popup
 } from "semantic-ui-react";
+
+const style = {
+  borderRadius: "10px",
+  opacity: 0.8
+};
 
 const Footer = props => (
   <Container fluid style={{ position: "absolute", bottom: 0 }}>
@@ -30,7 +36,12 @@ const Footer = props => (
               Navigation
             </Header>
             <Link to="/" name="home" onClick={props.handleItemClick}>
-              <Header as="h5" inverted textAlign="left">
+              <Header
+                style={{ paddingLeft: "10px" }}
+                as="h5"
+                inverted
+                textAlign="left"
+              >
                 Home
               </Header>
             </Link>
@@ -40,25 +51,45 @@ const Footer = props => (
               name="projects"
               onClick={props.handleItemClick}
             >
-              <Header as="h5" inverted textAlign="left">
+              <Header
+                style={{ paddingLeft: "10px" }}
+                as="h5"
+                inverted
+                textAlign="left"
+              >
                 Projects
               </Header>
             </Link>
             <Divider fitted hidden />
             <Link to="/resume" name="resume" onClick={props.handleItemClick}>
-              <Header as="h5" inverted textAlign="left">
+              <Header
+                style={{ paddingLeft: "10px" }}
+                as="h5"
+                inverted
+                textAlign="left"
+              >
                 Resume
               </Header>
             </Link>
             <Divider fitted hidden />
             <Link to="/about" name="about" onClick={props.handleItemClick}>
-              <Header as="h5" inverted textAlign="left">
+              <Header
+                style={{ paddingLeft: "10px" }}
+                as="h5"
+                inverted
+                textAlign="left"
+              >
                 About
               </Header>
             </Link>
             <Divider fitted hidden />
             <Link to="/blog" name="blog" onClick={props.handleItemClick}>
-              <Header as="h5" inverted textAlign="left">
+              <Header
+                style={{ paddingLeft: "10px" }}
+                as="h5"
+                inverted
+                textAlign="left"
+              >
                 Blog
               </Header>
             </Link>
@@ -70,133 +101,261 @@ const Footer = props => (
             <Grid columns="equal">
               <Grid.Row style={{ padding: 5 }}>
                 <Grid.Column textAlign="center" verticalAlign="bottom">
-                  <Image
-                    //ruby
-                    verticalAlign="middle"
-                    src={"https://i.imgur.com/hRTeTK8.png"}
+                  <Popup
+                    trigger={
+                      <Image
+                        //ruby
+                        verticalAlign="middle"
+                        src={"https://i.imgur.com/hRTeTK8.png"}
+                        size="mini"
+                      />
+                    }
+                    header="Ruby"
+                    style={style}
                     size="mini"
+                    position="top center"
                   />
                 </Grid.Column>
                 <Grid.Column textAlign="center" verticalAlign="bottom">
-                  <Image
-                    //HTML 5
-                    verticalAlign="middle"
-                    src={"https://i.imgur.com/EF2fDDn.png"}
+                  <Popup
+                    trigger={
+                      <Image
+                        //HTML 5
+                        verticalAlign="middle"
+                        src={"https://i.imgur.com/EF2fDDn.png"}
+                        size="mini"
+                      />
+                    }
+                    header="HTML5"
+                    style={style}
                     size="mini"
+                    position="top center"
                   />
                 </Grid.Column>
                 <Grid.Column textAlign="center" verticalAlign="bottom">
-                  <Image
-                    //Java
-                    verticalAlign="middle"
-                    src={"https://i.imgur.com/A0ziWcH.png"}
+                  <Popup
+                    trigger={
+                      <Image
+                        //Java
+                        verticalAlign="middle"
+                        src={"https://i.imgur.com/A0ziWcH.png"}
+                        size="mini"
+                      />
+                    }
+                    header="Java"
+                    style={style}
                     size="mini"
+                    position="top center"
                   />
                 </Grid.Column>
                 <Grid.Column textAlign="center" verticalAlign="bottom">
-                  <Image
-                    //react
-                    verticalAlign="middle"
-                    src={"https://i.imgur.com/NbwgUhc.png"}
+                  <Popup
+                    trigger={
+                      <Image
+                        //react
+                        verticalAlign="middle"
+                        src={"https://i.imgur.com/NbwgUhc.png"}
+                        size="mini"
+                      />
+                    }
+                    header="React"
+                    style={style}
                     size="mini"
+                    position="top center"
                   />
                 </Grid.Column>
                 <Grid.Column textAlign="center" verticalAlign="bottom">
-                  <Image
-                    //rails
-                    verticalAlign="middle"
-                    src={"https://i.imgur.com/xynxjpd.png"}
+                  <Popup
+                    trigger={
+                      <Image
+                        //rails
+                        verticalAlign="middle"
+                        src={"https://i.imgur.com/xynxjpd.png"}
+                        size="mini"
+                      />
+                    }
+                    header="Ruby on Rails"
+                    style={style}
                     size="mini"
+                    position="top center"
                   />
                 </Grid.Column>
                 <Grid.Column textAlign="center" verticalAlign="bottom">
-                  <Image
-                    //JS
-                    verticalAlign="middle"
-                    src={"https://i.imgur.com/Qd7AipT.png"}
+                  <Popup
+                    trigger={
+                      <Image
+                        //JS
+                        verticalAlign="middle"
+                        src={"https://i.imgur.com/Qd7AipT.png"}
+                        size="mini"
+                      />
+                    }
+                    header="Javascript"
+                    style={style}
                     size="mini"
+                    position="top center"
                   />
                 </Grid.Column>
                 <Grid.Column textAlign="center" verticalAlign="bottom">
-                  <Image
-                    //SQL
-                    verticalAlign="middle"
-                    src={"https://i.imgur.com/PPz2u3d.png"}
+                  <Popup
+                    trigger={
+                      <Image
+                        //SQL
+                        verticalAlign="middle"
+                        src={"https://i.imgur.com/PPz2u3d.png"}
+                        size="mini"
+                      />
+                    }
+                    header="SQLite"
+                    style={style}
                     size="mini"
+                    position="top center"
                   />
                 </Grid.Column>
                 <Grid.Column textAlign="center" verticalAlign="bottom">
-                  <Image
-                    //Postgres
-                    verticalAlign="middle"
-                    src={"https://i.imgur.com/85GEmW8.png"}
+                  <Popup
+                    trigger={
+                      <Image
+                        //Postgres
+                        verticalAlign="middle"
+                        src={"https://i.imgur.com/85GEmW8.png"}
+                        size="mini"
+                      />
+                    }
+                    header="PostgreSQL"
+                    style={style}
                     size="mini"
+                    position="top center"
                   />
                 </Grid.Column>
               </Grid.Row>
-              <Grid.Row style={{ padding: 5 }}>
+              <Grid.Row>
                 <Grid.Column textAlign="center" verticalAlign="bottom">
-                  <Image
-                    //Eclipse
-                    verticalAlign="middle"
-                    src={"https://i.imgur.com/AyUbKOk.png"}
+                  <Popup
+                    trigger={
+                      <Image
+                        //Eclipse
+                        verticalAlign="middle"
+                        src={"https://i.imgur.com/AyUbKOk.png"}
+                        size="mini"
+                      />
+                    }
+                    header="Eclipse"
+                    style={style}
                     size="mini"
+                    position="top center"
                   />
                 </Grid.Column>
                 <Grid.Column textAlign="center" verticalAlign="bottom">
-                  <Image
-                    //Python
-                    verticalAlign="middle"
-                    src={"https://i.imgur.com/qf8GLPk.png"}
+                  <Popup
+                    trigger={
+                      <Image
+                        //Python
+                        verticalAlign="middle"
+                        src={"https://i.imgur.com/qf8GLPk.png"}
+                        size="mini"
+                      />
+                    }
+                    header="Python"
+                    style={style}
                     size="mini"
+                    position="top center"
                   />
                 </Grid.Column>
                 <Grid.Column textAlign="center" verticalAlign="bottom">
-                  <Image
-                    //c++
-                    verticalAlign="middle"
-                    src={"https://i.imgur.com/RjWH8J4.png"}
+                  <Popup
+                    trigger={
+                      <Image
+                        //c++
+                        verticalAlign="middle"
+                        src={"https://i.imgur.com/RjWH8J4.png"}
+                        size="mini"
+                      />
+                    }
+                    header="C++"
+                    style={style}
                     size="mini"
+                    position="top center"
                   />
                 </Grid.Column>
                 <Grid.Column textAlign="center" verticalAlign="bottom">
-                  <Image
-                    //React Native
-                    verticalAlign="middle"
-                    src={"https://i.imgur.com/wdzwsBA.png"}
+                  <Popup
+                    trigger={
+                      <Image
+                        //React Native
+                        verticalAlign="middle"
+                        src={"https://i.imgur.com/wdzwsBA.png"}
+                        size="mini"
+                      />
+                    }
+                    header="React Native"
+                    style={style}
                     size="mini"
+                    position="top center"
                   />
                 </Grid.Column>
                 <Grid.Column textAlign="center" verticalAlign="bottom">
-                  <Image
-                    //Visual Basic
-                    verticalAlign="middle"
-                    src={"https://i.imgur.com/KHmN2E0.png"}
+                  <Popup
+                    trigger={
+                      <Image
+                        //Visual Basic
+                        verticalAlign="middle"
+                        src={"https://i.imgur.com/KHmN2E0.png"}
+                        size="mini"
+                      />
+                    }
+                    header="Visual Basic"
+                    style={style}
                     size="mini"
+                    position="top center"
                   />
                 </Grid.Column>
                 <Grid.Column textAlign="center" verticalAlign="bottom">
-                  <Image
-                    //Redux
-                    verticalAlign="middle"
-                    src={"https://i.imgur.com/tqEWNUe.png"}
+                  <Popup
+                    trigger={
+                      <Image
+                        //Redux
+                        verticalAlign="middle"
+                        src={"https://i.imgur.com/tqEWNUe.png"}
+                        size="mini"
+                      />
+                    }
+                    header="Redux"
+                    style={style}
                     size="mini"
+                    position="top center"
                   />
                 </Grid.Column>
                 <Grid.Column textAlign="center" verticalAlign="bottom">
-                  <Image
-                    //Git
-                    verticalAlign="middle"
-                    src={"https://i.imgur.com/cURXLc6.png"}
+                  <Popup
+                    trigger={
+                      <Image
+                        //Git
+                        verticalAlign="middle"
+                        src={"https://i.imgur.com/cURXLc6.png"}
+                        size="mini"
+                      />
+                    }
+                    header="Git"
+                    style={style}
                     size="mini"
+                    position="top center"
                   />
                 </Grid.Column>
                 <Grid.Column textAlign="center" verticalAlign="bottom">
-                  <Image
-                    //Github
-                    verticalAlign="middle"
-                    src={"https://i.imgur.com/WkyrtmR.png"}
+                  <Popup
+                    trigger={
+                      <Image
+                        //Github
+                        verticalAlign="middle"
+                        src={"https://i.imgur.com/WkyrtmR.png"}
+                        size="mini"
+                      />
+                    }
+                    header="Github"
+                    style={style}
                     size="mini"
+                    position="top center"
                   />
                 </Grid.Column>
               </Grid.Row>
