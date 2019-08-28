@@ -1,17 +1,16 @@
 import React, { Component } from "react";
 import { Router, Route, Switch } from "react-router-dom";
 import { Container } from "semantic-ui-react";
-import Header from "./Header";
-import SideMenu from "./SideMenu";
-import HomeButton from "./HomeButton";
-import HomePage from "./HomePage";
-import ProjectPage from "./ProjectPage";
-import AboutPage from "./AboutPage";
-import BlogPage from "./BlogPage";
-import Footer from "./Footer";
-import MtgShowPage from "./MtgShowPage";
-import ResumePage from "./ResumePage";
-import background from "../background.png";
+import Header from "./common/Header";
+import SideMenu from "./common/SideMenu";
+import HomeButton from "./common/HomeButton";
+import HomePage from "./home/HomePage";
+import ProjectPage from "./project/ProjectPage";
+import AboutPage from "./about/AboutPage";
+import BlogPage from "./blog/BlogPage";
+import Footer from "./common/Footer";
+import MtgShowPage from "./project/mtg/MtgShowPage";
+import ResumePage from "./resume/ResumePage";
 import history from "../history";
 import "./App.css";
 

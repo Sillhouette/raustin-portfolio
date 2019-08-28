@@ -1,7 +1,7 @@
 //Start imports
-import createHistory from "history/createBrowserHistory";
+import { createBrowserHistory } from "history";
 
 /**
  * export a fresh app history created using createHistory
  **/
-export default createHistory();
+export default createBrowserHistory();
