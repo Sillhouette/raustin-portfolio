@@ -8,3 +8,15 @@ img.transition {
 img.transition.visible {
   opacity: 1;
 }
+.mediumHeader {
+  display: none;
+}
+
+@media only screen and (max-width: 768px) {
+  .mediumHeader {
+    display: initial;
+  }
+  .largeHeader {
+    display: none;
+  }
+}

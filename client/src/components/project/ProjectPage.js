@@ -3,7 +3,7 @@ import mtg from "./images/mtg-wizards-colors.jpg";
 import laptop from "./images/newspaper.jpeg";
 import resume from "./images/gamer.jpeg";
 import { Link } from "react-router-dom";
-import { Grid, Image, Header, Menu, Container } from "semantic-ui-react";
+import { Grid, Image, Header, Menu, Item, Container } from "semantic-ui-react";
 import "./ProjectPage.css";
 
 const handleTransition = id => {
@@ -19,8 +19,7 @@ const ProjectPage = props => (
   <>
     <Grid
       stretched
-      stackable
-      columns={3}
+      columns="equal"
       style={{
         position: "absolute",
         zIndex: "-2",
@@ -32,8 +31,7 @@ const ProjectPage = props => (
     >
       <Grid.Row style={{ width: "100vw" }} stretched>
         <Grid.Column style={{ padding: 0 }} stretched>
-          <Container
-            fluid
+          <Item
             style={{
               display: "flex",
               justifyContent: "center",
@@ -52,11 +50,10 @@ const ProjectPage = props => (
               fluid
               src={laptop}
             />
-          </Container>
+          </Item>
         </Grid.Column>
         <Grid.Column style={{ padding: 0 }} stretched>
-          <Container
-            fluid
+          <Item
             style={{
               display: "flex",
               justifyContent: "center",
@@ -75,11 +72,10 @@ const ProjectPage = props => (
               fluid
               src={mtg}
             />
-          </Container>
+          </Item>
         </Grid.Column>
         <Grid.Column style={{ padding: 0 }} stretched>
-          <Container
-            fluid
+          <Item
             style={{
               display: "flex",
               justifyContent: "center",
@@ -98,17 +94,12 @@ const ProjectPage = props => (
               fluid
               src={resume}
             />
-          </Container>
+          </Item>
         </Grid.Column>
       </Grid.Row>
     </Grid>
     <Container fluid>
-      <Grid
-        style={{ width: "100vw", height: "100vh" }}
-        columns={3}
-        stretched
-        stackable
-      >
+      <Grid style={{ width: "100vw", height: "100vh" }} columns={3} stretched>
         <Grid.Row style={{ width: "100vw" }} stretched>
           <Grid.Column
             style={{ padding: 0 }}
@@ -124,7 +115,20 @@ const ProjectPage = props => (
               onMouseOut={() => handleTransition(`project1-img`)}
               onClick={props.handleItemClick}
             >
-              <Header inverted as="h1" textAlign="center">
+              <Header
+                inverted
+                size="huge"
+                className="largeHeader"
+                textAlign="center"
+              >
+                Crowder News CLI
+              </Header>
+              <Header
+                inverted
+                size="medium"
+                className="mediumHeader"
+                textAlign="center"
+              >
                 Crowder News CLI
               </Header>
             </Menu.Item>
@@ -144,7 +148,20 @@ const ProjectPage = props => (
               onMouseOut={() => handleTransition(`project2-img`)}
               onClick={props.handleItemClick}
             >
-              <Header inverted as="h1" textAlign="center">
+              <Header
+                inverted
+                size="huge"
+                className="largeHeader"
+                textAlign="center"
+              >
+                MTG Manager Pro
+              </Header>
+              <Header
+                inverted
+                size="medium"
+                className="mediumHeader"
+                textAlign="center"
+              >
                 MTG Manager Pro
               </Header>
             </Menu.Item>
@@ -162,7 +179,20 @@ const ProjectPage = props => (
               onMouseOut={() => handleTransition(`project3-img`)}
               onClick={props.handleItemClick}
             >
-              <Header inverted as="h1" textAlign="center">
+              <Header
+                inverted
+                size="huge"
+                className="largeHeader"
+                textAlign="center"
+              >
+                Stream Source
+              </Header>
+              <Header
+                inverted
+                size="medium"
+                className="mediumHeader"
+                textAlign="center"
+              >
                 Stream Source
               </Header>
             </Menu.Item>

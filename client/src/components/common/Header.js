@@ -2,9 +2,10 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { Menu } from "semantic-ui-react";
+import "./Header.css";
 
 const Header = props => (
-  <Menu compact stackable pointing secondary inverted>
+  <Menu id="header" compact stackable pointing secondary inverted>
     <Menu.Item
       as={Link}
       to="/"

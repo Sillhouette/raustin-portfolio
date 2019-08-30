@@ -7,7 +7,11 @@ import HomeButton from "./common/HomeButton";
 import HomePage from "./home/HomePage";
 import ProjectPage from "./project/ProjectPage";
 import AboutPage from "./about/AboutPage";
-import BlogPage from "./blog/BlogPage";
+import BlogList from "./blog/BlogList";
+import BlogCreate from "./blog/BlogCreate";
+import BlogDelete from "./blog/BlogDelete";
+import BlogEdit from "./blog/BlogEdit";
+import BlogShow from "./blog/BlogShow";
 import Footer from "./common/Footer";
 import MtgShowPage from "./project/mtg/MtgShowPage";
 import ResumePage from "./resume/ResumePage";
@@ -71,12 +75,16 @@ export default class App extends Component {
                 component={AboutPage}
               />
               <Route path="/about" exact component={AboutPage} />
-              <Route path="/blog" exact component={BlogPage} />
+              <Route path="/blog" exact component={BlogList} />
+              // <Route path="/blog/new" exact component={BlogCreate} />
+              // <Route path="/blog/edit/:id" exact component={BlogEdit} />
+              // <Route path="/blog/delete/:id" exact component={BlogDelete} />
+              <Route path="/blog/:id" exact component={BlogShow} />
               <Route path="/resume" exact component={ResumePage} />
             </Switch>
           </Container>
           <HomeButton handleItemClick={this.handleItemClick} />
-          <SideMenu />
+          <SideMenu handleItemClick={this.handleItemClick} />
           <Footer handleItemClick={this.handleItemClick} />
         </Router>
       </div>

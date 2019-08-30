@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { Container, Grid, Header, Menu, Image } from "semantic-ui-react";
+import { Container, Grid, Header, Menu, Image, Item } from "semantic-ui-react";
 import typewriter from "./images/typewriter.jpeg";
 import laptop from "./images/laptop.jpg";
 import resume from "./images/resume.jpeg";
@@ -20,8 +20,7 @@ const HomePage = props => (
   <>
     <Grid
       stretched
-      stackable
-      columns={4}
+      columns="equal"
       style={{
         position: "absolute",
         zIndex: "-2",
@@ -33,13 +32,14 @@ const HomePage = props => (
     >
       <Grid.Row style={{ width: "100vw" }} stretched>
         <Grid.Column style={{ padding: 0 }} stretched>
-          <Container
+          <Item
             fluid
             style={{
               display: "flex",
-              justifyContent: "center",
-              alignItems: "center",
-              overflow: "hidden"
+              //justifyContent: "center",
+              //alignItems: "center",
+              overflow: "hidden",
+              margin: 0
             }}
           >
             <Image
@@ -53,10 +53,10 @@ const HomePage = props => (
               fluid
               src={laptop}
             />
-          </Container>
+          </Item>
         </Grid.Column>
         <Grid.Column style={{ padding: 0 }} stretched>
-          <Container
+          <Item
             fluid
             style={{
               display: "flex",
@@ -76,10 +76,10 @@ const HomePage = props => (
               fluid
               src={resume}
             />
-          </Container>
+          </Item>
         </Grid.Column>
         <Grid.Column style={{ padding: 0 }} stretched>
-          <Container
+          <Item
             fluid
             style={{
               display: "flex",
@@ -99,10 +99,10 @@ const HomePage = props => (
               fluid
               src={books}
             />
-          </Container>
+          </Item>
         </Grid.Column>
         <Grid.Column style={{ padding: 0 }} stretched>
-          <Container
+          <Item
             fluid
             style={{
               display: "flex",
@@ -123,7 +123,7 @@ const HomePage = props => (
               fluid
               src={typewriter}
             />
-          </Container>
+          </Item>
         </Grid.Column>
       </Grid.Row>
     </Grid>
@@ -132,12 +132,12 @@ const HomePage = props => (
         style={{ width: "100vw", height: "100vh" }}
         divided="vertically"
         columns={4}
-        stackable
       >
         <Grid.Row stretched>
           <Grid.Column
             textAlign="center"
             verticalAlign="middle"
+            stretched
             style={{ padding: 0 }}
           >
             <Menu.Item
@@ -148,7 +148,20 @@ const HomePage = props => (
               onMouseOut={() => handleTransition(`project1-img`)}
               onClick={props.handleItemClick}
             >
-              <Header inverted as="h1" textAlign="center">
+              <Header
+                inverted
+                size="large"
+                className="largeHeader"
+                textAlign="center"
+              >
+                Projects
+              </Header>
+              <Header
+                inverted
+                size="medium"
+                className="mediumHeader"
+                textAlign="center"
+              >
                 Projects
               </Header>
             </Menu.Item>
@@ -156,6 +169,7 @@ const HomePage = props => (
           <Grid.Column
             textAlign="center"
             verticalAlign="middle"
+            stretched
             style={{ padding: 0 }}
           >
             <Menu.Item
@@ -166,7 +180,20 @@ const HomePage = props => (
               onMouseOut={() => handleTransition(`project2-img`)}
               onClick={props.handleItemClick}
             >
-              <Header inverted as="h1" textAlign="center">
+              <Header
+                inverted
+                size="large"
+                className="largeHeader"
+                textAlign="center"
+              >
+                Resume
+              </Header>
+              <Header
+                inverted
+                size="medium"
+                className="mediumHeader"
+                textAlign="center"
+              >
                 Resume
               </Header>
             </Menu.Item>
@@ -174,6 +201,7 @@ const HomePage = props => (
           <Grid.Column
             textAlign="center"
             verticalAlign="middle"
+            stretched
             style={{ padding: 0 }}
           >
             <Menu.Item
@@ -184,7 +212,20 @@ const HomePage = props => (
               onMouseOut={() => handleTransition(`project3-img`)}
               onClick={props.handleItemClick}
             >
-              <Header inverted as="h1" textAlign="center">
+              <Header
+                inverted
+                size="large"
+                className="largeHeader"
+                textAlign="center"
+              >
+                About
+              </Header>
+              <Header
+                inverted
+                size="medium"
+                className="mediumHeader"
+                textAlign="center"
+              >
                 About
               </Header>
             </Menu.Item>
@@ -192,6 +233,7 @@ const HomePage = props => (
           <Grid.Column
             textAlign="center"
             verticalAlign="middle"
+            stretched
             style={{ padding: 0 }}
           >
             <Menu.Item
@@ -202,7 +244,20 @@ const HomePage = props => (
               onMouseOut={() => handleTransition(`project4-img`)}
               onClick={props.handleItemClick}
             >
-              <Header inverted as="h1" textAlign="center">
+              <Header
+                inverted
+                size="large"
+                className="largeHeader"
+                textAlign="center"
+              >
+                Blog
+              </Header>
+              <Header
+                inverted
+                size="medium"
+                className="mediumHeader"
+                textAlign="center"
+              >
                 Blog
               </Header>
             </Menu.Item>

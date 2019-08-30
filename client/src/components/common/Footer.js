@@ -11,6 +11,7 @@ import {
   Divider,
   Popup
 } from "semantic-ui-react";
+import "./Footer.css";
 
 const style = {
   borderRadius: "10px",
@@ -94,7 +95,11 @@ const Footer = props => (
               </Header>
             </Link>
           </Grid.Column>
-          <Grid.Column textAlign="center" verticalAlign="top">
+          <Grid.Column
+            textAlign="center"
+            id="center-column"
+            verticalAlign="top"
+          >
             <Header as="h3" inverted textAlign="center" style={{}}>
               Skills
             </Header>

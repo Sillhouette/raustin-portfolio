@@ -1,9 +1,75 @@
 import React from "react";
-import { Icon, Menu } from "semantic-ui-react";
+import { Icon, Menu, Dropdown } from "semantic-ui-react";
 import LinkButton from "./LinkButton";
+import { Link } from "react-router-dom";
+import "./SideMenu.css";
 
-const SideMenu = () => (
+const SideMenu = props => (
   <Menu fixed="top" icon vertical inverted secondary floated>
+    <Menu.Item
+      as="button"
+      className="ui icon large button"
+      style={{ margin: 0, paddingLeft: 18 }}
+    >
+      <Dropdown
+        id="headerMenu"
+        icon={null}
+        trigger={<Icon fitted size="large" name="sidebar" />}
+      >
+        <Dropdown.Menu
+          style={{
+            paddingLeft: 20,
+            backgroundColor: "rgba(0,0,0,0)"
+          }}
+        >
+          <Dropdown.Item
+            as={Link}
+            to="/"
+            name="home"
+            onClick={props.handleItemClick}
+            className="custom"
+          >
+            Home
+          </Dropdown.Item>
+          <Dropdown.Item
+            as={Link}
+            to="/projects"
+            name="projects"
+            onClick={props.handleItemClick}
+            className="custom"
+          >
+            Projects
+          </Dropdown.Item>
+          <Dropdown.Item
+            as={Link}
+            to="/resume"
+            name="resume"
+            onClick={props.handleItemClick}
+            className="custom"
+          >
+            Resume
+          </Dropdown.Item>
+          <Dropdown.Item
+            as={Link}
+            to="/about"
+            name="about"
+            onClick={props.handleItemClick}
+            className="custom"
+          >
+            About
+          </Dropdown.Item>
+          <Dropdown.Item
+            as={Link}
+            to="/blog"
+            name="blog"
+            onClick={props.handleItemClick}
+            className="custom"
+          >
+            Blog
+          </Dropdown.Item>
+        </Dropdown.Menu>
+      </Dropdown>
+    </Menu.Item>
     <Menu.Item
       as="button"
       onClick={() => window.open("https://github.com/Sillhouette", "_blank")}
@@ -29,7 +95,13 @@ const SideMenu = () => (
     >
       <Icon fitted size="large" name="linkedin" />
     </Menu.Item>
-    <Menu.Item as={LinkButton} to="/resume" className="ui button icon large">
+    <Menu.Item
+      as={LinkButton}
+      to="/resume"
+      name="resume"
+      onClick={props.handleItemClick}
+      className="ui button icon large"
+    >
       <Icon fitted size="large" name="file alternate outline" />
     </Menu.Item>
   </Menu>
