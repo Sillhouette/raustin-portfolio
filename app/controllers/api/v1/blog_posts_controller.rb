@@ -10,5 +10,17 @@ module Api::V1
       @posts = BlogPost.all
       render json: @posts
     end
+
+    def create
+      render json: {"error": "Blog post creation has been disabled."}
+    end
+
+    def update
+      render json: {"error": "Blog post updates have been disabled."}
+    end
+
+    def delete
+      render json: {"error": "Blog post deletion has been disabled."}
+    end
   end
 end
