@@ -1,4 +1,5 @@
 import React from "react";
+import railsColor from "./images/rails_color";
 import { Container, Image, Grid, Header, Popup } from "semantic-ui-react";
 import Filler from "../common/Filler";
 
@@ -145,7 +146,7 @@ const AboutPage = () => {
                       <Image
                         //rails
                         verticalAlign="middle"
-                        src={"https://i.imgur.com/xynxjpd.png"}
+                        src={railsColor}
                         size="small"
                       />
                     }
