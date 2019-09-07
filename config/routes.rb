@@ -1,5 +1,9 @@
 Rails.application.routes.draw do
-  resources :blog_posts
+  namespace :api do
+    namespace :v1 do
+      resources :blog_posts
+    end
+end
   # app.get('*', (req, res) => {
   #   res.sendFile(path.join(__dirname, '/client/build/index.html'));
   # });

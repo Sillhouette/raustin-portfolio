@@ -15,7 +15,11 @@
     "redux-thunk": "^2.3.0",
     "semantic-ui-react": "^0.88.0"
   },
-  "proxy": "http://localhost:3001/",
+  "proxy": {
+    "/api": {
+      "target": "http://localhost:3001"
+    }
+  },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
