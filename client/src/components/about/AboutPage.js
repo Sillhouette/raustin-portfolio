@@ -1,5 +1,5 @@
 import React from "react";
-import railsColor from "images/rails_color.png";
+import railsColor from "./images/rails_color.png";
 import { Container, Image, Grid, Header, Popup } from "semantic-ui-react";
 import Filler from "../common/Filler";
 
