@@ -5,5 +5,5 @@ import axios from "axios";
  * Create an instance of axios to interact with our rails backend
  **/
 export default axios.create({
-  baseURL: "http://localhost:3001/api/v1"
+  baseURL: "http://www.austinmelchior.com/api/v1"
 });
