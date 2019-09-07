@@ -1,8 +1,39 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import {
+  Header,
+  Image,
+  Segment,
+  Item,
+  Divider,
+  Container
+} from "semantic-ui-react";
 
 class BlogListItem extends React.Component {
   state = { counter: 0 };
+
+  formatDate(date) {
+    var monthNames = [
+      "January",
+      "February",
+      "March",
+      "April",
+      "May",
+      "June",
+      "July",
+      "August",
+      "September",
+      "October",
+      "November",
+      "December"
+    ];
+
+    let day = date.getDate();
+    let monthIndex = date.getMonth();
+    let year = date.getFullYear();
+
+    return ` ${monthNames[monthIndex]} ${day}, ${year}`;
+  }
 
   /**
    * renderAdmin renders administrative buttons on a given blog if the current user
@@ -27,38 +58,53 @@ class BlogListItem extends React.Component {
     });
   }
 
-  callApi() {
-    console.log("a");
-    fetch("http://localhost:3000/api/blogs")
-      .then(function(response) {
-        console.log("b");
-        return response.json();
-      })
-      .then(function(data) {
-        console.log("c", data);
-      })
-      .catch(err => console.log("d", err));
-    console.log("e");
-  }
-
   render() {
     const { props } = this;
 
     if (!props.blog) {
       return null;
     }
-
     return (
-      <div className="item">
-        //{this.renderAdmin(props.blog)}
-        <i className="large middle aligned icon camera" />
-        <div className="content">
-          <Link to={`/blogs/${props.blog.id}`} className="header">
+      <Item>
+        {/*this.renderAdmin(props.blog)*/}
+        {/*<Image
+          size="small"
+          style={{
+            width: "100%",
+            height: "150px",
+            flexShrink: 0,
+            objectFit: "cover",
+            justifyContent: "center",
+            alignItems: "center"
+          }}
+          src={this.props.blog.image}
+        /> */}
+
+        <Link to={`/blog/${props.blog.id}`}>
+          <Header inverted size="huge">
             {props.blog.title}
-          </Link>
-          <div className="description">{props.blog.description}</div>
-        </div>
-      </div>
+          </Header>
+          <Container
+            fluid
+            style={{
+              borderRadius: "10px",
+              background: "#fff",
+              backgroundColor: "rgba(255,255,255,0.6)"
+            }}
+          >
+            <Segment basic style={{ color: "black" }}>
+              {props.blog.post.replace(/<p>/g, "").substring(0, 250)}...
+            </Segment>
+          </Container>
+
+          <Header size="small" inverted>
+            Posted by Austin on
+            {this.formatDate(new Date(props.blog.created_at))}
+          </Header>
+        </Link>
+
+        <Divider inverted />
+      </Item>
     );
   }
 }

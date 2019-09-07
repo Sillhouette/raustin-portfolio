@@ -19,7 +19,7 @@ import {
  * reducers
  **/
 export const createBlog = formValues => async (dispatch, getState) => {
-  const response = await blogs.post("/blogs", { ...formValues });
+  const response = await blogs.post("/blog_posts", { ...formValues });
 
   dispatch({ type: CREATE_POST, payload: response.data });
   history.push("/");
@@ -30,7 +30,7 @@ export const createBlog = formValues => async (dispatch, getState) => {
  * rails backend and dispatches them to our reducers
  **/
 export const fetchBlogs = () => async dispatch => {
-  const response = await blogs.get("/blogs");
+  const response = await blogs.get("/blog_posts");
 
   dispatch({ type: FETCH_POSTS, payload: response.data });
 };
@@ -40,7 +40,7 @@ export const fetchBlogs = () => async dispatch => {
  * rails backend and dispatches it to our reducers
  **/
 export const fetchBlog = id => async dispatch => {
-  const response = await blogs.get(`/blogs/${id}`);
+  const response = await blogs.get(`/blog_posts/${id}`);
 
   dispatch({ type: FETCH_POST, payload: response.data });
 };
@@ -50,7 +50,7 @@ export const fetchBlog = id => async dispatch => {
  * backend with new data submitted through our form
  **/
 export const editBlog = (id, formValues) => async dispatch => {
-  const response = await blogs.patch(`/blogs/${id}`, formValues);
+  const response = await blogs.patch(`/blog_posts/${id}`, formValues);
 
   dispatch({ type: EDIT_POST, payload: response.data });
   history.push("/");
@@ -61,7 +61,7 @@ export const editBlog = (id, formValues) => async dispatch => {
  * that deletes a blog from our rails backend
  **/
 export const deleteBlog = id => async dispatch => {
-  await blogs.delete(`/blogs/${id}`);
+  await blogs.delete(`/blog_posts/${id}`);
 
   dispatch({ type: DELETE_POST, payload: id });
   history.push("/");

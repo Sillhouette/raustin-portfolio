@@ -50,7 +50,7 @@ class MtgShowPage extends Component {
     const { activeItem } = this.state;
 
     return (
-      <div>
+      <div className="page">
         <div>
           <Image
             src={header}

@@ -2,8 +2,16 @@
 import React from "react";
 import { connect } from "react-redux";
 import { fetchBlogs } from "../../actions";
+import setup from "./images/setup.jpg";
 import { Link } from "react-router-dom";
-import { Header, Grid } from "semantic-ui-react";
+import {
+  Header,
+  Grid,
+  Container,
+  Divider,
+  Item,
+  Image
+} from "semantic-ui-react";
 import BlogListItem from "./BlogListItem";
 
 /**
@@ -25,8 +33,10 @@ class BlogList extends React.Component {
   renderList() {
     return this.props.blogs.map(blog => {
       return (
-        <Grid.Column>
-          <BlogListItem blog={blog} key={blog.id} />
+        <Grid.Column key={blog.id}>
+          <Container text textAlign="left">
+            <BlogListItem blog={blog} key={blog.id} />
+          </Container>
         </Grid.Column>
       );
     });
@@ -51,13 +61,40 @@ class BlogList extends React.Component {
   render() {
     return (
       <div>
-        <Header as="h2" inverted>
-          Blogs:
-        </Header>
-        <Grid>
-          <Grid.Row stretched></Grid.Row>
+        <Item>
+          <Image
+            src={setup}
+            style={{
+              position: "absolute",
+              width: "100vw",
+              zIndex: "-1",
+              top: 0,
+              filter: "blur(5px) drop-shadow(16px 16px 10px black)",
+              height: "300px",
+              objectFit: "cover",
+              objectPosition: "center"
+            }}
+          />
+          <Header
+            inverted
+            style={{
+              marginTop: "85px",
+              marginBottom: "85px",
+              fontSize: "50px",
+              textShadow: "-1px 0 black, 0 1px black, 1px 0 black, 0 -1px black"
+            }}
+          >
+            Austin Melchior
+          </Header>
+        </Item>
+        <Grid
+          columns={1}
+          style={{
+            padding: "50px"
+          }}
+        >
+          <Grid.Row stretched>{this.renderList()}</Grid.Row>
         </Grid>
-        <div className="ui celled list">{this.renderList()}</div>
       </div>
     );
   }
@@ -67,7 +104,6 @@ class BlogList extends React.Component {
  * mapStateToProps maps the blogs, and isSignedIn values to this component's props
  **/
 const mapStateToProps = state => {
-  debugger;
   return {
     blogs: Object.values(state.blogs)
   };

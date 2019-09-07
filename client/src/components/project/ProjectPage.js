@@ -15,8 +15,12 @@ const handleTransition = id => {
   }
 };
 
+const headerStyle = {
+  textShadow: "-1px 0 black, 0 1px black, 1px 0 black, 0 -1px black"
+};
+
 const ProjectPage = props => (
-  <>
+  <div className="page">
     <Grid
       stretched
       columns="equal"
@@ -120,6 +124,7 @@ const ProjectPage = props => (
                 size="huge"
                 className="largeHeader"
                 textAlign="center"
+                style={headerStyle}
               >
                 Crowder News CLI
               </Header>
@@ -153,6 +158,7 @@ const ProjectPage = props => (
                 size="huge"
                 className="largeHeader"
                 textAlign="center"
+                style={headerStyle}
               >
                 MTG Manager Pro
               </Header>
@@ -161,6 +167,7 @@ const ProjectPage = props => (
                 size="medium"
                 className="mediumHeader"
                 textAlign="center"
+                style={headerStyle}
               >
                 MTG Manager Pro
               </Header>
@@ -184,6 +191,7 @@ const ProjectPage = props => (
                 size="huge"
                 className="largeHeader"
                 textAlign="center"
+                style={headerStyle}
               >
                 Stream Source
               </Header>
@@ -192,6 +200,7 @@ const ProjectPage = props => (
                 size="medium"
                 className="mediumHeader"
                 textAlign="center"
+                style={headerStyle}
               >
                 Stream Source
               </Header>
@@ -200,7 +209,7 @@ const ProjectPage = props => (
         </Grid.Row>
       </Grid>
     </Container>
-  </>
+  </div>
 );
 
 export default ProjectPage;

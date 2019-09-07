@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { Container, Grid, Header, Menu, Image, Item } from "semantic-ui-react";
-import typewriter from "./images/typewriter.jpeg";
+import setup from "./images/setup.jpg";
 import laptop from "./images/laptop.jpg";
 import resume from "./images/resume.jpeg";
 import books from "./images/books.jpeg";
@@ -16,8 +16,12 @@ const handleTransition = id => {
   }
 };
 
+const headerStyle = {
+  textShadow: "-1px 0 black, 0 1px black, 1px 0 black, 0 -1px black"
+};
+
 const HomePage = props => (
-  <>
+  <div className="page">
     <Grid
       stretched
       columns="equal"
@@ -33,7 +37,6 @@ const HomePage = props => (
       <Grid.Row style={{ width: "100vw" }} stretched>
         <Grid.Column style={{ padding: 0 }} stretched>
           <Item
-            fluid
             style={{
               display: "flex",
               //justifyContent: "center",
@@ -57,7 +60,6 @@ const HomePage = props => (
         </Grid.Column>
         <Grid.Column style={{ padding: 0 }} stretched>
           <Item
-            fluid
             style={{
               display: "flex",
               justifyContent: "center",
@@ -80,7 +82,6 @@ const HomePage = props => (
         </Grid.Column>
         <Grid.Column style={{ padding: 0 }} stretched>
           <Item
-            fluid
             style={{
               display: "flex",
               justifyContent: "center",
@@ -103,7 +104,6 @@ const HomePage = props => (
         </Grid.Column>
         <Grid.Column style={{ padding: 0 }} stretched>
           <Item
-            fluid
             style={{
               display: "flex",
               justifyContent: "center",
@@ -117,11 +117,11 @@ const HomePage = props => (
               style={{
                 flexShrink: 0,
                 objectFit: "cover",
-                objectPosition: "right",
+                objectPosition: "center",
                 height: "100vh"
               }}
               fluid
-              src={typewriter}
+              src={setup}
             />
           </Item>
         </Grid.Column>
@@ -153,6 +153,7 @@ const HomePage = props => (
                 size="large"
                 className="largeHeader"
                 textAlign="center"
+                style={headerStyle}
               >
                 Projects
               </Header>
@@ -161,6 +162,7 @@ const HomePage = props => (
                 size="medium"
                 className="mediumHeader"
                 textAlign="center"
+                style={headerStyle}
               >
                 Projects
               </Header>
@@ -185,6 +187,7 @@ const HomePage = props => (
                 size="large"
                 className="largeHeader"
                 textAlign="center"
+                style={headerStyle}
               >
                 Resume
               </Header>
@@ -193,6 +196,7 @@ const HomePage = props => (
                 size="medium"
                 className="mediumHeader"
                 textAlign="center"
+                style={headerStyle}
               >
                 Resume
               </Header>
@@ -217,6 +221,7 @@ const HomePage = props => (
                 size="large"
                 className="largeHeader"
                 textAlign="center"
+                style={headerStyle}
               >
                 About
               </Header>
@@ -225,6 +230,7 @@ const HomePage = props => (
                 size="medium"
                 className="mediumHeader"
                 textAlign="center"
+                style={headerStyle}
               >
                 About
               </Header>
@@ -249,6 +255,7 @@ const HomePage = props => (
                 size="large"
                 className="largeHeader"
                 textAlign="center"
+                style={headerStyle}
               >
                 Blog
               </Header>
@@ -257,6 +264,7 @@ const HomePage = props => (
                 size="medium"
                 className="mediumHeader"
                 textAlign="center"
+                style={headerStyle}
               >
                 Blog
               </Header>
@@ -265,7 +273,7 @@ const HomePage = props => (
         </Grid.Row>
       </Grid>
     </Container>
-  </>
+  </div>
 );
 
 export default HomePage;
