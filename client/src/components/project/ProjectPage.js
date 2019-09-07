@@ -113,7 +113,7 @@ const ProjectPage = props => (
           >
             <Menu.Item
               as={Link}
-              to="/projects/Crowder-News-CLI"
+              to="/projects/News-CLI"
               name="projects"
               onMouseOver={() => handleTransition(`project1-img`)}
               onMouseOut={() => handleTransition(`project1-img`)}
@@ -126,7 +126,7 @@ const ProjectPage = props => (
                 textAlign="center"
                 style={headerStyle}
               >
-                Crowder News CLI
+                News CLI
               </Header>
               <Header
                 inverted
@@ -134,7 +134,7 @@ const ProjectPage = props => (
                 className="mediumHeader"
                 textAlign="center"
               >
-                Crowder News CLI
+                News CLI
               </Header>
             </Menu.Item>
           </Grid.Column>

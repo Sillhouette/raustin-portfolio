@@ -64,11 +64,7 @@ export default class App extends Component {
                 exact
                 component={MtgShowPage}
               />
-              <Route
-                path="/projects/Crowder-News-CLI"
-                exact
-                component={AboutPage}
-              />
+              <Route path="/projects/News-CLI" exact component={AboutPage} />
               <Route
                 path="/projects/Stream-Source"
                 exact
