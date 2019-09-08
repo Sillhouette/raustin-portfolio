@@ -80,7 +80,7 @@ const AboutPage = () => {
               compact
               style={{
                 backgroundColor: "rgba(255,255,255,0.6)",
-                borderRadius: "3px",
+                borderRadius: "25px",
                 padding: 10
               }}
             >
