@@ -6,7 +6,7 @@ import "./Header.css";
 
 const Header = props => (
   <Menu
-    style={{ visibility: props.visibility }}
+    className={props.visible ? null : "invisible"}
     id="header"
     compact
     stackable
