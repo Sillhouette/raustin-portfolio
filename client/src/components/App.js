@@ -24,25 +24,25 @@ export default class App extends Component {
   handleItemClick = (e, { name }) => {
     this.setState({ activeItem: name });
   };
-
-  handleHeaderDisplay = () => {
-    if (this.state.activeItem !== "home") {
-      return (
-        <Header
-          activeItem={this.state.activeItem}
-          handleItemClick={this.handleItemClick}
-        />
-      );
-    } else {
-      return (
-        <Header
-          style={{ visibility: "hidden !important" }}
-          activeItem={this.state.activeItem}
-          handleItemClick={this.handleItemClick}
-        />
-      );
-    }
-  };
+  //
+  // handleHeaderDisplay = () => {
+  //   if (this.state.activeItem !== "home") {
+  //     return (
+  //       <Header
+  //         activeItem={this.state.activeItem}
+  //         handleItemClick={this.handleItemClick}
+  //       />
+  //     );
+  //   } else {
+  //     return (
+  //       <Header
+  //         style={{ visibility: "hidden !important" }}
+  //         activeItem={this.state.activeItem}
+  //         handleItemClick={this.handleItemClick}
+  //       />
+  //     );
+  //   }
+  // };
 
   render() {
     return (
@@ -59,7 +59,14 @@ export default class App extends Component {
       >
         <Router history={history}>
           <Container fluid style={{ marginLeft: 0 }}>
-            {this.handleHeaderDisplay()}
+            <Header
+              style={{
+                visibility:
+                  this.state.activeItem === "home" ? "hidden" : "visible"
+              }}
+              activeItem={this.state.activeItem}
+              handleItemClick={this.handleItemClick}
+            />
             <Switch>
               <Route
                 path="/"
