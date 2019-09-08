@@ -36,7 +36,7 @@ export default class App extends Component {
     } else {
       return (
         <Header
-          style={{ visibility: "hidden" }}
+          style={{ visibility: "hidden !important" }}
           activeItem={this.state.activeItem}
           handleItemClick={this.handleItemClick}
         />
