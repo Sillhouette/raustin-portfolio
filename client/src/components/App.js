@@ -25,6 +25,17 @@ export default class App extends Component {
     this.setState({ activeItem: name });
   };
 
+  handleHeaderDisplay = () => {
+    if (this.state.activeItem !== "home") {
+      return (
+        <Header
+          activeItem={this.state.activeItem}
+          handleItemClick={this.handleItemClick}
+        />
+      );
+    }
+  };
+
   render() {
     return (
       <div
@@ -40,10 +51,7 @@ export default class App extends Component {
       >
         <Router history={history}>
           <Container fluid style={{ marginLeft: 0 }}>
-            <Header
-              activeItem={this.state.activeItem}
-              handleItemClick={this.handleItemClick}
-            />
+            {handleHeaderDisplay()}
             <Switch>
               <Route
                 path="/"
