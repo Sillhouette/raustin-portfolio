@@ -14,6 +14,7 @@ import BlogList from "./blog/BlogList";
 import BlogShow from "./blog/BlogShow";
 import Footer from "./common/Footer";
 import MtgShowPage from "./project/mtg/MtgShowPage";
+import StreamSource from "./project/stream/StreamSource";
 import ResumePage from "./resume/ResumePage";
 import history from "../history";
 import "./App.css";
@@ -69,7 +70,7 @@ export default class App extends Component {
               <Route
                 path="/projects/Stream-Source"
                 exact
-                component={AboutPage}
+                component={StreamSource}
               />
               <Route path="/about" exact component={AboutPage} />
               <Route path="/blog" exact component={BlogList} />

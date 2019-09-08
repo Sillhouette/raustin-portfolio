@@ -34,7 +34,7 @@ const ProjectPage = props => (
       }}
     >
       <Grid.Row style={{ width: "100vw" }} stretched>
-        <Grid.Column style={{ padding: 0 }} stretched>
+        {/*<Grid.Column style={{ display: "none", padding: 0 }} stretched>
           <Item
             style={{
               display: "flex",
@@ -55,7 +55,7 @@ const ProjectPage = props => (
               src={laptop}
             />
           </Item>
-        </Grid.Column>
+        </Grid.Column>*/}
         <Grid.Column style={{ padding: 0 }} stretched>
           <Item
             style={{
@@ -103,10 +103,14 @@ const ProjectPage = props => (
       </Grid.Row>
     </Grid>
     <Container fluid>
-      <Grid style={{ width: "100vw", height: "100vh" }} columns={3} stretched>
+      <Grid
+        style={{ width: "100vw", height: "100vh" }}
+        columns="equal"
+        stretched
+      >
         <Grid.Row style={{ width: "100vw" }} stretched>
-          <Grid.Column
-            style={{ padding: 0 }}
+          {/*<Grid.Column
+            style={{ display: "none", padding: 0 }}
             stretched
             textAlign="center"
             verticalAlign="middle"
@@ -137,7 +141,7 @@ const ProjectPage = props => (
                 News CLI
               </Header>
             </Menu.Item>
-          </Grid.Column>
+          </Grid.Column>*/}
           <Grid.Column
             textAlign="center"
             verticalAlign="middle"

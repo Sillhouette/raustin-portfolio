@@ -5,7 +5,6 @@ import { Menu } from "semantic-ui-react";
 import "./Header.css";
 
 const Header = props => {
-  console.log(props);
   return (
     <Menu
       className={props.invisible ? "invisible" : null}
