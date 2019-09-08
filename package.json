@@ -9,7 +9,6 @@
     "postinstall": "npm run build && npm run deploy && echo 'Client built!'"
   },
   "dependencies": {
-    "react-pdf": "^4.1.0",
-    "webpack": "^4.39.3"
+    "react-pdf": "^4.1.0"
   }
 }
