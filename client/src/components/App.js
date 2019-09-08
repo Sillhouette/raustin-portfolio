@@ -51,7 +51,7 @@ export default class App extends Component {
       >
         <Router history={history}>
           <Container fluid style={{ marginLeft: 0 }}>
-            {handleHeaderDisplay()}
+            {this.handleHeaderDisplay()}
             <Switch>
               <Route
                 path="/"
