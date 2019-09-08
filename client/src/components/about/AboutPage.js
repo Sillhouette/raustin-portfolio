@@ -72,7 +72,7 @@ const AboutPage = () => {
           </Grid.Column>
         </Grid.Row>
         <Grid.Row>
-          <Grid.Column style={{ paddingBottom: 35 }}>
+          <Grid.Column textAlign="center" style={{ paddingBottom: 35 }}>
             <Header as="h1" inverted textAlign="center">
               Skills
             </Header>
