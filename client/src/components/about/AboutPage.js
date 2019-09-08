@@ -76,7 +76,7 @@ const AboutPage = () => {
             <Header as="h1" inverted textAlign="center">
               Skills
             </Header>
-            <Segment
+            <Container
               compact
               style={{
                 backgroundColor: "rgba(255,255,255,0.6)"
@@ -401,7 +401,7 @@ const AboutPage = () => {
                   </Grid.Column>
                 </Grid.Row>
               </Grid>
-            </Segment>
+            </Container>
           </Grid.Column>
         </Grid.Row>
       </Grid>
