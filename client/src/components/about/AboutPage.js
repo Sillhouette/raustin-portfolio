@@ -79,7 +79,9 @@ const AboutPage = () => {
             <Container
               compact
               style={{
-                backgroundColor: "rgba(255,255,255,0.6)"
+                backgroundColor: "rgba(255,255,255,0.6)",
+                borderRadius: "3px",
+                padding: 10
               }}
             >
               <Grid
