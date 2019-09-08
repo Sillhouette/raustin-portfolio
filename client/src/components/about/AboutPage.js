@@ -71,13 +71,12 @@ const AboutPage = () => {
             <Filler num="3" />
           </Grid.Column>
         </Grid.Row>
-        <Grid.Row>
-          <Grid.Column textAlign="center" style={{ paddingBottom: 35 }}>
+        <Grid.Row centered>
+          <Grid.Column style={{ paddingBottom: 35 }}>
             <Header as="h1" inverted textAlign="center">
               Skills
             </Header>
             <Segment
-              fluid
               compact
               style={{
                 backgroundColor: "rgba(255,255,255,0.6)"
