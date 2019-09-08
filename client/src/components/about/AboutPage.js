@@ -15,7 +15,7 @@ import reduxColor from "./images/redux_color.png";
 import rubyColor from "./images/ruby_color.png";
 import sqliteColor from "./images/sqlite_color.png";
 import visualBasicColor from "./images/visual_basic_color.png";
-import { Container, Image, Grid, Header, Popup } from "semantic-ui-react";
+import { Container, Image, Grid, Header, Popup, Segment } from "semantic-ui-react";
 import Filler from "../common/Filler";
 
 const style = {
@@ -65,6 +65,12 @@ const AboutPage = () => {
           </Grid.Column>
         </Grid.Row>
         <Grid.Row>
+        <Segment
+          fluid
+          style={{
+            backgroundColor: "rgba(255,255,255,0.6)"
+          }}
+        >
           <Grid.Column style={{ paddingBottom: 35 }}>
             <Header as="h1" inverted textAlign="center">
               Skills
@@ -83,6 +89,7 @@ const AboutPage = () => {
                     trigger={
                       <Image
                         //ruby "https://i.imgur.com/hRTeTK8.png"
+                        circular
                         verticalAlign="middle"
                         src={rubyColor}
                         size="small"
@@ -387,6 +394,7 @@ const AboutPage = () => {
                 </Grid.Column>
               </Grid.Row>
             </Grid>
+            </Segment>
           </Grid.Column>
         </Grid.Row>
       </Grid>
