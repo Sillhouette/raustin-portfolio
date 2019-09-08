@@ -10,7 +10,7 @@ const ResumePage = () => (
     <div style={{ width: 600 }}>
       <Document
         file={resume}
-        onLoadSuccess={this.onDocumentLoadSuccess && console.log("PDF LOADED")}
+        onLoadSuccess={console.log("PDF LOADED")}
       ></Document>
     </div>
     <Filler num="3" />
