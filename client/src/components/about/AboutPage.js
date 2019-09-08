@@ -1,5 +1,20 @@
 import React from "react";
-import railsColor from "./images/rails_color.png";
+import railsColor from "./images/rails_color";
+import eclipseColor from "./images/eclipse_color";
+import cplusplusColor from "./images/cplusplus_color";
+import gitColor from "./images/git_color";
+import githubColor from "./images/github_color";
+import htmlColor from "./images/html_color";
+import javaColor from "./images/java_color";
+import jsColor from "./images/js_color";
+import postgresqlColor from "./images/postgresql_color";
+import pythonColor from "./images/python_color";
+import reactColor from "./images/react_color";
+import reactNativeColor from "./images/react_native_color";
+import reduxColor from "./images/redux_color";
+import rubyColor from "./images/ruby_color";
+import sqliteColor from "./images/sqlite_color";
+import visualBasicColor from "./images/visual_basic_color";
 import { Container, Image, Grid, Header, Popup } from "semantic-ui-react";
 import Filler from "../common/Filler";
 
@@ -67,9 +82,9 @@ const AboutPage = () => {
                   <Popup
                     trigger={
                       <Image
-                        //ruby
+                        //ruby "https://i.imgur.com/hRTeTK8.png"
                         verticalAlign="middle"
-                        src={"https://i.imgur.com/hRTeTK8.png"}
+                        src={rubyColor}
                         size="small"
                       />
                     }
@@ -84,9 +99,9 @@ const AboutPage = () => {
                   <Popup
                     trigger={
                       <Image
-                        //HTML 5
+                        //HTML 5 "https://i.imgur.com/EF2fDDn.png"
                         verticalAlign="middle"
-                        src={"https://i.imgur.com/EF2fDDn.png"}
+                        src={htmlColor}
                         size="small"
                       />
                     }
@@ -105,9 +120,9 @@ const AboutPage = () => {
                   <Popup
                     trigger={
                       <Image
-                        //Java
+                        //Java https://i.imgur.com/A0ziWcH.png
                         verticalAlign="middle"
-                        src={"https://i.imgur.com/A0ziWcH.png"}
+                        src={javaColor}
                         size="small"
                       />
                     }
@@ -124,9 +139,9 @@ const AboutPage = () => {
                   <Popup
                     trigger={
                       <Image
-                        //react
+                        //react "https://i.imgur.com/NbwgUhc.png"
                         verticalAlign="middle"
-                        src={"https://i.imgur.com/NbwgUhc.png"}
+                        src={reactColor}
                         size="small"
                       />
                     }
@@ -144,7 +159,7 @@ const AboutPage = () => {
                   <Popup
                     trigger={
                       <Image
-                        //rails
+                        //rails "https://i.imgur.com/xynxjpd.png"
                         verticalAlign="middle"
                         src={railsColor}
                         size="small"
@@ -163,9 +178,9 @@ const AboutPage = () => {
                   <Popup
                     trigger={
                       <Image
-                        //JS
+                        //JS "https://i.imgur.com/Qd7AipT.png"
                         verticalAlign="middle"
-                        src={"https://i.imgur.com/Qd7AipT.png"}
+                        src={jsColor}
                         size="small"
                       />
                     }
@@ -182,9 +197,9 @@ const AboutPage = () => {
                   <Popup
                     trigger={
                       <Image
-                        //SQL
+                        //SQL "https://i.imgur.com/PPz2u3d.png"
                         verticalAlign="middle"
-                        src={"https://i.imgur.com/PPz2u3d.png"}
+                        src={sqliteColor}
                         size="small"
                       />
                     }
@@ -201,9 +216,9 @@ const AboutPage = () => {
                   <Popup
                     trigger={
                       <Image
-                        //Postgres
+                        //Postgres "https://i.imgur.com/85GEmW8.png"
                         verticalAlign="middle"
-                        src={"https://i.imgur.com/85GEmW8.png"}
+                        src={postgresqlColor}
                         size="small"
                       />
                     }
@@ -222,9 +237,9 @@ const AboutPage = () => {
                   <Popup
                     trigger={
                       <Image
-                        //Eclipse
+                        //Eclipse "https://i.imgur.com/AyUbKOk.png"
                         verticalAlign="middle"
-                        src={"https://i.imgur.com/AyUbKOk.png"}
+                        src={eclipseColor}
                         size="small"
                       />
                     }
@@ -240,9 +255,9 @@ const AboutPage = () => {
                   <Popup
                     trigger={
                       <Image
-                        //Python
+                        //Python "https://i.imgur.com/qf8GLPk.png"
                         verticalAlign="middle"
-                        src={"https://i.imgur.com/qf8GLPk.png"}
+                        src={pythonColor}
                         size="small"
                       />
                     }
@@ -258,9 +273,9 @@ const AboutPage = () => {
                   <Popup
                     trigger={
                       <Image
-                        //c++
+                        //c++ "https://i.imgur.com/RjWH8J4.png"
                         verticalAlign="middle"
-                        src={"https://i.imgur.com/RjWH8J4.png"}
+                        src={cplusplusColor}
                         size="small"
                       />
                     }
@@ -276,9 +291,9 @@ const AboutPage = () => {
                   <Popup
                     trigger={
                       <Image
-                        //React Native
+                        //React Native "https://i.imgur.com/wdzwsBA.png"
                         verticalAlign="middle"
-                        src={"https://i.imgur.com/wdzwsBA.png"}
+                        src={reactNativeColor}
                         size="small"
                       />
                     }
@@ -295,9 +310,9 @@ const AboutPage = () => {
                   <Popup
                     trigger={
                       <Image
-                        //Visual Basic
+                        //Visual Basic "https://i.imgur.com/KHmN2E0.png"
                         verticalAlign="middle"
-                        src={"https://i.imgur.com/KHmN2E0.png"}
+                        src={visualBasicColor}
                         size="small"
                       />
                     }
@@ -315,9 +330,9 @@ const AboutPage = () => {
                   <Popup
                     trigger={
                       <Image
-                        //Redux
+                        //Redux "https://i.imgur.com/tqEWNUe.png"
                         verticalAlign="middle"
-                        src={"https://i.imgur.com/tqEWNUe.png"}
+                        src={reduxColor}
                         size="small"
                       />
                     }
@@ -334,9 +349,9 @@ const AboutPage = () => {
                   <Popup
                     trigger={
                       <Image
-                        //Git
+                        //Git "https://i.imgur.com/cURXLc6.png"
                         verticalAlign="middle"
-                        src={"https://i.imgur.com/cURXLc6.png"}
+                        src={gitColor}
                         size="small"
                       />
                     }
@@ -354,9 +369,9 @@ const AboutPage = () => {
                   <Popup
                     trigger={
                       <Image
-                        //Github
+                        //Github "https://i.imgur.com/WkyrtmR.png"
                         verticalAlign="middle"
-                        src={"https://i.imgur.com/WkyrtmR.png"}
+                        src={githubColor}
                         size="small"
                       />
                     }
