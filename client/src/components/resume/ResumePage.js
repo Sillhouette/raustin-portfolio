@@ -1,12 +1,18 @@
 import React from "react";
 import { Container } from "semantic-ui-react";
 import Filler from "../common/Filler";
+import { Document } from "react-pdf/dist/entry.webpack";
 import resume from "./pdfs/Austin-Melchior-Resume.pdf";
 
 const ResumePage = () => (
   <Container>
     <Filler num="3" />
-    <embed src={resume} width="800px" height="1090px" />
+    <div style={{ width: 600 }}>
+      <Document
+        file={resume}
+        onLoadSuccess={this.onDocumentLoadSuccess}
+      ></Document>
+    </div>
     <Filler num="3" />
   </Container>
 );
