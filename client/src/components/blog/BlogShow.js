@@ -20,7 +20,6 @@ class BlogShow extends React.Component {
   }
 
   addPostContent(content) {
-    debugger;
     let element = document.getElementById(`post_body`);
     if (element) {
       element.innerHTML += content;
@@ -58,7 +57,7 @@ class BlogShow extends React.Component {
       return <div>Loading...</div>;
     }
 
-    const { title, post, id, image } = this.props.blog;
+    const { title, image } = this.props.blog;
     return (
       <Item>
         <Item>

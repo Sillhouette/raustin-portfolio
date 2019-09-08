@@ -1,20 +1,61 @@
-import React from "react";
+import React, { Component } from "react";
 import { Container } from "semantic-ui-react";
-import Filler from "../common/Filler";
-import { Document } from "react-pdf";
+import { SizeMe } from "react-sizeme";
+import { Document, Page, pdfjs } from "react-pdf";
 import resume from "./pdfs/Austin-Melchior-Resume.pdf";
 
-const ResumePage = () => (
-  <Container>
-    <Filler num="3" />
-    <div style={{ width: 600 }}>
-      <Document
-        file={resume}
-        onLoadSuccess={console.log("PDF LOADED")}
-      ></Document>
-    </div>
-    <Filler num="3" />
-  </Container>
-);
+pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.js`;
+
+class ResumePage extends Component {
+  state = {
+    numPages: null,
+    pageNumber: 1
+  };
+
+  onDocumentLoadSuccess = ({ numPages }) => {
+    this.setState({ numPages });
+  };
+
+  removeTextLayerOffset = () => {
+    const textLayers = document.querySelectorAll(
+      ".react-pdf__Page__textContent"
+    );
+    textLayers.forEach(layer => {
+      const { style } = layer;
+      style.top = "0";
+      style.left = "0";
+      style.transform = "";
+    });
+  };
+
+  render() {
+    const { pageNumber } = this.state;
+    return (
+      <Container text style={{ padding: 20 }}>
+        <SizeMe
+          monitorHeight
+          monitorWidth
+          refreshRate={128}
+          refreshMode={"throttle"}
+          render={({ size }) => (
+            <div>
+              <Document
+                file={resume}
+                onLoadSuccess={this.onDocumentLoadSuccess}
+              >
+                <Page
+                  height={size.height}
+                  width={size.width}
+                  onLoadSuccess={this.removeTextLayerOffset}
+                  pageNumber={pageNumber}
+                />
+              </Document>
+            </div>
+          )}
+        />
+      </Container>
+    );
+  }
+}
 
 export default ResumePage;

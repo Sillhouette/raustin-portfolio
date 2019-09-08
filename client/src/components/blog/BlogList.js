@@ -4,14 +4,7 @@ import { connect } from "react-redux";
 import { fetchBlogs } from "../../actions";
 import setup from "./images/setup.jpg";
 import { Link } from "react-router-dom";
-import {
-  Header,
-  Grid,
-  Container,
-  Divider,
-  Item,
-  Image
-} from "semantic-ui-react";
+import { Header, Grid, Container, Item, Image } from "semantic-ui-react";
 import BlogListItem from "./BlogListItem";
 
 /**

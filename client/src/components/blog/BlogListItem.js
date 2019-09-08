@@ -1,13 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import {
-  Header,
-  Image,
-  Segment,
-  Item,
-  Divider,
-  Container
-} from "semantic-ui-react";
+import { Header, Segment, Item, Divider, Container } from "semantic-ui-react";
 
 class BlogListItem extends React.Component {
   state = { counter: 0 };

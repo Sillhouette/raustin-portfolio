@@ -15,14 +15,7 @@ import reduxColor from "./images/redux_color.png";
 import rubyColor from "./images/ruby_color.png";
 import sqliteColor from "./images/sqlite_color.png";
 import visualBasicColor from "./images/visual_basic_color.png";
-import {
-  Container,
-  Image,
-  Grid,
-  Header,
-  Popup,
-  Segment
-} from "semantic-ui-react";
+import { Container, Image, Grid, Header, Popup } from "semantic-ui-react";
 import Filler from "../common/Filler";
 
 const style = {
