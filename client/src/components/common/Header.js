@@ -5,7 +5,15 @@ import { Menu } from "semantic-ui-react";
 import "./Header.css";
 
 const Header = props => (
-  <Menu id="header" compact stackable pointing secondary inverted>
+  <Menu
+    style={{ visibility: this.props.visibility }}
+    id="header"
+    compact
+    stackable
+    pointing
+    secondary
+    inverted
+  >
     <Menu.Item
       as={Link}
       to="/"
