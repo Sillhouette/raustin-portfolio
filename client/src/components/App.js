@@ -41,7 +41,7 @@ export default class App extends Component {
         <Router history={history}>
           <Container fluid style={{ marginLeft: 0 }}>
             <Header
-              invisible={true}
+              invisible={this.state.activeItem == "home" ? true : false}
               activeItem={this.state.activeItem}
               handleItemClick={this.handleItemClick}
             />
