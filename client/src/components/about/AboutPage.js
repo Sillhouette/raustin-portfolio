@@ -78,6 +78,7 @@ const AboutPage = () => {
             </Header>
             <Segment
               fluid
+              compact
               style={{
                 backgroundColor: "rgba(255,255,255,0.6)"
               }}
