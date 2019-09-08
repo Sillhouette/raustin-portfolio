@@ -5,10 +5,10 @@ import { Menu } from "semantic-ui-react";
 import "./Header.css";
 
 const Header = props => {
-  debugger;
+  console.log(props);
   return (
     <Menu
-      className={props.visible ? null : "invisible"}
+      className={props.invisible ? "invisible" : null}
       id="header"
       compact
       stackable
