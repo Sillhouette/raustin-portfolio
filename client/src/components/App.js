@@ -33,6 +33,12 @@ export default class App extends Component {
           handleItemClick={this.handleItemClick}
         />
       );
+    } else {
+      <Header
+        style={{ visibility: "hidden" }}
+        activeItem={this.state.activeItem}
+        handleItemClick={this.handleItemClick}
+      />;
     }
   };
 
