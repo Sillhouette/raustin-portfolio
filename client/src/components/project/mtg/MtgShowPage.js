@@ -12,7 +12,8 @@ import {
   Container,
   Segment,
   Icon,
-  Button
+  Button,
+  List
 } from "semantic-ui-react";
 
 class MtgShowPage extends Component {
@@ -95,20 +96,28 @@ class MtgShowPage extends Component {
               Rails and Javascript
             </Header>
             <Header inverted as="h4">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent
-              hendrerit molestie ullamcorper. Pellentesque consequat leo quis mi
-              porttitor blandit. Nunc lacus odio, pellentesque et nulla mattis,
-              imperdiet aliquam elit. Integer id odio nec nunc commodo posuere
-              laoreet a dui. Nunc sit amet enim lobortis, convallis eros et,
-              placerat sem. Nulla varius bibendum iaculis. Mauris quis nunc et
-              metus pretium commodo vitae mollis purus. Fusce ut maximus nulla.
-              Suspendisse dictum arcu non risus rhoncus, ut ullamcorper tortor
-              elementum. Suspendisse feugiat nec ligula quis faucibus. Phasellus
-              sed ornare velit, id consectetur orci. Mauris ac aliquet nunc. In
-              tellus augue, ornare at maximus et, mollis non libero. Ut molestie
-              dolor non volutpat tincidunt. Sed dignissim tincidunt sapien ac
-              finibus. Mauris consequat urna eu diam laoreet ultricies.
+              Magic Manager Pro is a web application designed to allow it's
+              users to keep track their Magic the Gathering trading cards. With
+              an account, a user is able to build a library of the cards they
+              own with relevant information recorded. A user can keep track of
+              information such as the number of a specific card they own, their
+              value, and their condition. The user can then use the cards they
+              have added to their account to keep track of the decks they have
+              built, along with side decks and more. All details about each card
+              can also be viewed, including things such as legalities, mana
+              cost, color, cost and more.
             </Header>
+            <Header as="h4" inverted style={{ margin: 0 }}>
+              Technical details:
+            </Header>
+            <List style={{ color: "white" }} bulleted>
+              <List.Item>
+                CRUD app built with Ruby on Rails MVC architecture
+              </List.Item>
+              <List.Item>Javascript enabled forms</List.Item>
+              <List.Item>Powered Scryfall API</List.Item>
+              <List.Item>PostgreSQL database</List.Item>
+            </List>
             <Button
               circular
               icon

@@ -10,7 +10,8 @@ import {
   Container,
   Segment,
   Icon,
-  Button
+  Button,
+  List
 } from "semantic-ui-react";
 
 class StreamSource extends Component {
@@ -85,20 +86,20 @@ class StreamSource extends Component {
               React and Rails
             </Header>
             <Header inverted as="h4">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent
-              hendrerit molestie ullamcorper. Pellentesque consequat leo quis mi
-              porttitor blandit. Nunc lacus odio, pellentesque et nulla mattis,
-              imperdiet aliquam elit. Integer id odio nec nunc commodo posuere
-              laoreet a dui. Nunc sit amet enim lobortis, convallis eros et,
-              placerat sem. Nulla varius bibendum iaculis. Mauris quis nunc et
-              metus pretium commodo vitae mollis purus. Fusce ut maximus nulla.
-              Suspendisse dictum arcu non risus rhoncus, ut ullamcorper tortor
-              elementum. Suspendisse feugiat nec ligula quis faucibus. Phasellus
-              sed ornare velit, id consectetur orci. Mauris ac aliquet nunc. In
-              tellus augue, ornare at maximus et, mollis non libero. Ut molestie
-              dolor non volutpat tincidunt. Sed dignissim tincidunt sapien ac
-              finibus. Mauris consequat urna eu diam laoreet ultricies.
+              Stream Source is a web application that allows it's users to
+              create live streams to display to the world. With a user account
+              one can create a live stream, avaliable for anyone to watch. You
+              can log in with a google account and only the user who has created
+              a stream may edit or delete it.
             </Header>
+            <Header as="h4" inverted style={{ margin: 0 }}>
+              Technical details:
+            </Header>
+            <List style={{ color: "white" }} bulleted>
+              <List.Item>CRUD app built with React</List.Item>
+              <List.Item>Rails API backend for data management</List.Item>
+              <List.Item>PostgreSQL database</List.Item>
+            </List>
             <Button
               circular
               icon
