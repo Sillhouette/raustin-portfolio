@@ -9,7 +9,8 @@ import {
   Image,
   Icon,
   Divider,
-  Popup
+  Popup,
+  Menu
 } from "semantic-ui-react";
 import "./Footer.css";
 
@@ -36,7 +37,12 @@ const Footer = props => (
             >
               Navigation
             </Header>
-            <Link to="/" name="home" onClick={props.handleItemClick}>
+            <Menu.Item
+              as={Link}
+              to="/"
+              name="home"
+              onClick={props.handleItemClick}
+            >
               <Header
                 style={{ paddingLeft: "10px" }}
                 as="h5"
@@ -45,9 +51,10 @@ const Footer = props => (
               >
                 Home
               </Header>
-            </Link>
+            </Menu.Item>
             <Divider fitted hidden />
-            <Link
+            <Menu.Item
+              as={Link}
               to="/projects"
               name="projects"
               onClick={props.handleItemClick}
@@ -60,9 +67,14 @@ const Footer = props => (
               >
                 Projects
               </Header>
-            </Link>
+            </Menu.Item>
             <Divider fitted hidden />
-            <Link to="/resume" name="resume" onClick={props.handleItemClick}>
+            <Menu.Item
+              as={Link}
+              to="/resume"
+              name="resume"
+              onClick={props.handleItemClick}
+            >
               <Header
                 style={{ paddingLeft: "10px" }}
                 as="h5"
@@ -71,9 +83,14 @@ const Footer = props => (
               >
                 Resume
               </Header>
-            </Link>
+            </Menu.Item>
             <Divider fitted hidden />
-            <Link to="/about" name="about" onClick={props.handleItemClick}>
+            <Menu.Item
+              as={Link}
+              to="/about"
+              name="about"
+              onClick={props.handleItemClick}
+            >
               <Header
                 style={{ paddingLeft: "10px" }}
                 as="h5"
@@ -82,9 +99,14 @@ const Footer = props => (
               >
                 About
               </Header>
-            </Link>
+            </Menu.Item>
             <Divider fitted hidden />
-            <Link to="/blog" name="blog" onClick={props.handleItemClick}>
+            <Menu.Item
+              as={Link}
+              to="/blog"
+              name="blog"
+              onClick={props.handleItemClick}
+            >
               <Header
                 style={{ paddingLeft: "10px" }}
                 as="h5"
@@ -93,7 +115,7 @@ const Footer = props => (
               >
                 Blog
               </Header>
-            </Link>
+            </Menu.Item>
           </Grid.Column>
           <Grid.Column
             textAlign="center"
