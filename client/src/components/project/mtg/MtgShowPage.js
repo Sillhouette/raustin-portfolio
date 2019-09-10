@@ -132,7 +132,12 @@ class MtgShowPage extends Component {
               <Icon name="github" />
               View Repo
             </Button>
-            <Button circular icon labelPosition="right">
+            <Button
+              circular
+              icon
+              onClick={() => window.open("http://www.mtgmanager.net", "_blank")}
+              labelPosition="right"
+            >
               <Icon name="play" />
               View Live
             </Button>
