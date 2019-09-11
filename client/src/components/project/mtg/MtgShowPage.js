@@ -135,7 +135,9 @@ class MtgShowPage extends Component {
             <Button
               circular
               icon
-              onClick={() => window.open("http://www.mtgmanager.net", "_blank")}
+              onClick={() =>
+                window.open("https://www.mtgmanager.net", "_blank")
+              }
               labelPosition="right"
             >
               <Icon name="play" />
