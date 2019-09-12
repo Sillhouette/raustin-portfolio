@@ -143,6 +143,11 @@ class MtgShowPage extends Component {
               <Icon name="play" />
               View Live
             </Button>
+            <List style={{ color: "white" }} bulleted>
+              <List.Item>Login Info:</List.Item>
+              <List.Item>Username: Test</List.Item>
+              <List.Item>Password: 123456</List.Item>
+            </List>
           </Segment>
         </Container>
         <Container textAlign="center" style={{ marginBottom: 200 }}>
