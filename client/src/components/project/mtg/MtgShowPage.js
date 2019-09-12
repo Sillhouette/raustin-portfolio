@@ -143,7 +143,7 @@ class MtgShowPage extends Component {
               <Icon name="play" />
               View Live
             </Button>
-            <Header as="h4" inverted style={{ margin: 0 }}>
+            <Header as="h4" inverted>
               Test account:
             </Header>
             <List style={{ color: "white" }} bulleted>
