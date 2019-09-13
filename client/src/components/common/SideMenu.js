@@ -14,6 +14,7 @@ const SideMenu = props => (
       <Dropdown
         id="headerMenu"
         icon={null}
+        title={"Menu"}
         trigger={<Icon fitted size="large" name="sidebar" />}
       >
         <Dropdown.Menu
@@ -72,6 +73,7 @@ const SideMenu = props => (
     </Menu.Item>
     <Menu.Item
       as="button"
+      title={"Github"}
       onClick={() => window.open("https://github.com/Sillhouette", "_blank")}
       className="ui icon large button"
     >
@@ -79,6 +81,7 @@ const SideMenu = props => (
     </Menu.Item>
     <Menu.Item
       as="button"
+      title={"Email"}
       onClick={() => {
         window.open("mailto:raustin.melchior@gmail.com", "_top");
       }}
@@ -88,6 +91,7 @@ const SideMenu = props => (
     </Menu.Item>
     <Menu.Item
       as="button"
+      title={"LinkedIn"}
       onClick={() =>
         window.open("https://linkedin.com/in/richardamelchior/", "_blank")
       }
@@ -99,6 +103,7 @@ const SideMenu = props => (
       as={LinkButton}
       to="/resume"
       name="resume"
+      title="Resume"
       onClick={props.handleItemClick}
       className="ui button icon large"
     >
