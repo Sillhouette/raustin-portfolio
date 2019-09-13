@@ -8,6 +8,7 @@ const SideMenu = props => (
   <Menu fixed="top" icon vertical inverted secondary floated>
     <Menu.Item
       as="button"
+      title="Menu"
       className="ui icon large button"
       style={{ margin: 0, paddingLeft: 18 }}
     >

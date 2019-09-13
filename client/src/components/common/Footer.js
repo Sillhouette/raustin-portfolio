@@ -132,6 +132,7 @@ const Footer = props => (
                     trigger={
                       <Image
                         //ruby
+                        alt={"Ruby"}
                         verticalAlign="middle"
                         src={"https://i.imgur.com/hRTeTK8.png"}
                         size="mini"
@@ -148,6 +149,7 @@ const Footer = props => (
                     trigger={
                       <Image
                         //HTML 5
+                        alt={"HTML5"}
                         verticalAlign="middle"
                         src={"https://i.imgur.com/EF2fDDn.png"}
                         size="mini"
@@ -164,6 +166,7 @@ const Footer = props => (
                     trigger={
                       <Image
                         //Java
+                        alt={"Java"}
                         verticalAlign="middle"
                         src={"https://i.imgur.com/A0ziWcH.png"}
                         size="mini"
@@ -180,6 +183,7 @@ const Footer = props => (
                     trigger={
                       <Image
                         //react
+                        alt={"React"}
                         verticalAlign="middle"
                         src={"https://i.imgur.com/NbwgUhc.png"}
                         size="mini"
@@ -196,6 +200,7 @@ const Footer = props => (
                     trigger={
                       <Image
                         //rails
+                        alt={"Rails"}
                         verticalAlign="middle"
                         src={"https://i.imgur.com/xynxjpd.png"}
                         size="mini"
@@ -212,6 +217,7 @@ const Footer = props => (
                     trigger={
                       <Image
                         //JS
+                        alt={"Javascript"}
                         verticalAlign="middle"
                         src={"https://i.imgur.com/Qd7AipT.png"}
                         size="mini"
@@ -228,6 +234,7 @@ const Footer = props => (
                     trigger={
                       <Image
                         //SQL
+                        alt={"SQL"}
                         verticalAlign="middle"
                         src={"https://i.imgur.com/PPz2u3d.png"}
                         size="mini"
@@ -244,6 +251,7 @@ const Footer = props => (
                     trigger={
                       <Image
                         //Postgres
+                        alt={"PostgreSQL"}
                         verticalAlign="middle"
                         src={"https://i.imgur.com/85GEmW8.png"}
                         size="mini"
@@ -262,6 +270,7 @@ const Footer = props => (
                     trigger={
                       <Image
                         //Eclipse
+                        alt={"Eclipse"}
                         verticalAlign="middle"
                         src={"https://i.imgur.com/AyUbKOk.png"}
                         size="mini"
@@ -278,6 +287,7 @@ const Footer = props => (
                     trigger={
                       <Image
                         //Python
+                        alt={"Python"}
                         verticalAlign="middle"
                         src={"https://i.imgur.com/qf8GLPk.png"}
                         size="mini"
@@ -294,6 +304,7 @@ const Footer = props => (
                     trigger={
                       <Image
                         //c++
+                        alt={"C++"}
                         verticalAlign="middle"
                         src={"https://i.imgur.com/RjWH8J4.png"}
                         size="mini"
@@ -309,7 +320,8 @@ const Footer = props => (
                   <Popup
                     trigger={
                       <Image
-                        //React Native
+                        //React Nativ
+                        alt={"React Native"}
                         verticalAlign="middle"
                         src={"https://i.imgur.com/wdzwsBA.png"}
                         size="mini"
@@ -326,6 +338,7 @@ const Footer = props => (
                     trigger={
                       <Image
                         //Visual Basic
+                        alt={"Visual Basis"}
                         verticalAlign="middle"
                         src={"https://i.imgur.com/KHmN2E0.png"}
                         size="mini"
@@ -342,6 +355,7 @@ const Footer = props => (
                     trigger={
                       <Image
                         //Redux
+                        alt={"Redux"}
                         verticalAlign="middle"
                         src={"https://i.imgur.com/tqEWNUe.png"}
                         size="mini"
@@ -358,6 +372,7 @@ const Footer = props => (
                     trigger={
                       <Image
                         //Git
+                        alt={"Git"}
                         verticalAlign="middle"
                         src={"https://i.imgur.com/cURXLc6.png"}
                         size="mini"
@@ -374,6 +389,7 @@ const Footer = props => (
                     trigger={
                       <Image
                         //Github
+                        alt={"Github"}
                         verticalAlign="middle"
                         src={"https://i.imgur.com/WkyrtmR.png"}
                         size="mini"
