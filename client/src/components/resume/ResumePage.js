@@ -37,11 +37,14 @@ class ResumePage extends Component {
           className="ui circular icon right labeled button"
           href="/pdfs/Austin-Melchior-Resume.pdf"
           download="Austin-Melchior-Resume"
+          style={{ padding: 15 }}
         >
           <Icon name="file alternate outline" />
           Download Resume
+          <Header sub style={{ color: "white" }}>
+            (with working links)
+          </Header>
         </a>
-        <p style={{ color: "white" }}>(with working links)</p>
         <SizeMe
           monitorHeight
           monitorWidth

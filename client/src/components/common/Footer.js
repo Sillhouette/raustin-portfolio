@@ -128,6 +128,7 @@ const Footer = props => (
             <Grid columns="equal">
               <Grid.Row style={{ padding: 5 }}>
                 <Grid.Column textAlign="center" verticalAlign="bottom">
+                  {/*}
                   <Popup
                     trigger={
                       <Image
@@ -399,7 +400,7 @@ const Footer = props => (
                     style={style}
                     size="mini"
                     position="top center"
-                  />
+                  />*/}
                 </Grid.Column>
               </Grid.Row>
             </Grid>
