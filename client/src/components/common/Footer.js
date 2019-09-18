@@ -25,7 +25,7 @@ const Footer = props => (
     <Segment
       attached="bottom"
       inverted
-      style={{ backgroundColor: `rgba(118, 118, 118, 0.80 )` }}
+      style={{ backgroundColor: `rgba(118, 118, 118, 0.85 )` }}
     >
       <Grid style={{ width: "100vw" }} divided="vertically" columns="equal">
         <Grid.Row style={{ padding: 5 }}>
