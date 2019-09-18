@@ -10,7 +10,8 @@ import {
   Icon,
   Divider,
   Popup,
-  Menu
+  Menu,
+  Item
 } from "semantic-ui-react";
 import "./Footer.css";
 
