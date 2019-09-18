@@ -41,8 +41,11 @@ class ResumePage extends Component {
         >
           <Icon name="file alternate outline" />
           Download Resume
+          <Label basic style={{ color: "white" }} size="mini">
+            (with working links)
+          </Label>
         </a>
-        <p style={{ color: "white" }}>(with working links)</p>
+
         <SizeMe
           monitorHeight
           monitorWidth
