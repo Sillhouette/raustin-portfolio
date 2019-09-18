@@ -418,33 +418,31 @@ const Footer = props => (
               Contact
             </Header>
             <Divider fitted hidden />
-            <Header
-              as="h5"
-              inverted
-              textAlign="right"
-              style={{ margin: "0rem" }}
-            >
-              Raustin.Melchior@gmail.com&nbsp;&nbsp;
+            <span textAlign="right" style={{ margin: "0rem" }}>
+              <Link
+                style={{ color: "white" }}
+                href="mailto:raustin.melchior@gmail.com"
+              >
+                Raustin.Melchior@gmail.com&nbsp;&nbsp;
+              </Link>
               <Icon size="mini" name="envelope" />
-            </Header>
+            </span>
             <Divider fitted hidden />
-            <Header
-              as="h5"
-              inverted
-              textAlign="right"
-              style={{ margin: "0rem" }}
-            >
-              818.268.5442&nbsp;&nbsp; <Icon size="mini" name="phone" />
-            </Header>
+            <span textAlign="right" style={{ margin: "0rem" }}>
+              <Link style={{ color: "white" }} href="tel:818-268-5442">
+                818.268.5442&nbsp;&nbsp;
+              </Link>{" "}
+              <Icon size="mini" name="phone" />
+            </span>
             <Divider fitted hidden />
-            <Header
+            {/*<Header
               as="h5"
               inverted
               textAlign="right"
               style={{ margin: "0rem" }}
             >
               Los Angeles, CA&nbsp;&nbsp; <Icon size="mini" name="home" />
-            </Header>
+            </Header>*/}
           </Grid.Column>
         </Grid.Row>
       </Grid>

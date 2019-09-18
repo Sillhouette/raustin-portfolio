@@ -23,7 +23,7 @@ const SideMenu = props => (
       >
         <Dropdown.Menu
           style={{
-            marginLeft: 20,
+            marginLeft: 25,
             backgroundColor: "rgba(0, 0, 0, 0.67)"
           }}
         >
