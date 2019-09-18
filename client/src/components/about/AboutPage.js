@@ -39,6 +39,7 @@ const AboutPage = () => {
                 verticalAlign="middle"
                 circular
                 src={"https://i.imgur.com/4jWI7vj.png?1"}
+                alt="Profile Picture"
                 size="large"
                 floated="right"
               />
@@ -91,6 +92,7 @@ const AboutPage = () => {
                       trigger={
                         <Image
                           //ruby "https://i.imgur.com/hRTeTK8.png"
+                          alt="Ruby"
                           circular
                           verticalAlign="middle"
                           src={rubyColor}
@@ -109,6 +111,7 @@ const AboutPage = () => {
                       trigger={
                         <Image
                           //HTML 5 "https://i.imgur.com/EF2fDDn.png"
+                          alt="HTML 5"
                           verticalAlign="middle"
                           src={htmlColor}
                           size="small"
@@ -131,6 +134,7 @@ const AboutPage = () => {
                         <Image
                           //Java https://i.imgur.com/A0ziWcH.png
                           verticalAlign="middle"
+                          alt="Java"
                           src={javaColor}
                           size="small"
                         />
@@ -149,6 +153,7 @@ const AboutPage = () => {
                       trigger={
                         <Image
                           //react "https://i.imgur.com/NbwgUhc.png"
+                          alt="React"
                           verticalAlign="middle"
                           src={reactColor}
                           size="small"
@@ -169,6 +174,7 @@ const AboutPage = () => {
                       trigger={
                         <Image
                           //rails "https://i.imgur.com/xynxjpd.png"
+                          alt="Ruby on Rails"
                           verticalAlign="middle"
                           src={railsColor}
                           size="small"
@@ -188,6 +194,7 @@ const AboutPage = () => {
                       trigger={
                         <Image
                           //JS "https://i.imgur.com/Qd7AipT.png"
+                          alt="Javascript"
                           verticalAlign="middle"
                           src={jsColor}
                           size="small"
@@ -207,6 +214,7 @@ const AboutPage = () => {
                       trigger={
                         <Image
                           //SQL "https://i.imgur.com/PPz2u3d.png"
+                          alt="SQLite"
                           verticalAlign="middle"
                           src={sqliteColor}
                           size="small"
@@ -226,6 +234,7 @@ const AboutPage = () => {
                       trigger={
                         <Image
                           //Postgres "https://i.imgur.com/85GEmW8.png"
+                          alt="PostgreSQL"
                           verticalAlign="middle"
                           src={postgresqlColor}
                           size="small"
@@ -247,6 +256,7 @@ const AboutPage = () => {
                       trigger={
                         <Image
                           //Eclipse "https://i.imgur.com/AyUbKOk.png"
+                          alt="Eclipse"
                           verticalAlign="middle"
                           src={eclipseColor}
                           size="small"
@@ -265,6 +275,7 @@ const AboutPage = () => {
                       trigger={
                         <Image
                           //Python "https://i.imgur.com/qf8GLPk.png"
+                          alt="Python"
                           verticalAlign="middle"
                           src={pythonColor}
                           size="small"
@@ -283,6 +294,7 @@ const AboutPage = () => {
                       trigger={
                         <Image
                           //c++ "https://i.imgur.com/RjWH8J4.png"
+                          alt="C++"
                           verticalAlign="middle"
                           src={cplusplusColor}
                           size="small"
@@ -301,6 +313,7 @@ const AboutPage = () => {
                       trigger={
                         <Image
                           //React Native "https://i.imgur.com/wdzwsBA.png"
+                          alt="React Native"
                           verticalAlign="middle"
                           src={reactNativeColor}
                           size="small"
@@ -321,6 +334,7 @@ const AboutPage = () => {
                         <Image
                           //Visual Basic "https://i.imgur.com/KHmN2E0.png"
                           verticalAlign="middle"
+                          alt="Visual Basic"
                           src={visualBasicColor}
                           size="small"
                         />
@@ -340,6 +354,7 @@ const AboutPage = () => {
                       trigger={
                         <Image
                           //Redux "https://i.imgur.com/tqEWNUe.png"
+                          alt="Redux"
                           verticalAlign="middle"
                           src={reduxColor}
                           size="small"
@@ -359,6 +374,7 @@ const AboutPage = () => {
                       trigger={
                         <Image
                           //Git "https://i.imgur.com/cURXLc6.png"
+                          alt="Git"
                           verticalAlign="middle"
                           src={gitColor}
                           size="small"
@@ -379,6 +395,7 @@ const AboutPage = () => {
                       trigger={
                         <Image
                           //Github "https://i.imgur.com/WkyrtmR.png"
+                          alt="Github"
                           verticalAlign="middle"
                           src={githubColor}
                           size="small"

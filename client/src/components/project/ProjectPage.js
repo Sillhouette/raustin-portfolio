@@ -46,6 +46,7 @@ const ProjectPage = props => (
             <Image
               id="project1-img"
               className="transition"
+              alt=""
               style={{
                 flexShrink: 0,
                 objectFit: "cover",
@@ -68,6 +69,7 @@ const ProjectPage = props => (
             <Image
               id="project2-img"
               className="transition"
+              alt=""
               style={{
                 flexShrink: 0,
                 objectFit: "cover",
@@ -90,6 +92,7 @@ const ProjectPage = props => (
             <Image
               id="project3-img"
               className="transition"
+              alt=""
               style={{
                 flexShrink: 0,
                 objectFit: "cover",

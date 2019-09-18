@@ -45,6 +45,7 @@ class StreamSource extends Component {
         <div>
           <Image
             src={header}
+            alt=""
             style={{
               position: "absolute",
               width: "100vw",
@@ -138,7 +139,12 @@ class StreamSource extends Component {
               marginLeft: "7%"
             }}
           >
-            <Image id="project-image" src={example2} size="massive" />
+            <Image
+              id="project-image"
+              alt="Project Example"
+              src={example2}
+              size="massive"
+            />
 
             <Menu compact inverted secondary icon>
               <Menu.Item

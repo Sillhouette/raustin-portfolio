@@ -63,6 +63,7 @@ class BlogShow extends React.Component {
         <Item>
           <Image
             src={image}
+            alt=""
             style={{
               position: "absolute",
               width: "100vw",

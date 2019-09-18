@@ -56,6 +56,7 @@ class BlogList extends React.Component {
       <div>
         <Item>
           <Image
+            alt=""
             src={setup}
             style={{
               position: "absolute",

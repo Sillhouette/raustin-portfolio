@@ -55,6 +55,7 @@ class MtgShowPage extends Component {
         <div>
           <Image
             src={header}
+            alt="Header Image"
             style={{
               position: "absolute",
               width: "100vw",
@@ -163,7 +164,12 @@ class MtgShowPage extends Component {
               marginLeft: "7%"
             }}
           >
-            <Image id="project-image" src={example2} size="massive" />
+            <Image
+              id="project-image"
+              alt="Project Example"
+              src={example2}
+              size="massive"
+            />
 
             <Menu compact inverted secondary icon>
               <Menu.Item
