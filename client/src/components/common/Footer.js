@@ -418,22 +418,29 @@ const Footer = props => (
               Contact
             </Header>
             <Divider fitted hidden />
-            <span textAlign="right" style={{ margin: "0rem" }}>
+            <Item textAlign="right" style={{ margin: "0rem" }}>
               <Link
                 style={{ color: "white" }}
-                href="mailto:raustin.melchior@gmail.com"
+                onClick={() => {
+                  window.open("mailto:raustin.melchior@gmail.com", "_top");
+                }}
               >
                 Raustin.Melchior@gmail.com&nbsp;&nbsp;
               </Link>
               <Icon size="mini" name="envelope" />
-            </span>
+            </Item>
             <Divider fitted hidden />
-            <span textAlign="right" style={{ margin: "0rem" }}>
-              <Link style={{ color: "white" }} href="tel:818-268-5442">
+            <Item textAlign="right" style={{ margin: "0rem" }}>
+              <Link
+                style={{ color: "white" }}
+                onClick={() => {
+                  window.open("tel:818-268-5442", "_top");
+                }}
+              >
                 818.268.5442&nbsp;&nbsp;
-              </Link>{" "}
+              </Link>
               <Icon size="mini" name="phone" />
-            </span>
+            </Item>
             <Divider fitted hidden />
             {/*<Header
               as="h5"
