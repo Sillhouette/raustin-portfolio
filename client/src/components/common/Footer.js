@@ -411,7 +411,7 @@ const Footer = props => (
             </Grid>
           </Grid.Column>
           <Grid.Column
-            textAlign="center"
+            textAlign="right"
             verticalAlign="top"
             style={{ margin: "0rem" }}
           >
@@ -419,7 +419,7 @@ const Footer = props => (
               Contact
             </Header>
             <Divider fitted hidden />
-            <Item textAlign="right" style={{ margin: "0rem" }}>
+            <Item style={{ margin: "0rem" }}>
               <Link
                 style={{ color: "white" }}
                 onClick={() => {
@@ -428,10 +428,10 @@ const Footer = props => (
               >
                 Raustin.Melchior@gmail.com&nbsp;&nbsp;
               </Link>
-              <Icon size="mini" name="envelope" />
+              <Icon size="small" name="envelope" />
             </Item>
             <Divider fitted hidden />
-            <Item textAlign="right" style={{ margin: "0rem" }}>
+            <Item style={{ margin: "0rem" }}>
               <Link
                 style={{ color: "white" }}
                 onClick={() => {
@@ -440,7 +440,7 @@ const Footer = props => (
               >
                 818.268.5442&nbsp;&nbsp;
               </Link>
-              <Icon size="mini" name="phone" />
+              <Icon size="small" name="phone" />
             </Item>
             <Divider fitted hidden />
             {/*<Header
