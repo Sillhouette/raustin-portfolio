@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { Container } from "semantic-ui-react";
 import { SizeMe } from "react-sizeme";
-import { Button, Icon } from "semantic-ui-react";
+import { Button, Icon, Header } from "semantic-ui-react";
 import { Document, Page, pdfjs } from "react-pdf";
 import resume from "./pdfs/Austin-Melchior-Resume.pdf";
 

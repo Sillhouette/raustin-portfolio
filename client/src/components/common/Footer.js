@@ -21,7 +21,11 @@ const style = {
 
 const Footer = props => (
   <Container fluid style={{ position: "absolute", bottom: 0 }}>
-    <Segment attached="bottom" inverted color="grey" style={{ opacity: 0.8 }}>
+    <Segment
+      attached="bottom"
+      inverted
+      style={{ backgroundColor: `rgba(118, 118, 118, 0.80 )` }}
+    >
       <Grid style={{ width: "100vw" }} divided="vertically" columns="equal">
         <Grid.Row style={{ padding: 5 }}>
           <Grid.Column

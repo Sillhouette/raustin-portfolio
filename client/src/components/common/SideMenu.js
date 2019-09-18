@@ -10,7 +10,11 @@ const SideMenu = props => (
       as="button"
       title="Menu"
       className="ui icon large button"
-      style={{ margin: 0, paddingLeft: 18 }}
+      style={{
+        backgroundColor: "rgba(0, 0, 0, 0.67)",
+        margin: 0,
+        paddingLeft: 18
+      }}
     >
       <Dropdown
         id="headerMenu"
