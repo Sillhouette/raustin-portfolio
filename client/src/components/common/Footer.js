@@ -47,15 +47,9 @@ const Footer = props => (
               to="/"
               name="home"
               onClick={props.handleItemClick}
+              style={{ color: "white", paddingLeft: "10px" }}
             >
-              <Header
-                style={{ paddingLeft: "10px" }}
-                as="h5"
-                inverted
-                textAlign="left"
-              >
-                Home
-              </Header>
+              Home
             </Menu.Item>
             <Divider fitted hidden />
             <Menu.Item
@@ -63,15 +57,9 @@ const Footer = props => (
               to="/projects"
               name="projects"
               onClick={props.handleItemClick}
+              style={{ color: "white", paddingLeft: "10px" }}
             >
-              <Header
-                style={{ paddingLeft: "10px" }}
-                as="h5"
-                inverted
-                textAlign="left"
-              >
-                Projects
-              </Header>
+              Projects
             </Menu.Item>
             <Divider fitted hidden />
             <Menu.Item
@@ -79,15 +67,9 @@ const Footer = props => (
               to="/resume"
               name="resume"
               onClick={props.handleItemClick}
+              style={{ color: "white", paddingLeft: "10px" }}
             >
-              <Header
-                style={{ paddingLeft: "10px" }}
-                as="h5"
-                inverted
-                textAlign="left"
-              >
-                Resume
-              </Header>
+              Resume
             </Menu.Item>
             <Divider fitted hidden />
             <Menu.Item
@@ -95,15 +77,9 @@ const Footer = props => (
               to="/about"
               name="about"
               onClick={props.handleItemClick}
+              style={{ color: "white", paddingLeft: "10px" }}
             >
-              <Header
-                style={{ paddingLeft: "10px" }}
-                as="h5"
-                inverted
-                textAlign="left"
-              >
-                About
-              </Header>
+              About
             </Menu.Item>
             <Divider fitted hidden />
             <Menu.Item
@@ -111,15 +87,9 @@ const Footer = props => (
               to="/blog"
               name="blog"
               onClick={props.handleItemClick}
+              style={{ color: "white", paddingLeft: "10px" }}
             >
-              <Header
-                style={{ paddingLeft: "10px" }}
-                as="h5"
-                inverted
-                textAlign="left"
-              >
-                Blog
-              </Header>
+              Blog
             </Menu.Item>
           </Grid.Column>
           <Grid.Column
@@ -127,9 +97,9 @@ const Footer = props => (
             id="center-column"
             verticalAlign="top"
           >
-            <Header as="h3" inverted textAlign="center" style={{}}>
+            {/*<Header as="h3" inverted textAlign="center" style={{}}>
               Skills
-            </Header>
+            </Header>*/}
             <Grid columns="equal">
               <Grid.Row style={{ padding: 5 }}>
                 <Grid.Column textAlign="center" verticalAlign="bottom">
@@ -428,7 +398,7 @@ const Footer = props => (
               >
                 Raustin.Melchior@gmail.com&nbsp;&nbsp;
               </Link>
-              <Icon size="small" name="envelope" />
+              <Icon name="envelope" />
             </Item>
             <Divider fitted hidden />
             <Item style={{ margin: "0rem" }}>
@@ -440,7 +410,7 @@ const Footer = props => (
               >
                 818.268.5442&nbsp;&nbsp;
               </Link>
-              <Icon size="small" name="phone" />
+              <Icon name="phone" />
             </Item>
             <Divider fitted hidden />
             {/*<Header
