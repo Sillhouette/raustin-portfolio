@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { Container } from "semantic-ui-react";
 import { SizeMe } from "react-sizeme";
-import { Button, Icon, Header, Label } from "semantic-ui-react";
+import { Button, Icon, Header } from "semantic-ui-react";
 import { Document, Page, pdfjs } from "react-pdf";
 import resume from "./pdfs/Austin-Melchior-Resume.pdf";
 
@@ -41,9 +41,9 @@ class ResumePage extends Component {
         >
           <Icon name="file alternate outline" />
           Download Resume
-          <Label basic style={{ color: "white" }} size="mini">
+          <div basic style={{ color: "white", fontSize: "5px" }}>
             (with working links)
-          </Label>
+          </div>
         </a>
 
         <SizeMe
