@@ -35,7 +35,7 @@ class ResumePage extends Component {
       <Container text style={{ padding: 20 }}>
         <a
           className="ui circular icon right labeled button"
-          href="./pdfs/Austin-Melchior-Resume.pdf"
+          href="/pdfs/Austin-Melchior-Resume.pdf"
           download="Austin-Melchior-Resume"
         >
           <Icon name="file alternate outline" />
