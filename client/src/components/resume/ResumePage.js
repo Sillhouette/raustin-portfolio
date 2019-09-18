@@ -33,15 +33,14 @@ class ResumePage extends Component {
     const { pageNumber } = this.state;
     return (
       <Container text style={{ padding: 20 }}>
-        <Button
-          circular
-          icon
-          onClick={() => window.open({ resume }, "_blank")}
-          labelPosition="right"
+        <a
+          className="ui circular icon right labeled button"
+          href={resume}
+          download="Austin-Melchior-Resume"
         >
           <Icon name="file alternate outline" />
           Download Resume
-        </Button>
+        </a>
         <p style={{ color: "white" }}>(with working links)</p>
         <SizeMe
           monitorHeight
