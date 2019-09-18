@@ -10,7 +10,7 @@ const HomeButton = props => (
       secondary
       style={{ position: "fixed", top: 0, right: 0 }}
     >
-      <Link>
+      <a>
         <Menu.Item
           as={LinkButton}
           to="/"
@@ -23,7 +23,7 @@ const HomeButton = props => (
             </div>
           </div>
         </Menu.Item>
-      </Link>
+      </a>
     </Menu>
   </div>
 );
