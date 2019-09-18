@@ -32,6 +32,12 @@ class ResumePage extends Component {
     const { pageNumber } = this.state;
     return (
       <Container text style={{ padding: 20 }}>
+        <form method="get" action={resume}>
+          <Button circular icon type="submit" labelPosition="right">
+            <Icon name="document" />
+            View Live
+          </Button>
+        </form>
         <SizeMe
           monitorHeight
           monitorWidth
