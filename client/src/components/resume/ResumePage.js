@@ -42,7 +42,7 @@ class ResumePage extends Component {
           <Icon name="file alternate outline" />
           Download Resume
         </Button>
-        <p style={{color: "white"}}>(with working links)<p>
+        <p style={{ color: "white" }}>(with working links)</p>
         <SizeMe
           monitorHeight
           monitorWidth
