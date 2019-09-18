@@ -10,18 +10,20 @@ const HomeButton = props => (
       secondary
       style={{ position: "fixed", top: 0, right: 0 }}
     >
-      <Menu.Item
-        as={LinkButton}
-        to="/"
-        name="home"
-        onClick={props.handleItemClick}
-      >
-        <div className="content">
-          <div className="ui inverted header">
-            Austin Melchior <br /> Full Stack Engineer
+      <Link>
+        <Menu.Item
+          as={LinkButton}
+          to="/"
+          name="home"
+          onClick={props.handleItemClick}
+        >
+          <div className="content">
+            <div className="ui inverted header">
+              Austin Melchior <br /> Full Stack Engineer
+            </div>
           </div>
-        </div>
-      </Menu.Item>
+        </Menu.Item>
+      </Link>
     </Menu>
   </div>
 );
