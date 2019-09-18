@@ -1,8 +1,8 @@
 import React, { Component } from "react";
 import header from "./images/gamer.jpeg";
-import example from "./images/mtg-example-1.png";
-import example2 from "./images/mtg-example-2.png";
-import example3 from "./images/mtg-example-3.png";
+import example from "./images/stream-source-show.png";
+import example2 from "./images/stream-source-index.png";
+import example3 from "./images/stream-source-delete.png";
 import {
   Image,
   Header,
@@ -114,7 +114,14 @@ class StreamSource extends Component {
               <Icon name="github" />
               View Repo
             </Button>
-            <Button circular icon labelPosition="right">
+            <Button
+              circular
+              icon
+              labelPosition="right"
+              onClick={() =>
+                window.open("http://www.stream-source.net", "_blank")
+              }
+            >
               <Icon name="play" />
               View Live
             </Button>
