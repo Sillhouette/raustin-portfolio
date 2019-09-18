@@ -33,12 +33,16 @@ class ResumePage extends Component {
     const { pageNumber } = this.state;
     return (
       <Container text style={{ padding: 20 }}>
-        <form method="get" action={resume}>
-          <Button circular icon type="submit" labelPosition="right">
-            <Icon name="document" />
-            View Live
-          </Button>
-        </form>
+        <Button
+          circular
+          icon
+          onClick={() => window.open({ resume }, "_blank")}
+          labelPosition="right"
+        >
+          <Icon name="file alternate outline" />
+          Download Resume
+        </Button>
+        <p style={{color: "white"}}>(with working links)<p>
         <SizeMe
           monitorHeight
           monitorWidth
