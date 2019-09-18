@@ -41,10 +41,10 @@ class ResumePage extends Component {
         >
           <Icon name="file alternate outline" />
           Download Resume
-          <Header sub style={{ color: "white" }}>
-            (with working links)
-          </Header>
         </a>
+        <Header sub style={{ color: "white" }}>
+          (with working links)
+        </Header>
         <SizeMe
           monitorHeight
           monitorWidth

@@ -11,7 +11,6 @@ const SideMenu = props => (
       title="Menu"
       className="ui icon large button"
       style={{
-        backgroundColor: "rgba(0, 0, 0, 0.67)",
         margin: 0,
         paddingLeft: 18
       }}
@@ -25,7 +24,7 @@ const SideMenu = props => (
         <Dropdown.Menu
           style={{
             paddingLeft: 20,
-            backgroundColor: "rgba(0,0,0,0)"
+            backgroundColor: "rgba(0, 0, 0, 0.67)"
           }}
         >
           <Dropdown.Item
