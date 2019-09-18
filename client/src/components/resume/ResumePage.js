@@ -45,7 +45,7 @@ class ResumePage extends Component {
             (with working links)
           </div>
         </a>
-        <Divider>
+        <Divider />
         <SizeMe
           monitorHeight
           monitorWidth
