@@ -10,20 +10,19 @@ const HomeButton = props => (
       secondary
       style={{ position: "fixed", top: 0, right: 0 }}
     >
-      <a>
-        <Menu.Item
-          as={LinkButton}
-          to="/"
-          name="home"
-          onClick={props.handleItemClick}
-        >
-          <div className="content">
-            <div className="ui inverted header">
-              Austin Melchior <br /> Full Stack Engineer
-            </div>
+      <Menu.Item
+        as={LinkButton}
+        to="/"
+        name="home"
+        style={{ cursor: "pointer" }}
+        onClick={props.handleItemClick}
+      >
+        <div className="content">
+          <div className="ui inverted header">
+            Austin Melchior <br /> Full Stack Engineer
           </div>
-        </Menu.Item>
-      </a>
+        </div>
+      </Menu.Item>
     </Menu>
   </div>
 );
