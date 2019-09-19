@@ -400,7 +400,7 @@ const Footer = props => (
               </Link>
               <Icon name="envelope" />
             </Item>
-            <Divider fitted hidden />
+            <Divider hidden />
             <Item style={{ margin: "0rem" }}>
               <Link
                 style={{ color: "white" }}
