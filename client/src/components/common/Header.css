@@ -2,7 +2,7 @@
   visibility: hidden;
 }
 
-@media only screen and (max-width: 812px) {
+@media only screen and (max-width: 768px) {
   #header {
     visibility: hidden;
   }

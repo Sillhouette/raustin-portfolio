@@ -13,7 +13,7 @@ img.transition.visible {
   display: none;
 }
 
-@media only screen and (max-width: 812px) {
+@media only screen and (max-width: 768px) {
   .mediumHeader {
     display: initial;
   }
