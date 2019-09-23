@@ -390,14 +390,14 @@ const Footer = props => (
             </Header>
             <Divider fitted hidden />
             <Item style={{ margin: "0rem" }}>
-              <Link
-                style={{ color: "white" }}
+              <span
+                style={{ color: "white", cursor: "pointer" }}
                 onClick={() => {
                   window.open("mailto:raustin.melchior@gmail.com", "_top");
                 }}
               >
                 Raustin.Melchior@gmail.com&nbsp;&nbsp;
-              </Link>
+              </span>
               <Icon name="envelope" />
             </Item>
             <Divider
@@ -405,14 +405,14 @@ const Footer = props => (
               hidden
             />
             <Item style={{ margin: "0rem" }}>
-              <Link
-                style={{ color: "white" }}
+              <span
+                style={{ color: "white", cursor: "pointer" }}
                 onClick={() => {
                   window.open("tel:818-268-5442", "_top");
                 }}
               >
                 818.268.5442&nbsp;&nbsp;
-              </Link>
+              </span>
               <Icon name="phone" />
             </Item>
             <Divider fitted hidden />
