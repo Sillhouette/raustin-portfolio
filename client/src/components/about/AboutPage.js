@@ -15,6 +15,7 @@ import reduxColor from "./images/redux_color.png";
 import rubyColor from "./images/ruby_color.png";
 import sqliteColor from "./images/sqlite_color.png";
 import visualBasicColor from "./images/visual_basic_color.png";
+import SkillColumn from "./SkillColumn";
 import { Container, Image, Grid, Header, Popup } from "semantic-ui-react";
 import Filler from "../common/Filler";
 
@@ -87,25 +88,11 @@ const AboutPage = () => {
                 columns="equal"
               >
                 <Grid.Row>
-                  <Grid.Column textAlign="center" verticalAlign="middle">
-                    <Popup
-                      trigger={
-                        <Image
-                          //ruby "https://i.imgur.com/hRTeTK8.png"
-                          alt="Ruby"
-                          circular
-                          verticalAlign="middle"
-                          src={rubyColor}
-                          size="small"
-                        />
-                      }
-                      header="Ruby"
-                      content="A dynamic, open source programming language with a focus on simplicity and productivity"
-                      style={style}
-                      size="mini"
-                      position="top center"
-                    />
-                  </Grid.Column>
+                  <SkillColumn
+                    name="Ruby"
+                    image={rubyColor}
+                    description="A dynamic, open source programming language with a focus on simplicity and productivity"
+                  />
                   <Grid.Column textAlign="center" verticalAlign="middle">
                     <Popup
                       trigger={
