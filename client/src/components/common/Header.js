@@ -2,7 +2,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { Menu } from "semantic-ui-react";
-import "./Header.css";
+import "./css/Header.css";
 
 const Header = props => {
   return (
@@ -10,7 +10,6 @@ const Header = props => {
       className={props.invisible ? "invisible" : null}
       id="header"
       compact
-      stackable
       pointing
       secondary
       inverted

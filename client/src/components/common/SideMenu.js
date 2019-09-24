@@ -2,7 +2,7 @@ import React from "react";
 import { Icon, Menu, Dropdown } from "semantic-ui-react";
 import LinkButton from "./LinkButton";
 import { Link } from "react-router-dom";
-import "./SideMenu.css";
+import "./css/SideMenu.css";
 
 const SideMenu = props => (
   <Menu fixed="top" icon vertical inverted secondary floated>

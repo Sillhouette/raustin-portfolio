@@ -18,14 +18,9 @@ const handleTransition = id => {
 
 const HomePage = props => (
   <div className="page">
-    <Grid
-      stretched
-      columns="equal"
-      id="home-background-grid"
-      className="home-grid"
-    >
-      <Grid.Row stretched>
-        <Grid.Column className="home-grid-column" stretched>
+    <Grid columns="equal" id="home-background-grid" className="home-grid">
+      <Grid.Row>
+        <Grid.Column className="home-grid-column">
           <Item className="background-grid-item">
             <Image
               id="project1-img"
@@ -36,7 +31,7 @@ const HomePage = props => (
             />
           </Item>
         </Grid.Column>
-        <Grid.Column className="home-grid-column" stretched>
+        <Grid.Column className="home-grid-column">
           <Item className="background-grid-item">
             <Image
               id="project2-img"
@@ -47,7 +42,7 @@ const HomePage = props => (
             />
           </Item>
         </Grid.Column>
-        <Grid.Column className="home-grid-column" stretched>
+        <Grid.Column className="home-grid-column">
           <Item className="background-grid-item">
             <Image
               id="project3-img"
@@ -58,7 +53,7 @@ const HomePage = props => (
             />
           </Item>
         </Grid.Column>
-        <Grid.Column className="home-grid-column" stretched>
+        <Grid.Column className="home-grid-column">
           <Item className="background-grid-item">
             <Image
               id="project4-img"
@@ -73,11 +68,10 @@ const HomePage = props => (
     </Grid>
     <Container fluid>
       <Grid className="home-grid" divided="vertically" columns="equal">
-        <Grid.Row stretched>
+        <Grid.Row>
           <Grid.Column
             textAlign="center"
             verticalAlign="middle"
-            stretched
             className="home-grid-column"
           >
             <Menu.Item
@@ -109,7 +103,6 @@ const HomePage = props => (
           <Grid.Column
             textAlign="center"
             verticalAlign="middle"
-            stretched
             className="home-grid-column"
           >
             <Menu.Item
@@ -141,7 +134,6 @@ const HomePage = props => (
           <Grid.Column
             textAlign="center"
             verticalAlign="middle"
-            stretched
             className="home-grid-column"
           >
             <Menu.Item
@@ -173,7 +165,6 @@ const HomePage = props => (
           <Grid.Column
             textAlign="center"
             verticalAlign="middle"
-            stretched
             className="home-grid-column"
           >
             <Menu.Item

@@ -1,7 +1,7 @@
 import React from "react";
 import { Menu } from "semantic-ui-react";
 import LinkButton from "./LinkButton";
-import "./HomeButton.css";
+import "./css/HomeButton.css";
 
 const HomeButton = props => (
   <div>

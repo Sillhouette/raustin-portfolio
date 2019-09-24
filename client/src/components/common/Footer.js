@@ -11,7 +11,7 @@ import {
   Menu,
   Item
 } from "semantic-ui-react";
-import "./Footer.css";
+import "./css/Footer.css";
 
 const Footer = props => (
   <Container id="footer-container" fluid>

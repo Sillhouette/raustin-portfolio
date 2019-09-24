@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { Segment, Icon, Menu, Image } from "semantic-ui-react";
-import "./ImageDisplay.css";
+import "./css/ImageDisplay.css";
 
 export default class ImageDisplay extends Component {
   state = { activeItem: "second" };
