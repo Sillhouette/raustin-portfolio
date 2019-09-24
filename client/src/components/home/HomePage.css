@@ -34,8 +34,8 @@ img.transition.visible {
 }
 
 .home-grid {
-  width: 100vw;
-  height: 100vh;
+  width: 100vw !important;
+  height: 100vh !important;
 }
 
 #home-background-grid {
