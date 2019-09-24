@@ -16,8 +16,9 @@ import rubyColor from "./images/ruby_color.png";
 import sqliteColor from "./images/sqlite_color.png";
 import visualBasicColor from "./images/visual_basic_color.png";
 import SkillColumn from "./SkillColumn";
-import { Container, Image, Segment, Grid, Header } from "semantic-ui-react";
+import { Container, Image, Grid, Header } from "semantic-ui-react";
 import Filler from "../common/Filler";
+import "./AboutPage.css";
 
 const AboutPage = () => {
   return (
@@ -27,18 +28,10 @@ const AboutPage = () => {
         Austin Melchior - Full Stack Engineer
       </Header>
       <Filler num="3" />
-      <Grid style={{ width: "100vw" }}>
+      <Grid>
         <Grid.Row stretched>
           <Grid.Column verticalAlign="middle">
-            <Container
-              style={{
-                width: "75%",
-                padding: "25px",
-                backgroundColor: "rgba(255,255,255,0.6)",
-                borderRadius: "10px",
-                textAlign: "left"
-              }}
-            >
+            <Container id="body-container">
               <Image
                 verticalAlign="middle"
                 circular
@@ -47,12 +40,7 @@ const AboutPage = () => {
                 size="large"
                 floated="right"
               />
-              <p
-                style={{
-                  fontSize: "1.5rem",
-                  color: "black"
-                }}
-              >
+              <p>
                 Hi! I'm Austin Melchior, a Full Stack Developer specializing in
                 React, Javascript and Ruby on Rails. I have a background in a
                 wide variety of industries and job positions, that have taught
@@ -60,12 +48,7 @@ const AboutPage = () => {
                 of developing a great customer experience, to the value of a
                 good work ethic.
               </p>
-              <p
-                style={{
-                  fontSize: "1.5rem",
-                  color: "black"
-                }}
-              >
+              <p>
                 As a Software Engineering Coach for Flatiron School I work
                 remotely as part of a highly collaborative remote team that
                 interfaces with a variety of students, helping to teach and
@@ -73,12 +56,7 @@ const AboutPage = () => {
                 programming languages and frameworks including Javascript,
                 React, Ruby, Rails and SQL.
               </p>
-              <p
-                style={{
-                  fontSize: "1.5rem",
-                  color: "black"
-                }}
-              >
+              <p>
                 I enjoy working with students as it allows me to lead by
                 example, showing them how to approach debugging and problem
                 solving with the tools at hand. Working with Flatiron has also
@@ -86,12 +64,7 @@ const AboutPage = () => {
                 non-technical people, building up and breaking down problems to
                 the level appropriate for the audience with which I am speaking.
               </p>
-              <p
-                style={{
-                  fontSize: "1.5rem",
-                  color: "black"
-                }}
-              >
+              <p>
                 I've developed a number of projects including a Magic the
                 Gathering card management website and a live streaming website.
                 I used Rails and Javascript to develop the card management site
@@ -100,51 +73,17 @@ const AboutPage = () => {
                 website, a comprehensive single-page app designed to highlight
                 my abilities and show off my other portfolio projects.
               </p>
-              {/*<p
-                style={{
-                  fontSize: "1.5rem",
-                  color: "black"
-                }}
-              >
-                Prior to my time at Flatiron I worked with HelloTech, where I
-                spent time working with clients to solve a wide range of
-                technical problems they faced in their businesses and
-                residences. I worked with a wide range of equipment including
-                computers running every operating system, phones, printers,
-                networking equipment, laptops, and smart home equipment.
-              </p>*/}
-              {/*<p
-                style={{
-                  fontSize: "1.5rem",
-                  color: "black"
-                }}
-              >
-                In high school I developed an interest in programming. I started
-                to teach myself how to program in various languages while I was
-                working in different fields. I finally decided to enroll in the
-                Software Engineering program at Flatiron School. I am always
-                looking for ways to further develop my skills and my ability to
-                self-teach allows me to take on any stack and learn the skills I
-                need to work on any project.
-              </p>*/}
             </Container>
             <Filler num="3" />
           </Grid.Column>
         </Grid.Row>
         <Grid.Row centered>
-          <Grid.Column style={{ paddingBottom: 35 }}>
+          <Grid.Column id="skills-column">
             <Header as="h1" inverted textAlign="center">
               Skills
             </Header>
-            <Container
-              style={{
-                backgroundColor: "rgba(255,255,255,0.6)",
-                borderRadius: "25px",
-                padding: 10
-              }}
-            >
+            <Container id="skills-container">
               <Grid
-                style={{ width: "100vw" }}
                 container
                 divided="vertically"
                 stackable

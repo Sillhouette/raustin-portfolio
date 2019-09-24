@@ -1,0 +1,41 @@
+#image-display {
+  margin-bottom: 200px;
+}
+
+#stream-header {
+  margin-top: 85px;
+}
+
+#stream-main-content-container {
+  margin-top: 135px;
+  background: #fff;
+  background-color: rgba(118, 118, 118, 0.6);
+}
+
+#stream-main-content-segment {
+  width: 75%;
+  margin-left: 13%;
+}
+
+#stream-header-top {
+  margin-bottom: 0;
+  position: relative;
+}
+
+.zero-margin {
+  margin: 0 !important;
+}
+
+.white-text {
+  color: white;
+}
+
+#stream-header-image {
+  position: absolute;
+  width: 100vw;
+  z-index: -1;
+  top: 0;
+  height: 300px;
+  object-fit: cover;
+  object-position: center;
+}

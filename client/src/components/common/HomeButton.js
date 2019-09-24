@@ -1,20 +1,16 @@
 import React from "react";
 import { Menu } from "semantic-ui-react";
 import LinkButton from "./LinkButton";
+import "./HomeButton.css";
 
 const HomeButton = props => (
   <div>
-    <Menu
-      icon
-      inverted
-      secondary
-      style={{ position: "fixed", top: 0, right: 0 }}
-    >
+    <Menu id="home-button-menu" icon inverted secondary>
       <Menu.Item
         as={LinkButton}
         to="/"
         name="home"
-        style={{ cursor: "pointer" }}
+        id="home-button-menu-item"
         onClick={props.handleItemClick}
       >
         <div className="content">

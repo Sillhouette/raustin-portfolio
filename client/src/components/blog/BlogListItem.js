@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { Header, Segment, Item, Divider, Container } from "semantic-ui-react";
-
+import "./css/BlogListItem.css";
 class BlogListItem extends React.Component {
   state = { counter: 0 };
 
@@ -59,41 +59,20 @@ class BlogListItem extends React.Component {
     }
     return (
       <Item>
-        {/*this.renderAdmin(props.blog)*/}
-        {/*<Image
-          size="small"
-          style={{
-            width: "100%",
-            height: "150px",
-            flexShrink: 0,
-            objectFit: "cover",
-            justifyContent: "center",
-            alignItems: "center"
-          }}
-          src={this.props.blog.image}
-        /> */}
-
         <Link to={`/blog/${props.blog.id}`}>
           <Header inverted size="huge">
             {props.blog.title}
           </Header>
-          <Container
-            fluid
-            style={{
-              borderRadius: "10px",
-              background: "#fff",
-              backgroundColor: "rgba(255,255,255,0.6)"
-            }}
-          >
-            <Segment basic style={{ color: "black" }}>
+          <Container fluid id="blog-item-main-container">
+            <Segment basic id="blog-item-sub-container">
               {props.blog.post.replace(/<p>/g, "").substring(0, 250)}...
             </Segment>
           </Container>
 
-          <Header size="small" inverted>
+          <div id="post-date">
             Posted by Austin on
             {this.formatDate(new Date(props.blog.created_at))}
-          </Header>
+          </div>
         </Link>
 
         <Divider inverted />

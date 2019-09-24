@@ -1,0 +1,33 @@
+#blog-show-header-image {
+  position: absolute;
+  width: 100vw;
+  z-index: -1;
+  top: 0;
+  filter: blur(2px) drop-shadow(16px 16px 10px black) grayscale(75%);
+  height: 300px;
+  object-fit: cover;
+  object-position: bottom;
+}
+
+#blog-show-header {
+  margin-top: 85px;
+  margin-bottom: 85px;
+  font-size: 50px;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+#blog-show-main-container {
+  width: 75%;
+  padding: 75px;
+}
+
+#blog-show-sub-container {
+  border-radius: 10px;
+  background: #fff;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+#post-body {
+  color: black;
+  font-size: 16px;
+}

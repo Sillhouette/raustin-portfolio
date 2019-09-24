@@ -28,19 +28,9 @@ export default class App extends Component {
 
   render() {
     return (
-      <div
-        className="App"
-        style={{
-          paddingBottom: "122px",
-          width: "100%",
-          minHeight: "100vh",
-          overflow: "hidden",
-          display: "block",
-          position: "relative"
-        }}
-      >
+      <div className="App">
         <Router history={history}>
-          <Container fluid style={{ marginLeft: 0 }}>
+          <Container fluid id="main">
             <Header
               invisible={this.state.activeItem === "home" ? true : false}
               activeItem={this.state.activeItem}

@@ -8,15 +8,48 @@ img.transition {
 img.transition.visible {
   opacity: 1;
 }
-.mediumHeader {
+
+.medium-header {
   display: none;
 }
 
+.home-header {
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+.background-grid-item {
+  display: flex;
+  overflow: hidden;
+  margin: 0;
+}
+
+.background-image {
+  height: 100vh !important;
+  flex-shrink: 0;
+  object-fit: cover;
+}
+
+.home-grid-column {
+  padding: 0 !important;
+}
+
+.home-grid {
+  width: 100vw;
+  height: 100vh;
+}
+
+#home-background-grid {
+  position: absolute;
+  z-index: -2;
+  padding: 0;
+  top: -1px;
+}
+
 @media only screen and (max-width: 768px) {
-  .mediumHeader {
+  .medium-header {
     display: initial;
   }
-  .largeHeader {
+  .large-header {
     display: none;
   }
 }

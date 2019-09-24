@@ -3,3 +3,41 @@
     display: none;
   }
 }
+
+#footer-container {
+  position: absolute;
+  bottom: 0;
+}
+
+#footer-segment {
+  padding: 10px;
+  padding-bottom: 0;
+  background-color: rgba(89, 89, 89, 0.8);
+}
+
+#footer-grid {
+  width: 100vw;
+}
+
+#contact-divider {
+  margin-top: 0.25rem;
+  margin-bottom: 0.25rem;
+}
+
+.zero-margin {
+  margin: 0rem;
+}
+
+.footer-nav-menu-item {
+  color: white;
+  padding-left: 10px;
+}
+
+.padding-five {
+  padding: 5;
+}
+
+.footer-contact-item {
+  color: white;
+  cursor: pointer;
+}

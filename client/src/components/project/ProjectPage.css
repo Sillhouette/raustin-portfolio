@@ -9,15 +9,54 @@ img.transition.visible {
   opacity: 1;
 }
 
-.mediumHeader {
+.medium-header {
   display: none;
 }
 
+.grid-row {
+  width: 100vw;
+}
+
+.background-image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.header-style {
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+.zero-padding {
+  padding: 0 !important;
+}
+
+.project-grid {
+  height: 100vh;
+  width: 100vw;
+}
+
+.background-image {
+  flex-shrink: 0;
+  object-fit: cover;
+  height: 100vh;
+}
+
+#project-background-grid {
+  position: absolute;
+  z-index: -2;
+  height: 100vh;
+  width: 100vw;
+  padding: 0;
+  top: -1px;
+}
+
 @media only screen and (max-width: 768px) {
-  .mediumHeader {
+  .medium-header {
     display: initial;
   }
-  .largeHeader {
+  .large-header {
     display: none;
   }
 }

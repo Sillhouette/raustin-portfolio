@@ -6,6 +6,7 @@ import setup from "./images/setup.jpg";
 import { Link } from "react-router-dom";
 import { Header, Grid, Container, Item, Image } from "semantic-ui-react";
 import BlogListItem from "./BlogListItem";
+import "./css/BlogList.css";
 
 /**
  * Bloglist is a class-based component that fetches and displays the list of our blogs
@@ -40,7 +41,7 @@ class BlogList extends React.Component {
    **/
   renderCreate() {
     return (
-      <div style={{ textAlign: "right" }}>
+      <div id="create-blog-button">
         <Link to="/blogs/new" className="ui button primary">
           Create Blog
         </Link>
@@ -49,44 +50,18 @@ class BlogList extends React.Component {
   }
 
   /**
-   * render renders our list of blogs and the create blog button on the page
+   * render renders our list of blogs
    **/
   render() {
     return (
       <div>
         <Item>
-          <Image
-            alt=""
-            src={setup}
-            style={{
-              position: "absolute",
-              width: "100vw",
-              zIndex: "-1",
-              top: 0,
-              filter: "blur(5px) drop-shadow(16px 16px 10px black)",
-              height: "300px",
-              objectFit: "cover",
-              objectPosition: "center"
-            }}
-          />
-          <Header
-            inverted
-            style={{
-              marginTop: "85px",
-              marginBottom: "85px",
-              fontSize: "50px",
-              textShadow: "-1px 0 black, 0 1px black, 1px 0 black, 0 -1px black"
-            }}
-          >
+          <Image alt="" src={setup} id="blog-list-header-image" />
+          <Header inverted id="blog-list-header">
             Austin Melchior
           </Header>
         </Item>
-        <Grid
-          columns={1}
-          style={{
-            padding: "50px"
-          }}
-        >
+        <Grid id="blog-list-grid">
           <Grid.Row stretched>{this.renderList()}</Grid.Row>
         </Grid>
       </div>

@@ -1,0 +1,9 @@
+#home-button-menu {
+  position: fixed;
+  top: 0;
+  right: 0;
+}
+
+#home-button-menu-item {
+  cursor: pointer;
+}

@@ -1,0 +1,14 @@
+#blog-item-main-container {
+  border-radius: 10px;
+  background: #fff;
+  background-color: rgba(255, 255, 255, 0.6);
+}
+
+#blog-item-sub-container {
+  color: black;
+}
+
+#post-date {
+  color: white;
+  margin-top: 20px;
+}

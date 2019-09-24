@@ -10,10 +10,7 @@ const SideMenu = props => (
       as="button"
       title="Menu"
       className="ui icon large button"
-      style={{
-        margin: 0,
-        paddingLeft: 18
-      }}
+      id="hamburger-menu"
     >
       <Dropdown
         id="headerMenu"
@@ -21,16 +18,12 @@ const SideMenu = props => (
         title={"Menu"}
         trigger={<Icon fitted size="large" name="sidebar" />}
       >
-        <Dropdown.Menu
-          style={{
-            marginLeft: 25,
-            backgroundColor: "rgba(0, 0, 0, 0.67)"
-          }}
-        >
+        <Dropdown.Menu id="dropdown-menu">
           <Dropdown.Item
             as={Link}
             to="/"
             name="home"
+            title="Home"
             onClick={props.handleItemClick}
             className="custom"
           >
@@ -40,6 +33,7 @@ const SideMenu = props => (
             as={Link}
             to="/projects"
             name="projects"
+            title="Projects"
             onClick={props.handleItemClick}
             className="custom"
           >
@@ -49,6 +43,7 @@ const SideMenu = props => (
             as={Link}
             to="/resume"
             name="resume"
+            title="Resume"
             onClick={props.handleItemClick}
             className="custom"
           >
@@ -58,6 +53,7 @@ const SideMenu = props => (
             as={Link}
             to="/about"
             name="about"
+            title="About"
             onClick={props.handleItemClick}
             className="custom"
           >
@@ -67,6 +63,7 @@ const SideMenu = props => (
             as={Link}
             to="/blog"
             name="blog"
+            title="Blog"
             onClick={props.handleItemClick}
             className="custom"
           >

@@ -1,0 +1,25 @@
+grid {
+  width: 100vw;
+}
+
+p {
+  font-size: 1.5rem;
+}
+
+#skills-column {
+  padding-bottom: 40px;
+}
+
+#skills-container {
+  background-color: rgba(255, 255, 255, 0.6);
+  border-radius: 25px;
+  padding: 10px;
+}
+
+#body-container {
+  width: 75%;
+  padding: 25px;
+  background-color: rgba(255, 255, 255, 0.6);
+  border-radius: 10px;
+  text-align: left;
+}

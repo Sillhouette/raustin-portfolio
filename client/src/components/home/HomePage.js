@@ -16,114 +16,54 @@ const handleTransition = id => {
   }
 };
 
-const headerStyle = {
-  textShadow: "-1px 0 black, 0 1px black, 1px 0 black, 0 -1px black"
-};
-
 const HomePage = props => (
   <div className="page">
     <Grid
       stretched
       columns="equal"
-      style={{
-        position: "absolute",
-        zIndex: "-2",
-        height: "100vh",
-        width: "100vw",
-        padding: 0,
-        top: "-1px"
-      }}
+      id="home-background-grid"
+      className="home-grid"
     >
-      <Grid.Row style={{ width: "100vw" }} stretched>
-        <Grid.Column style={{ padding: 0 }} stretched>
-          <Item
-            style={{
-              display: "flex",
-              //justifyContent: "center",
-              //alignItems: "center",
-              overflow: "hidden",
-              margin: 0
-            }}
-          >
+      <Grid.Row stretched>
+        <Grid.Column className="home-grid-column" stretched>
+          <Item className="background-grid-item">
             <Image
               id="project1-img"
               alt={""}
-              className="transition"
-              style={{
-                flexShrink: 0,
-                objectFit: "cover",
-                height: "100vh"
-              }}
+              className="transition background-image"
               fluid
               src={laptop}
             />
           </Item>
         </Grid.Column>
-        <Grid.Column style={{ padding: 0 }} stretched>
-          <Item
-            style={{
-              display: "flex",
-              justifyContent: "center",
-              alignItems: "center",
-              overflow: "hidden"
-            }}
-          >
+        <Grid.Column className="home-grid-column" stretched>
+          <Item className="background-grid-item">
             <Image
               id="project2-img"
-              className="transition"
+              className="transition background-image"
               alt={""}
-              style={{
-                flexShrink: 0,
-                objectFit: "cover",
-                height: "100vh"
-              }}
               fluid
               src={resume}
             />
           </Item>
         </Grid.Column>
-        <Grid.Column style={{ padding: 0 }} stretched>
-          <Item
-            style={{
-              display: "flex",
-              justifyContent: "center",
-              alignItems: "center",
-              overflow: "hidden"
-            }}
-          >
+        <Grid.Column className="home-grid-column" stretched>
+          <Item className="background-grid-item">
             <Image
               id="project3-img"
               alt={""}
-              className="transition"
-              style={{
-                flexShrink: 0,
-                objectFit: "cover",
-                height: "100vh"
-              }}
+              className="transition background-image"
               fluid
               src={books}
             />
           </Item>
         </Grid.Column>
-        <Grid.Column style={{ padding: 0 }} stretched>
-          <Item
-            style={{
-              display: "flex",
-              justifyContent: "center",
-              alignItems: "center",
-              overflow: "hidden"
-            }}
-          >
+        <Grid.Column className="home-grid-column" stretched>
+          <Item className="background-grid-item">
             <Image
               id="project4-img"
               alt={""}
-              className="transition"
-              style={{
-                flexShrink: 0,
-                objectFit: "cover",
-                objectPosition: "center",
-                height: "100vh"
-              }}
+              className="transition background-image"
               fluid
               src={setup}
             />
@@ -132,17 +72,13 @@ const HomePage = props => (
       </Grid.Row>
     </Grid>
     <Container fluid>
-      <Grid
-        style={{ width: "100vw", height: "100vh" }}
-        divided="vertically"
-        columns={4}
-      >
+      <Grid className="home-grid" divided="vertically" columns="equal">
         <Grid.Row stretched>
           <Grid.Column
             textAlign="center"
             verticalAlign="middle"
             stretched
-            style={{ padding: 0 }}
+            className="home-grid-column"
           >
             <Menu.Item
               as={Link}
@@ -155,18 +91,16 @@ const HomePage = props => (
               <Header
                 inverted
                 size="large"
-                className="largeHeader"
+                className="large-header home-header"
                 textAlign="center"
-                style={headerStyle}
               >
                 Projects
               </Header>
               <Header
                 inverted
                 size="medium"
-                className="mediumHeader"
+                className="medium-header home-header"
                 textAlign="center"
-                style={headerStyle}
               >
                 Projects
               </Header>
@@ -176,7 +110,7 @@ const HomePage = props => (
             textAlign="center"
             verticalAlign="middle"
             stretched
-            style={{ padding: 0 }}
+            className="home-grid-column"
           >
             <Menu.Item
               as={Link}
@@ -189,18 +123,16 @@ const HomePage = props => (
               <Header
                 inverted
                 size="large"
-                className="largeHeader"
+                className="large-header home-header"
                 textAlign="center"
-                style={headerStyle}
               >
                 Resume
               </Header>
               <Header
                 inverted
                 size="medium"
-                className="mediumHeader"
+                className="medium-header home-header"
                 textAlign="center"
-                style={headerStyle}
               >
                 Resume
               </Header>
@@ -210,7 +142,7 @@ const HomePage = props => (
             textAlign="center"
             verticalAlign="middle"
             stretched
-            style={{ padding: 0 }}
+            className="home-grid-column"
           >
             <Menu.Item
               as={Link}
@@ -223,18 +155,16 @@ const HomePage = props => (
               <Header
                 inverted
                 size="large"
-                className="largeHeader"
+                className="large-header home-header"
                 textAlign="center"
-                style={headerStyle}
               >
                 About
               </Header>
               <Header
                 inverted
                 size="medium"
-                className="mediumHeader"
+                className="medium-header home-header"
                 textAlign="center"
-                style={headerStyle}
               >
                 About
               </Header>
@@ -244,7 +174,7 @@ const HomePage = props => (
             textAlign="center"
             verticalAlign="middle"
             stretched
-            style={{ padding: 0 }}
+            className="home-grid-column"
           >
             <Menu.Item
               as={Link}
@@ -257,18 +187,16 @@ const HomePage = props => (
               <Header
                 inverted
                 size="large"
-                className="largeHeader"
+                className="large-header home-header"
                 textAlign="center"
-                style={headerStyle}
               >
                 Blog
               </Header>
               <Header
                 inverted
                 size="medium"
-                className="mediumHeader"
+                className="medium-header home-header"
                 textAlign="center"
-                style={headerStyle}
               >
                 Blog
               </Header>

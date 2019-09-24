@@ -15,89 +15,32 @@ const handleTransition = id => {
   }
 };
 
-const headerStyle = {
-  textShadow: "-1px 0 black, 0 1px black, 1px 0 black, 0 -1px black"
-};
-
 const ProjectPage = props => (
   <div className="page">
     <Grid
       stretched
       columns="equal"
-      style={{
-        position: "absolute",
-        zIndex: "-2",
-        height: "100vh",
-        width: "100vw",
-        padding: 0,
-        top: "-1px"
-      }}
+      id="project-background-grid"
+      className="project-grid"
     >
-      <Grid.Row style={{ width: "100vw" }} stretched>
-        {/*<Grid.Column style={{ display: "none", padding: 0 }} stretched>
-          <Item
-            style={{
-              display: "flex",
-              justifyContent: "center",
-              alignItems: "center",
-              overflow: "hidden"
-            }}
-          >
-            <Image
-              id="project1-img"
-              className="transition"
-              alt=""
-              style={{
-                flexShrink: 0,
-                objectFit: "cover",
-                height: "100vh"
-              }}
-              fluid
-              src={laptop}
-            />
-          </Item>
-        </Grid.Column>*/}
-        <Grid.Column style={{ padding: 0 }} stretched>
-          <Item
-            style={{
-              display: "flex",
-              justifyContent: "center",
-              alignItems: "center",
-              overflow: "hidden"
-            }}
-          >
+      <Grid.Row className="grid-row" stretched>
+        <Grid.Column className="zero-padding" stretched>
+          <Item className="background-image-container">
             <Image
               id="project2-img"
-              className="transition"
+              className="transition background-image"
               alt=""
-              style={{
-                flexShrink: 0,
-                objectFit: "cover",
-                height: "100vh"
-              }}
               fluid
               src={mtg}
             />
           </Item>
         </Grid.Column>
-        <Grid.Column style={{ padding: 0 }} stretched>
-          <Item
-            style={{
-              display: "flex",
-              justifyContent: "center",
-              alignItems: "center",
-              overflow: "hidden"
-            }}
-          >
+        <Grid.Column className="zero-padding" stretched>
+          <Item className="background-image-container">
             <Image
               id="project3-img"
-              className="transition"
+              className="transition background-image"
               alt=""
-              style={{
-                flexShrink: 0,
-                objectFit: "cover",
-                height: "100vh"
-              }}
               fluid
               src={resume}
             />
@@ -106,51 +49,12 @@ const ProjectPage = props => (
       </Grid.Row>
     </Grid>
     <Container fluid>
-      <Grid
-        style={{ width: "100vw", height: "100vh" }}
-        columns="equal"
-        stretched
-      >
-        <Grid.Row style={{ width: "100vw" }} stretched>
-          {/*<Grid.Column
-            style={{ display: "none", padding: 0 }}
-            stretched
-            textAlign="center"
-            verticalAlign="middle"
-          >
-            <Menu.Item
-              as={Link}
-              to="/projects/News-CLI"
-              name="projects"
-              onMouseOver={() => handleTransition(`project1-img`)}
-              onMouseOut={() => handleTransition(`project1-img`)}
-              onClick={props.handleItemClick}
-            >
-              <Header
-                inverted
-                size="huge"
-                className="largeHeader"
-                textAlign="center"
-                style={headerStyle}
-              >
-                News CLI
-              </Header>
-              <Header
-                inverted
-                size="medium"
-                className="mediumHeader"
-                textAlign="center"
-              >
-                News CLI
-              </Header>
-            </Menu.Item>
-          </Grid.Column>*/}
+      <Grid className="project-grid" columns="equal" stretched>
+        <Grid.Row className="grid-row" stretched>
           <Grid.Column
             textAlign="center"
             verticalAlign="middle"
-            style={{
-              padding: 0
-            }}
+            className="zero-padding"
           >
             <Menu.Item
               as={Link}
@@ -163,18 +67,16 @@ const ProjectPage = props => (
               <Header
                 inverted
                 size="huge"
-                className="largeHeader"
+                className="large-header header-style"
                 textAlign="center"
-                style={headerStyle}
               >
                 MTG Manager Pro
               </Header>
               <Header
                 inverted
                 size="medium"
-                className="mediumHeader"
+                className="medium-header header-style"
                 textAlign="center"
-                style={headerStyle}
               >
                 MTG Manager Pro
               </Header>
@@ -183,7 +85,7 @@ const ProjectPage = props => (
           <Grid.Column
             textAlign="center"
             verticalAlign="middle"
-            style={{ padding: 0 }}
+            className="zero-padding"
           >
             <Menu.Item
               as={Link}
@@ -196,18 +98,16 @@ const ProjectPage = props => (
               <Header
                 inverted
                 size="huge"
-                className="largeHeader"
+                className="large-header header-style"
                 textAlign="center"
-                style={headerStyle}
               >
                 Stream Source
               </Header>
               <Header
                 inverted
                 size="medium"
-                className="mediumHeader"
+                className="medium-header header-style"
                 textAlign="center"
-                style={headerStyle}
               >
                 Stream Source
               </Header>

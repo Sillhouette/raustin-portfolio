@@ -1,0 +1,41 @@
+#header-image {
+  position: absolute;
+  width: 100vw;
+  z-index: -1;
+  top: 0;
+  height: 300px;
+  object-fit: cover;
+  object-position: top;
+}
+
+#main-header {
+  margin-top: 85px;
+}
+
+#content-container {
+  margin-top: 135px;
+  background: #fff;
+  background-color: rgba(118, 118, 118, 0.6);
+}
+
+#content-segment {
+  width: 75%;
+  margin-left: 12%;
+}
+
+#content-header-top {
+  margin-bottom: 0;
+  position: relative;
+}
+
+#image-display {
+  margin-bottom: 200px;
+}
+
+.content-header-bottom {
+  margin: 0 !important;
+}
+
+.white-text {
+  color: white;
+}

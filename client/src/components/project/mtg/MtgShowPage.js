@@ -2,9 +2,10 @@ import React, { Component } from "react";
 import header from "./images/mtg-header.png";
 import background from "./images/green-background.png";
 import mainBackground from "./images/background.png";
-import example from "./images/mtg-example-1.png";
-import example2 from "./images/mtg-example-2.png";
-import example3 from "./images/mtg-example-3.png";
+import firstImage from "./images/mtg-example-1.png";
+import secondImage from "./images/mtg-example-2.png";
+import thirdImage from "./images/mtg-example-3.png";
+import ImageDisplay from "../../common/ImageDisplay";
 import {
   Image,
   Header,
@@ -15,30 +16,9 @@ import {
   Button,
   List
 } from "semantic-ui-react";
+import "./MtgShowPage.css";
 
 class MtgShowPage extends Component {
-  state = { activeItem: "second" };
-
-  handleItemClick = (e, { name }) => {
-    const image = document.getElementById("project-image");
-    if (name === "first") {
-      image.setAttribute("src", example);
-    } else if (name === "second") {
-      image.setAttribute("src", example2);
-    } else {
-      image.setAttribute("src", example3);
-    }
-    this.setState({ activeItem: name });
-  };
-
-  displayActiveCircle = (activeItem, currentItem) => {
-    return activeItem === currentItem ? (
-      <Icon name="circle" />
-    ) : (
-      <Icon name="circle outline" />
-    );
-  };
-
   componentDidMount() {
     document.body.style.backgroundImage = `url(${background})`;
   }
@@ -48,52 +28,20 @@ class MtgShowPage extends Component {
   }
 
   render() {
-    const { activeItem } = this.state;
-
     return (
       <div className="page">
         <div>
-          <Image
-            src={header}
-            alt="Header Image"
-            style={{
-              position: "absolute",
-              width: "100vw",
-              zIndex: "-1",
-              top: 0,
-              height: "300px",
-              objectFit: "cover",
-              objectPosition: "top"
-            }}
-          />
-          <Header inverted as="h1" style={{ marginTop: "85px" }}>
+          <Image src={header} alt="Header Image" id="header-image" />
+          <Header inverted as="h1" id="main-header">
             Magic Manager Pro
           </Header>
         </div>
-        <Container
-          fluid
-          style={{
-            marginTop: 135,
-            background: "#fff",
-            backgroundColor: "rgba(118,118,118,0.6)"
-          }}
-        >
-          <Segment
-            basic
-            padded
-            style={{
-              width: "75%",
-              marginLeft: "13%"
-            }}
-          >
-            <Header
-              as="h2"
-              inverted
-              style={{ marginBottom: 0, position: "relative" }}
-            >
+        <Container fluid id="content-container">
+          <Segment id="content-segment" basic padded>
+            <Header as="h2" inverted id="content-header-top">
               Developed with
             </Header>
-            <Header as="h2" inverted style={{ margin: 0 }}>
+            <Header as="h2" inverted className="content-header-bottom">
               Rails and Javascript
             </Header>
             <Header inverted as="h4">
@@ -108,10 +56,10 @@ class MtgShowPage extends Component {
               can also be viewed, including things such as legalities, mana
               cost, color, cost and more.
             </Header>
-            <Header as="h4" inverted style={{ margin: 0 }}>
+            <Header as="h4" inverted className="content-header-bottom">
               Technical details:
             </Header>
-            <List style={{ color: "white" }} bulleted>
+            <List className="white-text" bulleted>
               <List.Item>
                 CRUD app built with Ruby on Rails MVC architecture
               </List.Item>
@@ -147,56 +95,18 @@ class MtgShowPage extends Component {
             <Header as="h4" inverted>
               Test account:
             </Header>
-            <List style={{ color: "white" }} bulleted>
+            <List className="white-text" bulleted>
               <List.Item>Username: Test</List.Item>
               <List.Item>Password: 123456</List.Item>
             </List>
           </Segment>
         </Container>
-        <Container textAlign="center" style={{ marginBottom: 200 }}>
-          <Segment
-            inverted
-            compact
-            style={{
-              top: 100,
-              background: "#fff",
-              backgroundColor: "rgba(118,118,118,0.6)",
-              marginLeft: "7%"
-            }}
-          >
-            <Image
-              id="project-image"
-              alt="Project Example"
-              src={example2}
-              size="massive"
-            />
-
-            <Menu compact inverted secondary icon>
-              <Menu.Item
-                name="first"
-                active={activeItem === "first"}
-                onClick={this.handleItemClick}
-              >
-                {this.displayActiveCircle(activeItem, "first")}
-              </Menu.Item>
-
-              <Menu.Item
-                name="second"
-                active={activeItem === "second"}
-                onClick={this.handleItemClick}
-              >
-                {this.displayActiveCircle(activeItem, "second")}
-              </Menu.Item>
-
-              <Menu.Item
-                name="third"
-                active={activeItem === "third"}
-                onClick={this.handleItemClick}
-              >
-                {this.displayActiveCircle(activeItem, "third")}
-              </Menu.Item>
-            </Menu>
-          </Segment>
+        <Container id="image-display" textAlign="center">
+          <ImageDisplay
+            firstImage={firstImage}
+            secondImage={secondImage}
+            thirdImage={thirdImage}
+          />
         </Container>
       </div>
     );
