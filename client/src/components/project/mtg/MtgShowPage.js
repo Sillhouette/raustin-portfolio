@@ -9,7 +9,6 @@ import ImageDisplay from "../../common/ImageDisplay";
 import {
   Image,
   Header,
-  Menu,
   Container,
   Segment,
   Icon,

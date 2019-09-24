@@ -1,6 +1,5 @@
 import React from "react";
 import mtg from "./images/mtg-wizards-colors.jpg";
-import laptop from "./images/newspaper.jpeg";
 import resume from "./images/gamer.jpeg";
 import { Link } from "react-router-dom";
 import { Grid, Image, Header, Menu, Item, Container } from "semantic-ui-react";

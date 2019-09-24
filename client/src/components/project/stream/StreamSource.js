@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React from "react";
 import header from "./images/gamer.jpeg";
 import firstImage from "./images/stream-source-show.png";
 import secondImage from "./images/stream-source-index.png";
@@ -7,7 +7,6 @@ import ImageDisplay from "../../common/ImageDisplay";
 import {
   Image,
   Header,
-  Menu,
   Container,
   Segment,
   Icon,

@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Container, Segment, Icon, Menu, Image } from "semantic-ui-react";
+import { Segment, Icon, Menu, Image } from "semantic-ui-react";
 import "./ImageDisplay.css";
 
 export default class ImageDisplay extends Component {
