@@ -23,7 +23,7 @@ module PortfolioWebsite
     config.load_defaults 5.2
     config.middleware.insert_before 0, Rack::Cors do
           allow do
-             origins 'http://www.stream-source.net'
+             origins 'http://134.209.52.55'
              resource '*', :headers => :any, :methods => :any
            end
         end
