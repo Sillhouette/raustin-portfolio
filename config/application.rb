@@ -23,7 +23,7 @@ module PortfolioWebsite
     config.load_defaults 5.2
     config.middleware.insert_before 0, Rack::Cors do
           allow do
-             origins 'http://austinmelchior.com'
+             origins 'http://www.austinmelchior.com'
              resource '*', :headers => :any, :methods => :any
            end
         end
