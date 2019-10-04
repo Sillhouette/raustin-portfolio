@@ -95,7 +95,7 @@ class MtgShowPage extends Component {
               Test account:
             </Header>
             <List className="white-text" bulleted>
-              <List.Item>Username: Test</List.Item>
+              <List.Item>Username: test</List.Item>
               <List.Item>Password: 123456</List.Item>
             </List>
           </Segment>
