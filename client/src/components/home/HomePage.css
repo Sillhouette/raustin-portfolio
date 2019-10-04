@@ -1,11 +1,11 @@
-img.transition {
+picture.transition {
   transition: opacity 0.25s;
   -moz-transition: opacity 0.25s;
   -webkit-transition: opacity 0.25s;
   opacity: 0;
 }
 
-img.transition.visible {
+picture.transition.visible {
   opacity: 1;
 }
 

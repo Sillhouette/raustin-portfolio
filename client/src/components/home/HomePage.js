@@ -5,6 +5,10 @@ import setup from "./images/setup.jpg";
 import laptop from "./images/laptop.jpg";
 import resume from "./images/resume.jpeg";
 import books from "./images/books.jpeg";
+import setupWeb from "./images/setup.webp";
+import laptopWeb from "./images/laptop.webp";
+import resumeWeb from "./images/resume.webp";
+import booksWeb from "./images/books.webp";
 import "./HomePage.css";
 
 const handleTransition = id => {
@@ -22,46 +26,70 @@ const HomePage = props => (
       <Grid.Row>
         <Grid.Column className="home-grid-column">
           <Item className="background-grid-item">
-            <Image
-              id="project1-img"
-              alt={""}
-              className="transition background-image"
-              fluid
-              src={laptop}
-            />
+            <picture className="transition" id="project1-img">
+              <source
+                className="background-image"
+                type="image/webp"
+                srcSet={laptopWeb}
+              />
+              <source
+                className="background-image"
+                type="image/jpg"
+                srcSet={laptop}
+              />
+              <Image alt={""} className="background-image" fluid src={laptop} />
+            </picture>
           </Item>
         </Grid.Column>
         <Grid.Column className="home-grid-column">
           <Item className="background-grid-item">
-            <Image
-              id="project2-img"
-              className="transition background-image"
-              alt={""}
-              fluid
-              src={resume}
-            />
+            <picture className="transition" id="project2-img">
+              <source
+                className="background-image"
+                type="image/webp"
+                srcSet={resumeWeb}
+              />
+              <source
+                className="background-image"
+                type="image/jpg"
+                srcSet={resume}
+              />
+              <Image alt={""} className="background-image" fluid src={resume} />
+            </picture>
           </Item>
         </Grid.Column>
         <Grid.Column className="home-grid-column">
           <Item className="background-grid-item">
-            <Image
-              id="project3-img"
-              alt={""}
-              className="transition background-image"
-              fluid
-              src={books}
-            />
+            <picture className="transition" id="project3-img">
+              <source
+                className="background-image"
+                type="image/webp"
+                srcSet={booksWeb}
+              />
+              <source
+                className="background-image"
+                type="image/jpg"
+                srcSet={books}
+              />
+              <Image alt={""} className="background-image" fluid src={books} />
+            </picture>
           </Item>
         </Grid.Column>
         <Grid.Column className="home-grid-column">
           <Item className="background-grid-item">
-            <Image
-              id="project4-img"
-              alt={""}
-              className="transition background-image"
-              fluid
-              src={setup}
-            />
+            <picture className="transition" id="project4-img">
+              <source
+                className="background-image"
+                type="image/webp"
+                srcSet={setupWeb}
+              />
+              <source
+                className="background-image"
+                type="image/jpg"
+                srcSet={setup}
+              />
+              <Image alt={""} className="background-image" fluid src={setup} />
+            </picture>
           </Item>
         </Grid.Column>
       </Grid.Row>
