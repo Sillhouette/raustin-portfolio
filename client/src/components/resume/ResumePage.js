@@ -36,7 +36,8 @@ class ResumePage extends Component {
       <Container text id="main-container">
         <a
           className="ui circular icon right labeled button"
-          href="/pdfs/Austin Melchior - Resume.pdf"
+          href="https://austinmelchior.com/files/austin-melchior-resume.pdf"
+          target="_blank"
           download="Austin Melchior - Resume"
         >
           <Icon name="file alternate outline" />
