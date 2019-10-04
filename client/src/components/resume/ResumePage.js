@@ -38,6 +38,7 @@ class ResumePage extends Component {
           className="ui circular icon right labeled button"
           href="https://austinmelchior.com/files/austin-melchior-resume.pdf"
           target="_blank"
+          rel="noopener noreferrer"
           download="Austin Melchior - Resume"
         >
           <Icon name="file alternate outline" />

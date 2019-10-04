@@ -19,9 +19,10 @@
   width: 100vw;
 }
 
-#contact-divider {
-  margin-top: 0.25rem;
-  margin-bottom: 0.25rem;
+.contact-divider {
+  height: 8px !important;
+  margin-top: 0.25rem !important;
+  margin-bottom: 0.25rem !important;
 }
 
 .zero-margin {

@@ -31,6 +31,7 @@ const Footer = props => (
               to="/"
               name="home"
               onClick={props.handleItemClick}
+              id="home-menu-button"
               className="footer-nav-menu-item"
             >
               Home
@@ -71,6 +72,7 @@ const Footer = props => (
               to="/blog"
               name="blog"
               onClick={props.handleItemClick}
+              id="blog-menu-button"
               className="footer-nav-menu-item"
             >
               Blog
@@ -84,7 +86,6 @@ const Footer = props => (
             <Header as="h3" inverted textAlign="right">
               Contact
             </Header>
-            <Divider fitted hidden />
             <Item className="zero-margin">
               <span
                 className="footer-contact-item"
@@ -93,10 +94,10 @@ const Footer = props => (
                 }}
               >
                 Raustin.Melchior@gmail.com&nbsp;&nbsp;
+                <Icon name="envelope" />
               </span>
-              <Icon name="envelope" />
             </Item>
-            <Divider id="contact-divider" hidden />
+            <Divider fitted hidden className="contact-divider" />
             <Item className="zero-margin">
               <span
                 className="footer-contact-item"
@@ -105,8 +106,8 @@ const Footer = props => (
                 }}
               >
                 818.268.5442&nbsp;&nbsp;
+                <Icon name="phone" />
               </span>
-              <Icon name="phone" />
             </Item>
             <Divider fitted hidden />
           </Grid.Column>
