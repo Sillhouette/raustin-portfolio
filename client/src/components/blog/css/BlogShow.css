@@ -12,13 +12,21 @@
 #blog-show-header {
   margin-top: 85px;
   margin-bottom: 85px;
-  font-size: 50px;
+  font-size: 13vw;
   text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+@media screen and (min-width: 768px) {
+  #blog-show-header {
+    font-size: 50px;
+  }
 }
 
 #blog-show-main-container {
   width: 75%;
-  padding: 75px;
+  padding-left: 25px;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 
 #blog-show-sub-container {
@@ -29,5 +37,25 @@
 
 #post-body {
   color: black;
-  font-size: 16px;
+}
+
+#post-body > ul {
+  display: flex !important;
+  flex-flow: column wrap !important;
+  height: inherit !important;
+  width: inherit !important;
+  margin: 0 !important;
+  padding-left: 8px !important;
+}
+
+#post-body > ul > li {
+  flex: 0 0 auto !important;
+  width: 100%;
+  word-wrap: break-word;
+}
+
+.img-responsive {
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
