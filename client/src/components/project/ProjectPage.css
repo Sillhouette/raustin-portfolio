@@ -13,8 +13,12 @@ img.transition.visible {
   display: none;
 }
 
+.grid-column {
+  height: 100vh !important;
+}
+
 .grid-row {
-  width: 100vw;
+  padding: 0px !important;
 }
 
 .background-image-container {
@@ -33,22 +37,23 @@ img.transition.visible {
 }
 
 .project-grid {
-  height: 100vh;
-  width: 100vw;
+  top: 0;
+  margin: 0px !important;
+  width: 100vw !important;
+  height: 100vh !important;
 }
 
 .background-image {
   flex-shrink: 0;
   object-fit: cover;
-  height: 100vh;
+  height: 100vh !important;
 }
 
 #project-background-grid {
   position: absolute;
   z-index: -2;
-  height: 100vh;
-  width: 100vw;
   padding: 0;
+  height: 100% !important;
   top: -1px;
 }
 

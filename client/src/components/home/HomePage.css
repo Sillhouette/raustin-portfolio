@@ -35,6 +35,7 @@ picture.transition.visible {
 
 .home-grid {
   top: 0;
+  margin: 0px !important;
   width: 100vw !important;
   height: 100vh !important;
 }

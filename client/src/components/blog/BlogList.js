@@ -3,6 +3,7 @@ import React from "react";
 import { connect } from "react-redux";
 import { fetchBlogs } from "../../actions";
 import setup from "./images/setup.jpg";
+import setupWeb from "./images/setup.webp";
 import { Link } from "react-router-dom";
 import { Header, Grid, Container, Item, Image } from "semantic-ui-react";
 import BlogListItem from "./BlogListItem";
@@ -56,7 +57,11 @@ class BlogList extends React.Component {
     return (
       <div>
         <Item>
-          <Image alt="" src={setup} id="blog-list-header-image" />
+          <picture>
+            <source type="image/webp" srcSet={setupWeb} />
+            <source type="image/jpg" srcSet={setupWeb} />
+            <Image id="blog-list-header-image" alt="" src={setup} />
+          </picture>
           <Header inverted id="blog-list-header">
             Austin Melchior
           </Header>

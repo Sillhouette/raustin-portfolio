@@ -11,13 +11,21 @@ const SkillColumn = props => {
     <Grid.Column textAlign="center" verticalAlign="middle">
       <Popup
         trigger={
-          <Image
-            alt={props.name}
-            circular={props.circular}
-            verticalAlign="middle"
-            src={props.image}
-            size="small"
-          />
+          <picture>
+            <source type="image/webp" srcSet={props.imageWeb} />
+            <source
+              className="background-image"
+              type="image/jpg"
+              srcSet={props.imageWeb}
+            />
+            <Image
+              circular={props.circular}
+              alt={props.name}
+              size="small"
+              verticalAlign="middle"
+              src={props.image}
+            />
+          </picture>
         }
         header={props.name}
         content={props.description}

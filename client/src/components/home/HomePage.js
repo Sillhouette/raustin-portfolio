@@ -23,7 +23,7 @@ const handleTransition = id => {
 const HomePage = props => (
   <div className="page">
     <Grid columns="equal" id="home-background-grid" className="home-grid">
-      <Grid.Row>
+      <Grid.Row className="grid-row">
         <Grid.Column className="home-grid-column">
           <Item className="background-grid-item">
             <picture className="transition" id="project1-img">

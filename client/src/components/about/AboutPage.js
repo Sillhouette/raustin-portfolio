@@ -15,6 +15,24 @@ import reduxColor from "./images/redux_color.png";
 import rubyColor from "./images/ruby_color.png";
 import sqliteColor from "./images/sqlite_color.png";
 import visualBasicColor from "./images/visual_basic_color.png";
+import railsColorWeb from "./images/rails_color.webp";
+import eclipseColorWeb from "./images/eclipse_color.webp";
+import cplusplusColorWeb from "./images/cplusplus_color.webp";
+import gitColorWeb from "./images/git_color.webp";
+import githubColorWeb from "./images/github_color.webp";
+import htmlColorWeb from "./images/html_color.webp";
+import javaColorWeb from "./images/java_color.webp";
+import jsColorWeb from "./images/js_color.webp";
+import postgresqlColorWeb from "./images/postgresql_color.webp";
+import pythonColorWeb from "./images/python_color.webp";
+import reactColorWeb from "./images/react_color.webp";
+import reactNativeColorWeb from "./images/react_native_color.webp";
+import reduxColorWeb from "./images/redux_color.webp";
+import rubyColorWeb from "./images/ruby_color.webp";
+import sqliteColorWeb from "./images/sqlite_color.webp";
+import visualBasicColorWeb from "./images/visual_basic_color.webp";
+import profile from "./images/austin-profile-pic.png";
+import profileWeb from "./images/austin-profile-pic.webp";
 import SkillColumn from "./SkillColumn";
 import { Container, Image, Grid, Header } from "semantic-ui-react";
 import Filler from "../common/Filler";
@@ -32,14 +50,22 @@ const AboutPage = () => {
         <Grid.Row stretched>
           <Grid.Column verticalAlign="middle">
             <Container id="body-container">
-              <Image
-                verticalAlign="middle"
-                circular
-                src={"https://i.imgur.com/4jWI7vj.png?1"}
-                alt="Profile Picture"
-                size="large"
-                floated="right"
-              />
+              <picture>
+                <source type="image/webp" srcSet={profileWeb} />
+                <source
+                  className="background-image"
+                  type="image/jpg"
+                  srcSet={profileWeb}
+                />
+                <Image
+                  circular
+                  alt="Austin Melchior"
+                  size="large"
+                  floated="right"
+                  src={profile}
+                />
+              </picture>
+
               <p>
                 Hi! I'm Austin Melchior, a Full Stack Developer specializing in
                 React, Javascript and Ruby on Rails. I have a background in a
@@ -95,11 +121,13 @@ const AboutPage = () => {
                     name="Ruby"
                     circular={true}
                     image={rubyColor}
+                    imageWeb={rubyColorWeb}
                     description="A dynamic, open source programming language with a focus on simplicity and productivity"
                   />
                   <SkillColumn
                     name="HTML 5"
                     image={htmlColor}
+                    imageWeb={htmlColorWeb}
                     description={`The latest evolution of the standard that defines HTML.
                       The term represents two different concepts. It is a new version of the
                       language HTML, with new elements, attributes, and behaviors, and a larger
@@ -109,6 +137,7 @@ const AboutPage = () => {
                   <SkillColumn
                     name="Java"
                     image={javaColor}
+                    imageWeb={javaColorWeb}
                     description={`Java is a general-purpose programming language that is class-based,
                       object-oriented, and designed to have as few implementation dependencies as
                       possible`}
@@ -116,6 +145,7 @@ const AboutPage = () => {
                   <SkillColumn
                     name="React"
                     image={reactColor}
+                    imageWeb={reactColorWeb}
                     description={`React is a JavaScript library for building user interfaces. It is maintained
                       by Facebook and a community of individual developers and companies. React can be used
                       as a base in the development of single-page or mobile applications, as it is optimal for
@@ -124,6 +154,7 @@ const AboutPage = () => {
                   <SkillColumn
                     name="Ruby on Rails"
                     image={railsColor}
+                    imageWeb={railsColorWeb}
                     description={`Ruby on Rails, or Rails, is a server-side web application
                       framework written in Ruby under the MIT License. Rails is a model–view–controller
                       framework, providing default structures for a database, a web service, and web pages`}
@@ -131,6 +162,7 @@ const AboutPage = () => {
                   <SkillColumn
                     name="Javascript"
                     image={jsColor}
+                    imageWeb={jsColorWeb}
                     description={`JavaScript, often abbreviated as JS, is a high-level, interpreted scripting language
                       that conforms to the ECMAScript specification. JavaScript has curly-bracket syntax, dynamic typing,
                       prototype-based object-orientation, and first-class functions`}
@@ -138,6 +170,7 @@ const AboutPage = () => {
                   <SkillColumn
                     name="SQLite"
                     image={sqliteColor}
+                    imageWeb={sqliteColorWeb}
                     description={`SQLite is a relational database management system contained in a C library. In contrast to many
                       other database management systems, SQLite is not a client–server database engine. Rather, it is embedded
                       into the end program`}
@@ -145,6 +178,7 @@ const AboutPage = () => {
                   <SkillColumn
                     name="PostgreSQL"
                     image={postgresqlColor}
+                    imageWeb={postgresqlColorWeb}
                     description={`PostgreSQL, also known as Postgres, is a free and open-source relational database management system
                       emphasizing extensibility and technical standards compliance. It is designed to handle a range of workloads,
                       from single machines to data warehouses or Web services with many concurrent users`}
@@ -154,24 +188,28 @@ const AboutPage = () => {
                   <SkillColumn
                     name="Eclipse"
                     image={eclipseColor}
+                    imageWeb={eclipseColorWeb}
                     description={`Eclipse is an integrated development environment used in computer programming. It contains a
                       base workspace and an extensible plug-in system for customizing the environment`}
                   />
                   <SkillColumn
                     name="Python"
                     image={pythonColor}
+                    imageWeb={pythonColorWeb}
                     description={`Python is an interpreted, high-level, general-purpose programming language. Python's design philosophy
                       emphasizes code readability with its notable use of significant whitespace`}
                   />
                   <SkillColumn
                     name="C++"
                     image={cplusplusColor}
+                    imageWeb={cplusplusColorWeb}
                     description={`C++ is a general-purpose programming language built as an extension of the C programming language,
                       or "C with Classes"`}
                   />
                   <SkillColumn
                     name="React Native"
                     image={reactNativeColor}
+                    imageWeb={reactNativeColorWeb}
                     description={`React Native is an open-source mobile application framework created
                       by Facebook. It is used to develop applications for Android, iOS, Web and UWP
                       by enabling developers to use React along with native platform capabilities`}
@@ -179,6 +217,7 @@ const AboutPage = () => {
                   <SkillColumn
                     name="Visual basic"
                     image={visualBasicColor}
+                    imageWeb={visualBasicColorWeb}
                     description={`Visual Basic is a third-generation event-driven programming language from
                       Microsoft for its Component Object Model programming model first released in 1991
                       and declared legacy during 2008. Microsoft intended Visual Basic to be relatively
@@ -187,6 +226,7 @@ const AboutPage = () => {
                   <SkillColumn
                     name="Redux"
                     image={reduxColor}
+                    imageWeb={reduxColorWeb}
                     description={`Redux is an open-source JavaScript library for managing application state.
                       It is most commonly used with libraries such as React or Angular for building user
                       interfaces`}
@@ -194,6 +234,7 @@ const AboutPage = () => {
                   <SkillColumn
                     name="Git"
                     image={gitColor}
+                    imageWeb={gitColorWeb}
                     description={`Git is a distributed version-control system for tracking changes in source
                       code during software development. It is designed for coordinating work among programmers,
                       but it can be used to track changes in any set of files. Its goals include speed, data integrity,
@@ -202,6 +243,7 @@ const AboutPage = () => {
                   <SkillColumn
                     name="Github"
                     image={githubColor}
+                    imageWeb={githubColorWeb}
                     description={`GitHub is a Git repository hosting service, but it adds many of its own features. While Git
                     is a command line tool, GitHub provides a Web-based graphical interface. It also provides access
                     control and several collaboration features, such as a wikis and basic task management tools for every
