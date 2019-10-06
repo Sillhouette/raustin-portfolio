@@ -82,7 +82,7 @@ const Footer = props => (
             textAlign="right"
             verticalAlign="top"
             className="zero-margin"
-            width="10"
+            width="11"
           >
             <Header as="h3" inverted textAlign="right">
               Contact

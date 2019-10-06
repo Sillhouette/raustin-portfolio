@@ -11,16 +11,16 @@ export default class ImageDisplay extends Component {
     const source2 = document.getElementsByClassName("project-image-source")[1];
     if (name === "first") {
       image.setAttribute("src", this.props.firstImage);
-      source1.setAttribute("srcset", this.props.firstImage);
-      source2.setAttribute("srcset", this.props.firstImageWeb);
+      source1.setAttribute("srcset", this.props.firstImageWeb);
+      source2.setAttribute("srcset", this.props.firstImage);
     } else if (name === "second") {
       image.setAttribute("src", this.props.secondImage);
-      source1.setAttribute("srcset", this.props.secondImage);
-      source2.setAttribute("srcset", this.props.secondImageWeb);
+      source1.setAttribute("srcset", this.props.secondImageWeb);
+      source2.setAttribute("srcset", this.props.secondImage);
     } else {
       image.setAttribute("src", this.props.thirdImage);
-      source1.setAttribute("srcset", this.props.thirdImage);
-      source2.setAttribute("srcset", this.props.thirdImageWeb);
+      source1.setAttribute("srcset", this.props.thirdImageWeb);
+      source2.setAttribute("srcset", this.props.thirdImage);
     }
     this.setState({ activeItem: name });
   };
