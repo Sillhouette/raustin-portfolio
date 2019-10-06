@@ -30,12 +30,16 @@ export default class ImageDisplay extends Component {
 
     return (
       <Segment inverted compact id="main-segment">
-        <Image
-          id="project-image"
-          alt="Project Example"
-          src={this.props.secondImage}
-          size="massive"
-        />
+        <picture>
+          <source type="image/webp" srcSet={this.props.secondImageWeb} />
+          <source type="image/jpg" srcSet={this.props.secondImageWeb} />
+          <Image
+            alt="Project Example"
+            id="project-image"
+            src={this.props.secondImage}
+            size="massive"
+          />
+        </picture>
 
         <Menu compact inverted secondary icon>
           <Menu.Item

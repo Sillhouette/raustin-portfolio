@@ -1,10 +1,16 @@
 import React, { Component } from "react";
 import header from "./images/mtg-header.png";
+import headerWeb from "./images/mtg-header.webp";
 import background from "./images/green-background.png";
+import backgroundWeb from "./images/green-background.webp";
 import mainBackground from "./images/background.png";
-import firstImage from "./images/mtg-example-1.png";
-import secondImage from "./images/mtg-example-2.png";
-import thirdImage from "./images/mtg-example-3.png";
+import mainBackgroundWeb from "./images/background.webp";
+import firstImage from "./images/mtg-user-show-page.png";
+import secondImage from "./images/mtg-magic-card-show.png";
+import thirdImage from "./images/mtg-magic-card-index.png";
+import firstImageWeb from "./images/mtg-user-show-page.webp";
+import secondImageWeb from "./images/mtg-magic-card-show.webp";
+import thirdImageWeb from "./images/mtg-magic-card-index.webp";
 import ImageDisplay from "../../common/ImageDisplay";
 import {
   Image,
@@ -19,18 +25,30 @@ import "./MtgShowPage.css";
 
 class MtgShowPage extends Component {
   componentDidMount() {
-    document.body.style.backgroundImage = `url(${background})`;
+    if (document.getElementsByTagName("html")[0].classList.contains("webp")) {
+      document.body.style.backgroundImage = `url(${backgroundWeb})`;
+    } else {
+      document.body.style.backgroundImage = `url(${background})`;
+    }
   }
 
   componentWillUnmount() {
-    document.body.style.backgroundImage = `url(${mainBackground})`;
+    if (document.getElementsByTagName("html")[0].classList.contains("webp")) {
+      document.body.style.backgroundImage = `url(${mainBackgroundWeb})`;
+    } else {
+      document.body.style.backgroundImage = `url(${mainBackground})`;
+    }
   }
 
   render() {
     return (
       <div className="page">
         <div>
-          <Image src={header} alt="Header Image" id="header-image" />
+          <picture>
+            <source type="image/webp" srcSet={headerWeb} />
+            <source type="image/jpg" srcSet={headerWeb} />
+            <Image alt="Header Image" src={header} id="header-image" />
+          </picture>
           <Header inverted as="h1" id="main-header">
             Magic Manager Pro
           </Header>
@@ -105,6 +123,9 @@ class MtgShowPage extends Component {
             firstImage={firstImage}
             secondImage={secondImage}
             thirdImage={thirdImage}
+            firstImageWeb={firstImage}
+            secondImageWeb={secondImage}
+            thirdImageWeb={thirdImage}
           />
         </Container>
       </div>
