@@ -1,5 +1,6 @@
 import React from "react";
 import header from "./images/gamer.jpeg";
+import headerWeb from "./images/gamer.webp";
 import firstImage from "./images/streams-create.jpg";
 import secondImage from "./images/streams-show.jpg";
 import thirdImage from "./images/streams-index.jpg";
@@ -22,7 +23,11 @@ const StreamSource = () => {
   return (
     <div className="page">
       <div>
-        <Image src={header} alt="" id="stream-header-image" />
+        <picture>
+          <source type="image/webp" srcSet={headerWeb} />
+          <source type="image/jpg" srcSet={headerWeb} />
+          <Image alt="Header Image" src={header} id="stream-header-image" />
+        </picture>
         <Header inverted as="h1" id="stream-header">
           Stream Source
         </Header>
