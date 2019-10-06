@@ -22,7 +22,8 @@
 }
 
 #second-column {
-  padding: 0 !important;
+  padding-left: 0px !important;
+  padding-right: 3px !important;
 }
 
 .contact-divider {
