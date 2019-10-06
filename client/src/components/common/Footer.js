@@ -16,7 +16,7 @@ import "./css/Footer.css";
 const Footer = props => (
   <Container id="footer-container" fluid>
     <Segment id="footer-segment" attached="bottom" inverted>
-      <Grid id="footer-grid" divided="vertically" columns="equal">
+      <Grid id="footer-grid" divided="vertically" columns="3">
         <Grid.Row className="padding-five">
           <Grid.Column
             textAlign="left"
@@ -82,6 +82,7 @@ const Footer = props => (
             textAlign="right"
             verticalAlign="top"
             className="zero-margin"
+            width="10"
           >
             <Header as="h3" inverted textAlign="right">
               Contact

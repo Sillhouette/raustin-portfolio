@@ -47,7 +47,7 @@ export default class ImageDisplay extends Component {
           <source
             className="project-image-source"
             type="image/jpg"
-            srcSet={this.props.secondImageWeb}
+            srcSet={this.props.secondImage}
           />
           <Image
             alt="Project Example"

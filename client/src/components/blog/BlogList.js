@@ -59,7 +59,7 @@ class BlogList extends React.Component {
         <Item>
           <picture>
             <source type="image/webp" srcSet={setupWeb} />
-            <source type="image/jpg" srcSet={setupWeb} />
+            <source type="image/jpg" srcSet={setup} />
             <Image id="blog-list-header-image" alt="" src={setup} />
           </picture>
           <Header inverted id="blog-list-header">
