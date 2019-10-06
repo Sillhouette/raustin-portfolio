@@ -21,6 +21,10 @@
   width: 100vw;
 }
 
+#second-column {
+  padding: 0 !important;
+}
+
 .contact-divider {
   height: 8px !important;
   margin-top: 0.25rem !important;
