@@ -7,8 +7,8 @@ export default class ImageDisplay extends Component {
 
   handleItemClick = (e, { name }) => {
     const image = document.getElementById("project-image");
-    const source1 = document.getElementsByClassName("source")[0];
-    const source2 = document.getElementsByClassName("source")[1];
+    const source1 = document.getElementsByClassName("project-image-source")[0];
+    const source2 = document.getElementsByClassName("project-image-source")[1];
     if (name === "first") {
       image.setAttribute("src", this.props.firstImage);
       source1.setAttribute("srcset", this.props.firstImageWeb);
