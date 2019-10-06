@@ -123,9 +123,9 @@ class MtgShowPage extends Component {
             firstImage={firstImage}
             secondImage={secondImage}
             thirdImage={thirdImage}
-            firstImageWeb={firstImage}
-            secondImageWeb={secondImage}
-            thirdImageWeb={thirdImage}
+            firstImageWeb={firstImageWeb}
+            secondImageWeb={secondImageWeb}
+            thirdImageWeb={thirdImageWeb}
           />
         </Container>
       </div>
