@@ -7,8 +7,8 @@ export default class ImageDisplay extends Component {
 
   handleItemClick = (e, { name }) => {
     const image = document.getElementById("project-image");
-    const source1 = document.getElementsByTagName("source")[0];
-    const source2 = document.getElementsByTagName("source")[1];
+    const source1 = document.getElementsByClassName("source")[0];
+    const source2 = document.getElementsByClassName("source")[1];
     if (name === "first") {
       image.setAttribute("src", this.props.firstImage);
       source1.setAttribute("srcset", this.props.firstImageWeb);
@@ -40,18 +40,17 @@ export default class ImageDisplay extends Component {
       <Segment inverted compact id="main-segment">
         <picture>
           <source
-            className="project-image"
+            className="project-image-source"
             type="image/webp"
             srcSet={this.props.secondImageWeb}
           />
           <source
-            className="project-image"
+            className="project-image-source"
             type="image/jpg"
             srcSet={this.props.secondImageWeb}
           />
           <Image
             alt="Project Example"
-            className="project-image"
             id="project-image"
             src={this.props.secondImage}
             size="massive"
