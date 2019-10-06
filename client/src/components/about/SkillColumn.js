@@ -16,7 +16,7 @@ const SkillColumn = props => {
             <source
               className="background-image"
               type="image/jpg"
-              srcSet={props.imageWeb}
+              srcSet={props.image}
             />
             <Image
               circular={props.circular}

@@ -55,7 +55,7 @@ const AboutPage = () => {
                 <source
                   className="background-image"
                   type="image/jpg"
-                  srcSet={profileWeb}
+                  srcSet={profile}
                 />
                 <Image
                   circular

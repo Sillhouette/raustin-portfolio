@@ -36,7 +36,7 @@ const ProjectPage = props => (
               <source
                 className="background-image"
                 type="image/jpg"
-                srcSet={mtgWeb}
+                srcSet={mtg}
               />
               <Image alt="" className="background-image" fluid src={mtg} />
             </picture>
@@ -53,7 +53,7 @@ const ProjectPage = props => (
               <source
                 className="background-image"
                 type="image/jpg"
-                srcSet={resumeWeb}
+                srcSet={resume}
               />
               <Image alt="" className="background-image" fluid src={resume} />
             </picture>

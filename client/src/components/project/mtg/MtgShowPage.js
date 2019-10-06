@@ -46,7 +46,7 @@ class MtgShowPage extends Component {
         <div>
           <picture>
             <source type="image/webp" srcSet={headerWeb} />
-            <source type="image/jpg" srcSet={headerWeb} />
+            <source type="image/jpg" srcSet={header} />
             <Image alt="Header Image" src={header} id="header-image" />
           </picture>
           <Header inverted as="h1" id="main-header">
