@@ -1,8 +1,11 @@
 import React from "react";
 import header from "./images/gamer.jpeg";
-import firstImage from "./images/stream-source-show.png";
-import secondImage from "./images/stream-source-index.png";
-import thirdImage from "./images/stream-source-delete.png";
+import firstImage from "./images/streams-create.png";
+import secondImage from "./images/streams-show.png";
+import thirdImage from "./images/streams-index.png";
+import firstImageWeb from "./images/streams-create.webp";
+import secondImageWeb from "./images/streams-show.webp";
+import thirdImageWeb from "./images/streams-index.webp";
 import ImageDisplay from "../../common/ImageDisplay";
 import {
   Image,
@@ -79,6 +82,9 @@ const StreamSource = () => {
           firstImage={firstImage}
           secondImage={secondImage}
           thirdImage={thirdImage}
+          firstImageWeb={firstImageWeb}
+          secondImageWeb={secondImageWeb}
+          thirdImageWeb={thirdImageWeb}
         />
       </Container>
     </div>
