@@ -1,3 +1,9 @@
+@media only screen and (max-width: 768px) {
+  #content-container {
+    padding-top: 25px;
+  }
+}
+
 #header-image {
   position: absolute;
   width: 100vw;
