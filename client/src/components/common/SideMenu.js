@@ -94,7 +94,7 @@ const SideMenu = props => (
       as="button"
       title={"LinkedIn"}
       onClick={() =>
-        window.open("https://linkedin.com/in/richardamelchior/", "_blank")
+        window.open("https://linkedin.com/in/austinmelchior/", "_blank")
       }
       className="ui icon large button"
     >
