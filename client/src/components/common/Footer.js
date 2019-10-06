@@ -21,6 +21,7 @@ const Footer = props => (
           <Grid.Column
             textAlign="left"
             verticalAlign="top"
+            id="first-column"
             className="zero-margin"
             width="2"
           >

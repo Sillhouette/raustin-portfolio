@@ -1,6 +1,7 @@
-@media only screen and (max-width: 1000px) {
-  #center-column {
-    display: none;
+@media only screen and (max-width: 768px) {
+  #second-column {
+    padding-left: 0px !important;
+    padding-right: 0px !important;
   }
 }
 
@@ -21,9 +22,14 @@
   width: 100vw;
 }
 
+#first-column {
+  padding-left: 10px !important;
+  padding-right: 0px !important;
+}
+
 #second-column {
   padding-left: 0px !important;
-  padding-right: 3px !important;
+  padding-right: 10px;
 }
 
 .contact-divider {
