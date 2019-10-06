@@ -7,12 +7,20 @@ export default class ImageDisplay extends Component {
 
   handleItemClick = (e, { name }) => {
     const image = document.getElementById("project-image");
+    const source1 = document.getElementsByClassName()[0];
+    const source2 = doument.getElementsByClassName()[1];
     if (name === "first") {
       image.setAttribute("src", this.props.firstImage);
+      source1.setAttribute("srcset", this.props.firstImageWeb);
+      source2.setAttribute("srcset", this.props.firstImageWeb);
     } else if (name === "second") {
       image.setAttribute("src", this.props.secondImage);
+      source1.setAttribute("srcset", this.props.secondImageWeb);
+      source2.setAttribute("srcset", this.props.secondImageWeb);
     } else {
       image.setAttribute("src", this.props.thirdImage);
+      source1.setAttribute("srcset", this.props.thirdImageWeb);
+      source2.setAttribute("srcset", this.props.thirdImageWeb);
     }
     this.setState({ activeItem: name });
   };
@@ -31,10 +39,19 @@ export default class ImageDisplay extends Component {
     return (
       <Segment inverted compact id="main-segment">
         <picture>
-          <source type="image/webp" srcSet={this.props.secondImageWeb} />
-          <source type="image/jpg" srcSet={this.props.secondImageWeb} />
+          <source
+            className="project-image"
+            type="image/webp"
+            srcSet={this.props.secondImageWeb}
+          />
+          <source
+            className="projec-image"
+            type="image/jpg"
+            srcSet={this.props.secondImageWeb}
+          />
           <Image
             alt="Project Example"
+            className="project-image"
             id="project-image"
             src={this.props.secondImage}
             size="massive"
