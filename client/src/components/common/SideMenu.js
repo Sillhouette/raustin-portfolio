@@ -5,7 +5,15 @@ import { Link } from "react-router-dom";
 import "./css/SideMenu.css";
 
 const SideMenu = props => (
-  <Menu fixed="top" icon vertical inverted secondary floated>
+  <Menu
+    id="main-side-menu"
+    fixed="top"
+    icon
+    vertical
+    inverted
+    secondary
+    floated
+  >
     <Menu.Item
       as="button"
       title="Menu"
