@@ -1,3 +1,14 @@
+@media only screen and (max-width: 768px) {
+  #headerMenu {
+    display: initial !important;
+  }
+
+  #resume,
+  #email {
+    display: none;
+  }
+}
+
 .ui.menu .ui.dropdown .menu > .item.custom {
   color: rgb(255, 255, 255) !important;
 }
@@ -16,10 +27,4 @@
   margin-left: 30px;
   top: 0px;
   background-color: rgba(0, 0, 0, 0.67);
-}
-
-@media only screen and (max-width: 768px) {
-  #headerMenu {
-    display: initial;
-  }
 }

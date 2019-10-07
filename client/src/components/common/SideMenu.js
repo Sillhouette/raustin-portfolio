@@ -69,6 +69,26 @@ const SideMenu = props => (
           >
             Blog
           </Dropdown.Item>
+          {/*<Dropdown.Item
+            name="github"
+            title="Github"
+            onClick={() =>
+              window.open("https://github.com/Sillhouette", "_blank")
+            }
+            className="custom"
+          >
+            Github
+          </Dropdown.Item>
+          <Dropdown.Item
+            name="linkedin"
+            title="LinkedIn"
+            onClick={() =>
+              window.open("https://linkedin.com/in/austinmelchior/", "_blank")
+            }
+            className="custom"
+          >
+            LinkedIn
+          </Dropdown.Item>*/}
         </Dropdown.Menu>
       </Dropdown>
     </Menu.Item>
@@ -77,6 +97,7 @@ const SideMenu = props => (
       title={"Github"}
       onClick={() => window.open("https://github.com/Sillhouette", "_blank")}
       className="ui icon large button"
+      id="github"
     >
       <Icon fitted size="large" name="github" />
     </Menu.Item>
@@ -87,6 +108,7 @@ const SideMenu = props => (
         window.open("mailto:raustin.melchior@gmail.com", "_top");
       }}
       className="ui icon large button"
+      id="email"
     >
       <Icon fitted size="large" name="envelope" />
     </Menu.Item>
@@ -97,6 +119,7 @@ const SideMenu = props => (
         window.open("https://linkedin.com/in/austinmelchior/", "_blank")
       }
       className="ui icon large button"
+      id="linkedin"
     >
       <Icon fitted size="large" name="linkedin" />
     </Menu.Item>
@@ -107,6 +130,7 @@ const SideMenu = props => (
       title="Resume"
       onClick={props.handleItemClick}
       className="ui button icon large"
+      id="resume"
     >
       <Icon fitted size="large" name="file alternate outline" />
     </Menu.Item>
