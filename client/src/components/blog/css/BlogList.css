@@ -1,3 +1,9 @@
+@media only screen and (max-width: 768px) {
+  #blog-list-grid {
+    margin-top: 200px !important;
+  }
+}
+
 #blog-list-header-image {
   position: absolute;
   width: 100vw;
