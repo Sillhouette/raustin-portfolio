@@ -63,11 +63,11 @@ class BlogListItem extends React.Component {
           <Header inverted size="huge">
             {props.blog.title}
           </Header>
-          <Container fluid id="blog-item-main-container">
+          {/*<Container fluid id="blog-item-main-container">
             <Segment basic id="blog-item-sub-container">
               {props.blog.post.replace(/<p>/g, "").substring(0, 250)}...
             </Segment>
-          </Container>
+          </Container>*/}
 
           <div id="post-date">
             Posted by Austin on
