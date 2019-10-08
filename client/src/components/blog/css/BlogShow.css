@@ -1,3 +1,9 @@
+@media only screen and (min-width: 768px) {
+  div > #blog-show-header {
+    font-size: 50px;
+  }
+}
+
 #blog-show-header-image {
   position: absolute;
   width: 100vw;
@@ -14,12 +20,6 @@
   margin-bottom: 85px;
   font-size: 13vw;
   text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
-}
-
-@media screen and (min-width: 768px) {
-  #blog-show-header {
-    font-size: 50px;
-  }
 }
 
 #blog-show-main-container {
@@ -40,14 +40,14 @@
   color: black;
 }
 
-#post-body > ul {
+/* #post-body > ul {
   display: flex !important;
   flex-flow: column wrap !important;
   height: inherit !important;
   width: inherit !important;
   margin: 0 !important;
   padding-left: 8px !important;
-}
+} */
 
 #post-body > ul > li {
   flex: 0 0 auto !important;
