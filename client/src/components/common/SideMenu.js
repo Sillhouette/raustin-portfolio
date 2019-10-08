@@ -17,7 +17,7 @@ const SideMenu = props => (
     <Menu.Item
       as="button"
       title="Menu"
-      className="ui icon large button"
+      className="ui icon large button mobile-menu-button"
       id="hamburger-menu"
     >
       <Dropdown
@@ -104,7 +104,7 @@ const SideMenu = props => (
       as="button"
       title={"Github"}
       onClick={() => window.open("https://github.com/Sillhouette", "_blank")}
-      className="ui icon large button"
+      className="ui icon large button mobile-menu-button"
       id="github"
     >
       <Icon fitted size="large" name="github" />
@@ -126,7 +126,7 @@ const SideMenu = props => (
       onClick={() =>
         window.open("https://linkedin.com/in/austinmelchior/", "_blank")
       }
-      className="ui icon large button"
+      className="ui icon large button mobile-menu-button"
       id="linkedin"
     >
       <Icon fitted size="large" name="linkedin" />

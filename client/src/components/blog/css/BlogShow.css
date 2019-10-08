@@ -24,7 +24,7 @@
 
 #blog-show-main-container {
   width: 75%;
-  padding-left: 25px;
+  padding-left: 10px;
   padding-top: 50px;
   padding-bottom: 50px;
   margin-bottom: 50px;
@@ -39,15 +39,6 @@
 #post-body {
   color: black;
 }
-
-/* #post-body > ul {
-  display: flex !important;
-  flex-flow: column wrap !important;
-  height: inherit !important;
-  width: inherit !important;
-  margin: 0 !important;
-  padding-left: 8px !important;
-} */
 
 #post-body > ul > li {
   flex: 0 0 auto !important;
