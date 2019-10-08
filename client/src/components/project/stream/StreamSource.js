@@ -69,6 +69,10 @@ const StreamSource = () => {
             <Icon name="github" />
             View Repo
           </Button>
+          <div id="button-divider">
+            <br />
+            <br />
+          </div>
           <Button
             circular
             icon

@@ -19,7 +19,8 @@ import {
   Segment,
   Icon,
   Button,
-  List
+  List,
+  Divider
 } from "semantic-ui-react";
 import "./MtgShowPage.css";
 
@@ -84,31 +85,37 @@ class MtgShowPage extends Component {
               <List.Item>Powered Scryfall API</List.Item>
               <List.Item>PostgreSQL database</List.Item>
             </List>
-            <Button
-              circular
-              icon
-              labelPosition="left"
-              onClick={() =>
-                window.open(
-                  "https://github.com/Sillhouette/magic-manager-pro-rails-js",
-                  "_blank"
-                )
-              }
-            >
-              <Icon name="github" />
-              View Repo
-            </Button>
-            <Button
-              circular
-              icon
-              onClick={() =>
-                window.open("https://www.mtgmanager.net", "_blank")
-              }
-              labelPosition="right"
-            >
-              <Icon name="play" />
-              View Live
-            </Button>
+            <Segment basic>
+              <Button
+                circular
+                icon
+                labelPosition="left"
+                onClick={() =>
+                  window.open(
+                    "https://github.com/Sillhouette/magic-manager-pro-rails-js",
+                    "_blank"
+                  )
+                }
+              >
+                <Icon name="github" />
+                View Repo
+              </Button>
+              <div id="button-divider">
+                <br />
+                <br />
+              </div>
+              <Button
+                circular
+                icon
+                onClick={() =>
+                  window.open("https://www.mtgmanager.net", "_blank")
+                }
+                labelPosition="right"
+              >
+                <Icon name="play" />
+                View Live
+              </Button>
+            </Segment>
             <Header as="h4" inverted>
               Test account:
             </Header>

@@ -2,6 +2,10 @@
   #content-container {
     margin-top: 200px !important;
   }
+
+  #button-divider {
+    display: initial !important;
+  }
 }
 
 #header-image {
@@ -16,6 +20,10 @@
 
 #main-header {
   margin-top: 85px;
+}
+
+#button-divider {
+  display: none;
 }
 
 #content-container {
