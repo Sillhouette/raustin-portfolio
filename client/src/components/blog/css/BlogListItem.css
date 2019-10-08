@@ -6,7 +6,8 @@
 }
 
 #blog-item-sub-container {
-  color: white;
+  background-color: rgba(0, 0, 0, 0.67);
+  border-radius: 10px;
 }
 
 #post-date {

@@ -68,16 +68,18 @@ class BlogListItem extends React.Component {
       <Grid.Column>
         <Container text textAlign="left">
           <Link to={`/blog/${props.blog.id}`}>
-            <Segment basic>
-              <Header inverted size="huge">
-                {props.blog.title}
-              </Header>
-            </Segment>
+            <Segment basic id="blog-item-sub-container">
+              <Segment basic>
+                <Header inverted size="huge">
+                  {props.blog.title}
+                </Header>
+              </Segment>
 
-            <div id="post-date">
-              Posted by Austin on
-              {this.formatDate(new Date(props.blog.created_at))}
-            </div>
+              <div id="post-date">
+                Posted by Austin on
+                {this.formatDate(new Date(props.blog.created_at))}
+              </div>
+            </Segment>
           </Link>
           <Divider inverted />
         </Container>
