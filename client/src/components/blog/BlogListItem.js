@@ -1,6 +1,13 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { Header, Segment, Item, Divider, Container } from "semantic-ui-react";
+import {
+  Header,
+  Segment,
+  Item,
+  Divider,
+  Container,
+  Grid
+} from "semantic-ui-react";
 import "./css/BlogListItem.css";
 class BlogListItem extends React.Component {
   state = { counter: 0 };
@@ -58,25 +65,23 @@ class BlogListItem extends React.Component {
       return null;
     }
     return (
-      <Segment>
-        <Link to={`/blog/${props.blog.id}`}>
-          <Header inverted size="huge">
-            {props.blog.title}
-          </Header>
-          {/*<Container fluid id="blog-item-main-container">
-            <Segment basic id="blog-item-sub-container">
-              {props.blog.post.replace(/<p>/g, "").substring(0, 250)}...
+      <Grid.Column>
+        <Container text textAlign="left">
+          <Link to={`/blog/${props.blog.id}`}>
+            <Segment basic>
+              <Header inverted size="huge">
+                {props.blog.title}
+              </Header>
             </Segment>
-          </Container>*/}
 
-          <div id="post-date">
-            Posted by Austin on
-            {this.formatDate(new Date(props.blog.created_at))}
-          </div>
-        </Link>
-
-        <Divider inverted />
-      </Segment>
+            <div id="post-date">
+              Posted by Austin on
+              {this.formatDate(new Date(props.blog.created_at))}
+            </div>
+          </Link>
+          <Divider inverted />
+        </Container>
+      </Grid.Column>
     );
   }
 }

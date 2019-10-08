@@ -26,13 +26,13 @@ class BlogList extends React.Component {
    * a list of the blogs and their properties to be displayed
    **/
   renderList() {
-    return this.props.blogs.map(blog => {
+    return this.props.blogs.reverse().map(blog => {
       return (
-        <Grid.Column key={blog.id}>
+        <Grid.Row stretched key={blog.id}>
           {/*<Container text textAlign="left">*/}
           <BlogListItem blog={blog} key={blog.id} />
           {/*</Container>*/}
-        </Grid.Column>
+        </Grid.Row>
       );
     });
   }
