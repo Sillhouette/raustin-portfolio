@@ -58,7 +58,7 @@ class BlogListItem extends React.Component {
       return null;
     }
     return (
-      <Item>
+      <Segment>
         <Link to={`/blog/${props.blog.id}`}>
           <Header inverted size="huge">
             {props.blog.title}
@@ -76,7 +76,7 @@ class BlogListItem extends React.Component {
         </Link>
 
         <Divider inverted />
-      </Item>
+      </Segment>
     );
   }
 }

@@ -29,9 +29,9 @@ class BlogList extends React.Component {
     return this.props.blogs.map(blog => {
       return (
         <Grid.Column key={blog.id}>
-          <Container text textAlign="left">
-            <BlogListItem blog={blog} key={blog.id} />
-          </Container>
+          {/*<Container text textAlign="left">*/}
+          <BlogListItem blog={blog} key={blog.id} />
+          {/*</Container>*/}
         </Grid.Column>
       );
     });
