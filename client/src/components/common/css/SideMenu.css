@@ -7,14 +7,14 @@
   #email {
     display: none;
   }
+
+  .mobile-menu-button {
+    padding-left: 5px !important;
+  }
 }
 
 .ui.menu .ui.dropdown .menu > .item.custom {
   color: rgb(255, 255, 255) !important;
-}
-
-.mobile-menu-button {
-  padding-left: 5px !important;
 }
 
 #headerMenu {
