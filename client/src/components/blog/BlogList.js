@@ -66,9 +66,7 @@ class BlogList extends React.Component {
             Austin Melchior
           </Header>
         </Item>
-        <Grid id="blog-list-grid">
-          <Grid.Row stretched>{this.renderList()}</Grid.Row>
-        </Grid>
+        <Grid id="blog-list-grid">{this.renderList()}</Grid>
       </div>
     );
   }
