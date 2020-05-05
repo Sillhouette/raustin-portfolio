@@ -17,8 +17,10 @@ matrix:
         - "stable"
       before_script:
         - cd client
+      env:
+        - CI=false
       script:
-        - CI=false npm test
+        - npm test
 
 notifications:
   email:
