@@ -1,8 +1,8 @@
 matrix:
   include:
-    - services:
-      - postgresql
     - language: ruby
+      services:
+        - postgresql
       rvm:
       - 2.6.4
       before_script:
