@@ -10,5 +10,8 @@
   },
   "dependencies": {
     "react-pdf": "^4.1.0"
+  },
+  "devDependencies": {
+    "@testing-library/react": "^10.0.4"
   }
 }

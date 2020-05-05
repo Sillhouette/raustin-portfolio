@@ -1,0 +1,22 @@
+matrix:
+  include:
+    - language: ruby
+      rvm:
+      - 2.6.4
+      script:
+        - rspec
+
+    - language: node_js
+      node_js:
+        - "stable"
+      cache:
+        directories:
+          - node_modules
+      before_script:
+        - cd client
+      script:
+        - npm test
+
+notifications:
+  email:
+    - raustin.melchior@gmail.com
