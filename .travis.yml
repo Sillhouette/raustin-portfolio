@@ -3,6 +3,8 @@ matrix:
     - language: ruby
       rvm:
       - 2.6.4
+      before_script:
+        - bundle
       script:
         - rspec
 
