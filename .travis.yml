@@ -1,19 +1,24 @@
 matrix:
   include:
     - language: ruby
+      services:
+        - postgresql
       rvm:
       - 2.6.4
+      before_script:
+        - cp config/database.yml.travis config/database.yml
+        - psql -c 'create database travis_ci_test;' -U postgres
       script:
-        - rspec
+        - bundle exec rails db:migrate RAILS_ENV=test
+        - bundle exec rspec
 
     - language: node_js
       node_js:
         - "stable"
-      cache:
-        directories:
-          - node_modules
       before_script:
         - cd client
+      env:
+        - CI=false
       script:
         - npm test
 
