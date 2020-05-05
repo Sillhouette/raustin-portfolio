@@ -6,8 +6,9 @@ matrix:
       before_script:
         - bundle
       script:
-        - rspec
-
+        - bundle exec rake db:setup
+        - bundle exec rake spec
+        
     - language: node_js
       node_js:
         - "stable"
