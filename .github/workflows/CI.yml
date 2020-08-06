@@ -71,4 +71,4 @@ jobs:
         npm run build --if-present
         npm test 
       env:
-        CI: true
+        CI: ""
