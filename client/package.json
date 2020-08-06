@@ -17,6 +17,9 @@
     "redux-thunk": "^2.3.0",
     "semantic-ui-react": "^0.88.0"
   },
+  "devDependencies": {
+    "@testing-library/react": "^10.0.4"
+  },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
