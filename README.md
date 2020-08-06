@@ -1,1 +1,1 @@
-![Build Status](https://github.com/Sillhouette/raustin-portfolio/workflows/.github/workflows/ci.yml/badge.svg)
+![Build Status](https://github.com/Sillhouette/raustin-portfolio/workflows/CI/badge.svg)
