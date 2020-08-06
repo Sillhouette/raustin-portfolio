@@ -2,8 +2,11 @@ Rails.application.routes.draw do
   namespace :api do
     namespace :v1 do
       resources :blog_posts
+      get '/blog_posts/:id/edit', to: 'blog_posts#edit'
     end
   end
+
+
   # app.get('*', (req, res) => {
   #   res.sendFile(path.join(__dirname, '/client/build/index.html'));
   # });
