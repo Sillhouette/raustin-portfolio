@@ -77,26 +77,6 @@ const SideMenu = props => (
           >
             Blog
           </Dropdown.Item>
-          {/*<Dropdown.Item
-            name="github"
-            title="Github"
-            onClick={() =>
-              window.open("https://github.com/Sillhouette", "_blank")
-            }
-            className="custom"
-          >
-            Github
-          </Dropdown.Item>
-          <Dropdown.Item
-            name="linkedin"
-            title="LinkedIn"
-            onClick={() =>
-              window.open("https://linkedin.com/in/austinmelchior/", "_blank")
-            }
-            className="custom"
-          >
-            LinkedIn
-          </Dropdown.Item>*/}
         </Dropdown.Menu>
       </Dropdown>
     </Menu.Item>

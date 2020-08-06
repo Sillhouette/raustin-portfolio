@@ -5,7 +5,7 @@ import { fetchBlogs } from "../../actions";
 import setup from "./images/setup.jpg";
 import setupWeb from "./images/setup.webp";
 import { Link } from "react-router-dom";
-import { Header, Grid, Container, Item, Image } from "semantic-ui-react";
+import { Header, Grid, Item, Image } from "semantic-ui-react";
 import BlogListItem from "./BlogListItem";
 import "./css/BlogList.css";
 

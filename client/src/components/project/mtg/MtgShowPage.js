@@ -20,7 +20,6 @@ import {
   Icon,
   Button,
   List,
-  Divider
 } from "semantic-ui-react";
 import "./MtgShowPage.css";
 
