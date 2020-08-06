@@ -1,1 +1,1 @@
-[![Build Status](https://travis-ci.org/Sillhouette/raustin-portfolio.svg?branch=master)](https://travis-ci.org/Sillhouette/raustin-portfolio)
+![Build Status](https://github.com/Sillhouette/raustin-portfolio/workflows/.github/workflows/ci.yml/badge.svg)
