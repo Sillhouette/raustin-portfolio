@@ -87,7 +87,8 @@ jobs:
         PASSWORD: ${{ secrets.PASSWORD }}
         script: |
           cd /var/www/raustin-portfolio
-          git pull          
+          git pull
+          source /usr/local/rvm/scripts/rvm
           rvm use --default 2.6.6
           bundle install
           passenger stop -p 8080
