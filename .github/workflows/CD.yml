@@ -86,14 +86,4 @@ jobs:
         username: ${{ secrets.USERNAME }}
         PASSWORD: ${{ secrets.PASSWORD }}
         script: |
-          cd /var/www/raustin-portfolio
-          git pull
-          source ~/.bashrc
-          bundle install
-          passenger stop -p 8080
-          passenger start -a 127.0.0.1 -p 8080 -d -e production
-          cd client
-          npm install
-          npm run build
-          sudo service nginx restart
-          echo "done"
+          gem env
