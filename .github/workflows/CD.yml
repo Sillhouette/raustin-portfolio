@@ -98,4 +98,15 @@ jobs:
           export POSTGRES_PASSWORD=${{ secrets.POSTGRES_PASSWORD }}
           export POSTGRES_USER=${{ secrets.POSTGRES_USER }}
           export POSTGRES_DB=${{ secrets.POSTGRES_DB }}
-          env
+          cd /var/www/raustin-portfolio
+          git pull
+          source /usr/local/rvm/scripts/rvm
+          rvm use --default 2.6.6
+          bundle install
+          source ~/.bashrc
+          passenger stop -p 8080
+          passenger start -a 127.0.0.1 -p 8080 -d -e production
+          cd client
+          npm install
+          npm run build
+          sudo service nginx restart
