@@ -81,10 +81,22 @@ jobs:
 
     - name: Executing remote command
       uses: appleboy/ssh-action@master
+
       with:
         host: ${{ secrets.HOST }}
-        debug: true
         username: ${{ secrets.USERNAME }}
         PASSWORD: ${{ secrets.PASSWORD }}
         script: |
-          who
+          cd /var/www/raustin-portfolio
+          git pull
+          source /usr/local/rvm/scripts/rvm
+          rvm use --default 2.6.6
+          bundle install
+          source ~/.bashrc
+          passenger stop -p 8080
+          passenger start -a 127.0.0.1 -p 8080 -d -e production
+          cd client
+          npm install
+          npm run build
+          sudo service nginx restart
+          echo "done"
