@@ -81,11 +81,18 @@ jobs:
 
     - name: Executing remote command
       uses: appleboy/ssh-action@master
+      env: 
+         POSTGRES_USER: ${{ secrets.POSTGRES_USER }} 
+         POSTGRES_PASSWORD: ${{ secrets.POSTGRES_PASSWORD }} 
+         POSTGRES_HOST: ${{ secrets.POSTGRES_HOST }} 
+         POSTGRES_DB: ${{ secrets.POSTGRES_DB }} 
+         SECRET_KEY_BASE: ${{ secrets.SECRET_KEY_BASE }}
 
       with:
         host: ${{ secrets.HOST }}
         username: ${{ secrets.USERNAME }}
         PASSWORD: ${{ secrets.PASSWORD }}
+        envs: POSTGRES_USER,POSTGRES_PASSWORD,POSTGRES_HOST,POSTGRES_DB,SECRET_KEY_BASE
         script: |
           cd /var/www/raustin-portfolio
           git pull
