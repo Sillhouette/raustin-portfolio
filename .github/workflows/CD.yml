@@ -88,6 +88,7 @@ jobs:
         script: |
           cd /var/www/raustin-portfolio
           git pull
+          bundle
           passenger stop -p 8080
           passenger start -a 127.0.0.1 -p 8080 -d -e production
           cd client
