@@ -22,4 +22,4 @@ jobs:
         PASSPHRASE: ${{ secrets.PASSWORD }}
         script: |
           echo "hello world"
-          echo "hello back"
+          echo "hello"
