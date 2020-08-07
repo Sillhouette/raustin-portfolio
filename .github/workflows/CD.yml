@@ -89,6 +89,8 @@ jobs:
         script: |
           cd /var/www/raustin-portfolio
           git pull
+          source /usr/local/rvm/scripts/rvm
+          rvm use --default 2.6.6
           bundle install
           sudo service nginx restart
           passenger stop -p 8080
