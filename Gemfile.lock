@@ -193,7 +193,7 @@ DEPENDENCIES
   byebug
   dotenv-rails
   foreman
-  listen (>= 3.0.5, < 3.2)
+  listen
   passenger (>= 5.0.25)
   pg
   pry
