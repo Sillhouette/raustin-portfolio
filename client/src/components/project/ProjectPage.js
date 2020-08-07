@@ -83,7 +83,7 @@ const ProjectPage = props => (
                 className="large-header header-style"
                 textAlign="center"
               >
-                MTG Manager Pro
+                Mtg Manager Pro
               </Header>
               <Header
                 inverted
