@@ -85,6 +85,7 @@ jobs:
           cd /var/www/raustin-portfolio
           git pull
           source ~/.bashrc
+          rvm use 2.6.6
           bundle install
           passenger stop -p 8080
           passenger start -a 127.0.0.1 -p 8080 -d -e production
