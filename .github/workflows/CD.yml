@@ -106,4 +106,3 @@ jobs:
           npm install
           npm run build
           sudo service nginx restart
-          echo "done"
