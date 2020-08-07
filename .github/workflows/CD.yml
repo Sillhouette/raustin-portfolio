@@ -81,9 +81,9 @@ jobs:
 
     - name: Executing remote command
       uses: appleboy/ssh-action@master
-
       with:
         host: ${{ secrets.HOST }}
+        debug: true
         username: ${{ secrets.USERNAME }}
         PASSWORD: ${{ secrets.PASSWORD }}
         script: |
