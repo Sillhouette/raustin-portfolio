@@ -92,6 +92,7 @@ jobs:
           \curl -sSL https://get.rvm.io | bash -s stable --rails
           rvm install 2.6.6
           rvm use --default 2.6.6
+          source /usr/local/rvm/scripts/rvm
           bundle install
           passenger stop -p 8080
           passenger start -a 127.0.0.1 -p 8080 -d -e production
