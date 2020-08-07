@@ -21,5 +21,5 @@ jobs:
         USERNAME: ${{ secrets.USERNAME }}
         PASSPHRASE: ${{ secrets.PASSWORD }}
         script: |
-          echo "hello world"
-          echo "hello"
+          whoami
+          ls -al
