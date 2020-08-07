@@ -87,4 +87,5 @@ jobs:
         PASSWORD: ${{ secrets.PASSWORD }}
         script: |
           cd /var/www/raustin-portfolio
+          source ~/.bashrc
           rvm list
