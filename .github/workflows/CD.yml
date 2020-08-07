@@ -94,4 +94,8 @@ jobs:
         PASSWORD: ${{ secrets.PASSWORD }}
         envs: POSTGRES_USER,POSTGRES_PASSWORD,POSTGRES_HOST,POSTGRES_DB,SECRET_KEY_BASE
         script: |
+          export POSTGRES_HOST=${{ secrets.POSTGRES_HOST }}
+          export POSTGRES_PASSWORD=${{ secrets.POSTGRES_PASSWORD }}
+          export POSTGRES_USER=${{ secrets.POSTGRES_USER }}
+          export POSTGRES_DB=${{ secrets.POSTGRES_DB }}
           env
