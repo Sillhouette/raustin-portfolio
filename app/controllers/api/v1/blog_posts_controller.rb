@@ -15,10 +15,6 @@ module Api::V1
       render json: {"error": "Blog post creation has been disabled."}
     end
 
-    def edit
-      render json: {"error": "Blog post editing has been disabled."}
-    end
-
     def update
       render json: {"error": "Blog post updates have been disabled."}
     end

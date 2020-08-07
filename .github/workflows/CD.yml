@@ -3,7 +3,7 @@ name: CD
 on:
   push:
     branches:
-      - 'testing-cd'
+      - 'master'
 
 jobs:
   build:
@@ -19,8 +19,13 @@ jobs:
         host: ${{ secrets.HOST }}
         username: ${{ secrets.USERNAME }}
         PASSWORD: ${{ secrets.PASSWORD }}
-        debug: true
         script: |
-          whoami
-          ls -al
-          whoami
+          cd /var/www/raustin-portfolio
+          git pull
+          bundle install
+          passenger stop -p 8080
+          passenger start -a 127.0.0.1 -p 8080 -d -e production
+          cd client
+          npm install
+          npm run build
+          sudo service nginx restart
