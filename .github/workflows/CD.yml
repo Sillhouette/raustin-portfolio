@@ -88,7 +88,8 @@ jobs:
         script: |
           cd /var/www/raustin-portfolio
           git pull
-          gem env
+          echo '[[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm" # Load RVM function' >> ~/.bashrc
+          source ~/.bashrc
           bundle install
           passenger stop -p 8080
           passenger start -a 127.0.0.1 -p 8080 -d -e production
