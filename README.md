@@ -1,1 +1,1 @@
-![Build Status](https://github.com/Sillhouette/raustin-portfolio/workflows/CI/badge.svg)
+![Build Status](https://github.com/Sillhouette/raustin-portfolio/workflows/CI/badge.svg) ![CD](https://github.com/Sillhouette/raustin-portfolio/workflows/CD/badge.svg?branch=master)
