@@ -20,6 +20,7 @@ jobs:
         KEY: ${{secrets.KEY}}
         USERNAME: ${{ secrets.USERNAME }}
         PASSPHRASE: ${{ secrets.PASSWORD }}
+        debug: true
         script: |
           whoami
           ls -al
