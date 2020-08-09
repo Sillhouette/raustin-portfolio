@@ -11,12 +11,11 @@ import "./css/BlogShow.css";
 class BlogShow extends React.Component {
   /**
    * componentDidMount fetches our blog object when the component first mounts
-   * as well as builds our video player
    **/
   componentDidMount() {
     const { id } = this.props.match.params;
     this.props.fetchBlog(id).then(() => {
-      this.addPostContent(this.props.blog.post);
+      this.addPostContent(this.props.blog.content);
     });
   }
 
