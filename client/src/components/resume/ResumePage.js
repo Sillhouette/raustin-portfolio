@@ -18,6 +18,16 @@ class ResumePage extends Component {
     this.setState({ numPages });
   };
 
+  removeTextLayerOffset = () => {
+    const textLayers = document.querySelectorAll(".react-pdf__Page__textContent");
+      textLayers.forEach(layer => {
+        const { style } = layer;
+        style.top = "0";
+        style.left = "0";
+        style.transform = "";
+    });
+  }
+
   render() {
     const { pageNumber } = this.state;
     return (
@@ -49,6 +59,7 @@ class ResumePage extends Component {
                   height={size.height}
                   width={size.width}
                   pageNumber={pageNumber}
+                  onLoadSuccess={this.removeTextLayerOffset}
                 />
               </Document>
             </div>
