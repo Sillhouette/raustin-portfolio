@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Router, Route, Switch } from "react-router-dom";
+import { Route, Switch } from "react-router-dom";
 import { Container } from "semantic-ui-react";
 import Header from "./common/Header";
 import SideMenu from "./common/SideMenu";
@@ -16,7 +16,6 @@ import Footer from "./common/Footer";
 import MtgShowPage from "./project/mtg/MtgShowPage";
 import StreamSource from "./project/stream/StreamSource";
 import ResumePage from "./resume/ResumePage";
-import history from "../history";
 import "./App.css";
 
 export default class App extends Component {
@@ -29,7 +28,6 @@ export default class App extends Component {
   render() {
     return (
       <div className="App">
-        <Router history={history}>
           <Container fluid id="main">
             <Header
               invisible={this.state.activeItem === "home" ? true : false}
@@ -74,7 +72,6 @@ export default class App extends Component {
           <HomeButton handleItemClick={this.handleItemClick} />
           <SideMenu handleItemClick={this.handleItemClick} />
           <Footer handleItemClick={this.handleItemClick} />
-        </Router>
       </div>
     );
   }
