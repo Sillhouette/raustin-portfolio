@@ -21,7 +21,7 @@ gem "passenger", ">= 5.0.25", require: "phusion_passenger/rack_handler"
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 4.0'
 # Use ActiveModel has_secure_password
-# gem 'bcrypt', '~> 3.1.7'
+gem 'bcrypt', '~> 3.1.7'
 
 # Use ActiveStorage variant
 # gem 'mini_magick', '~> 4.8'
@@ -45,6 +45,8 @@ end
 
 group :test do
   gem 'database_cleaner-active_record'
+  gem 'simplecov', require: false
+  gem 'simplecov-console', '~> 0.7.2'
 end
 
 group :development do
