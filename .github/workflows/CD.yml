@@ -93,6 +93,7 @@ jobs:
           source /usr/local/rvm/scripts/rvm
           rvm use --default 2.6.6
           bundle install
+          rails db:migrate
           source ~/.bashrc
           passenger stop -p 8080
           passenger start -a 127.0.0.1 -p 8080 -d -e production
