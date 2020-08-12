@@ -1,9 +1,13 @@
 module Api::V1
   class BlogPostsController < ApplicationController
+
+    before_action :set_blog, only: [:show, :update, :destroy]
+    before_action :check_permissions, only: [:create, :update, :destroy]
+
     def show
-      @post = BlogPost.find(params[:id])
-      @post.post = ActionController::Base.helpers.simple_format(@post.post)
-      render json: @post
+      return if @errors
+        @post.content = ActionController::Base.helpers.simple_format(@post.content)
+        render json: @post
     end
 
     def index
@@ -12,15 +16,39 @@ module Api::V1
     end
 
     def create
-      render json: {"error": "Blog post creation has been disabled."}
+      return if @errors
+      @post = BlogPost.create(blog_params)
+      render json: @post
     end
 
     def update
-      render json: {"error": "Blog post updates have been disabled."}
+      return if @errors
+      @post.update(blog_params)
+      @post.save
+      render json: @post
     end
 
-    def delete
-      render json: {"error": "Blog post deletion has been disabled."}
+    def destroy
+      return if @errors
+      @post.destroy
+      render json: @post
+    end
+
+    private
+
+    def set_blog
+      @post = BlogPost.find_by(id: params[:id])
+      if !@post
+        @errors = true
+        render json: {
+          status: 500,
+          errors: ["Could not find blog with that id."]
+        }
+      end
+    end
+
+    def blog_params
+      params.require(:blog_post).permit(:title, :content)
     end
   end
 end
