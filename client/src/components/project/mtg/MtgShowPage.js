@@ -24,6 +24,12 @@ import {
 import "./MtgShowPage.css";
 
 class MtgShowPage extends Component {
+  images = [
+    {jpg: firstImage, webp: firstImageWeb},
+    {jpg: secondImage, webp: secondImageWeb},
+    {jpg: thirdImage, webp: thirdImageWeb}
+  ]
+
   componentDidMount() {
     if (document.getElementsByTagName("html")[0].classList.contains("webp")) {
       document.body.style.backgroundImage = `url(${backgroundWeb})`;
@@ -126,12 +132,7 @@ class MtgShowPage extends Component {
         </Container>
         <Container id="image-display" textAlign="center">
           <ImageDisplay
-            firstImage={firstImage}
-            secondImage={secondImage}
-            thirdImage={thirdImage}
-            firstImageWeb={firstImageWeb}
-            secondImageWeb={secondImageWeb}
-            thirdImageWeb={thirdImageWeb}
+            images={this.images}
           />
         </Container>
       </div>

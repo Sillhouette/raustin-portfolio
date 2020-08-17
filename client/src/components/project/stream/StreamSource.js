@@ -20,6 +20,13 @@ import {
 import "./StreamSource.css";
 
 const StreamSource = () => {
+
+  const images = [
+    {jpg: firstImage, webp: firstImageWeb},
+    {jpg: secondImage, webp: secondImageWeb},
+    {jpg: thirdImage, webp: thirdImageWeb}
+  ]
+
   return (
     <div className="page">
       <div>
@@ -88,12 +95,7 @@ const StreamSource = () => {
       </Container>
       <Container textAlign="center" id="image-display">
         <ImageDisplay
-          firstImage={firstImage}
-          secondImage={secondImage}
-          thirdImage={thirdImage}
-          firstImageWeb={firstImageWeb}
-          secondImageWeb={secondImageWeb}
-          thirdImageWeb={thirdImageWeb}
+          images={images}
         />
       </Container>
     </div>
