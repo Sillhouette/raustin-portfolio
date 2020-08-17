@@ -1,20 +1,12 @@
 import React from "react";
+import { Grid, Container } from "semantic-ui-react";
+import ImageColumn from './ImageColumn';
+import UnderlayColumn from './UnderlayColumn'
 import mtg from "./images/mtg-wizards-colors.jpg";
-import resume from "./images/gamer.jpeg";
 import mtgWeb from "./images/mtg-wizards-colors.webp";
-import resumeWeb from "./images/gamer.webp";
-import { Link } from "react-router-dom";
-import { Grid, Image, Header, Menu, Item, Container } from "semantic-ui-react";
+import gamer from "./images/gamer.jpeg";
+import gamerWeb from "./images/gamer.webp";
 import "./ProjectPage.css";
-
-const handleTransition = id => {
-  let target = document.getElementById(id);
-  if (target.classList.contains("visible")) {
-    target.classList.remove("visible");
-  } else {
-    target.classList.add("visible");
-  }
-};
 
 const ProjectPage = props => (
   <div className="page">
@@ -25,107 +17,31 @@ const ProjectPage = props => (
       className="project-grid"
     >
       <Grid.Row className="grid-row" stretched>
-        <Grid.Column className="zero-padding grid-column" stretched>
-          <Item className="background-image-container">
-            <picture className="transition" id="project2-img">
-              <source
-                className="background-image"
-                type="image/webp"
-                srcSet={mtgWeb}
-              />
-              <source
-                className="background-image"
-                type="image/jpg"
-                srcSet={mtg}
-              />
-              <Image alt="" className="background-image" fluid src={mtg} />
-            </picture>
-          </Item>
-        </Grid.Column>
-        <Grid.Column className="zero-padding grid-column" stretched>
-          <Item className="background-image-container">
-            <picture className="transition" id="project3-img">
-              <source
-                className="background-image"
-                type="image/webp"
-                srcSet={resumeWeb}
-              />
-              <source
-                className="background-image"
-                type="image/jpg"
-                srcSet={resume}
-              />
-              <Image alt="" className="background-image" fluid src={resume} />
-            </picture>
-          </Item>
-        </Grid.Column>
+        <ImageColumn 
+          jpg={mtg}
+          webp={mtgWeb}
+          imageId="project1-img"
+        />
+        <ImageColumn 
+          jpg={gamer}
+          webp={gamerWeb}
+          imageId="project2-img"
+        />
       </Grid.Row>
     </Grid>
     <Container fluid>
       <Grid className="project-grid" columns="equal" stretched>
         <Grid.Row stretched>
-          <Grid.Column
-            textAlign="center"
-            verticalAlign="middle"
-            className="zero-padding"
-          >
-            <Menu.Item
-              as={Link}
-              to="/projects/MTG-Manager-Pro"
-              name="projects"
-              onMouseOver={() => handleTransition(`project2-img`)}
-              onMouseOut={() => handleTransition(`project2-img`)}
-              onClick={props.handleItemClick}
-            >
-              <Header
-                inverted
-                size="huge"
-                className="large-header header-style"
-                textAlign="center"
-              >
-                MTG Manager Pro
-              </Header>
-              <Header
-                inverted
-                size="medium"
-                className="medium-header header-style"
-                textAlign="center"
-              >
-                MTG Manager Pro
-              </Header>
-            </Menu.Item>
-          </Grid.Column>
-          <Grid.Column
-            textAlign="center"
-            verticalAlign="middle"
-            className="zero-padding"
-          >
-            <Menu.Item
-              as={Link}
-              to="/projects/Stream-Source"
-              name="projects"
-              onMouseOver={() => handleTransition(`project3-img`)}
-              onMouseOut={() => handleTransition(`project3-img`)}
-              onClick={props.handleItemClick}
-            >
-              <Header
-                inverted
-                size="huge"
-                className="large-header header-style"
-                textAlign="center"
-              >
-                Stream Source
-              </Header>
-              <Header
-                inverted
-                size="medium"
-                className="medium-header header-style"
-                textAlign="center"
-              >
-                Stream Source
-              </Header>
-            </Menu.Item>
-          </Grid.Column>
+          <UnderlayColumn 
+            name="MTG-Manager-Pro"
+            imageId="project1-img"
+            onClick={props.handleItemClick}
+          />
+          <UnderlayColumn 
+            name="Stream-Source"
+            imageId="project2-img"
+            onClick={props.handleItemClick}
+          />
         </Grid.Row>
       </Grid>
     </Container>
