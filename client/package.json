@@ -18,12 +18,13 @@
     "semantic-ui-react": "^0.88.0"
   },
   "devDependencies": {
-    "@testing-library/react": "^10.0.4"
+    "@testing-library/react": "^10.0.4",
+    "moxios": "^0.4.0"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test --verbose",
+    "test": "react-scripts test --verbose --coverage",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
