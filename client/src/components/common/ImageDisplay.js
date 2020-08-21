@@ -5,27 +5,28 @@ import "./css/ImageDisplay.css";
 export default class ImageDisplay extends Component {
   state = { activeItem: "" }
 
+  centerImage = Math.round((this.props.images.length - 1) / 2)
+
   componentDidMount() {
-    this.setState({ activeItem: `image-${this.centerIndex}` })
+    this.setState({ activeItem: `image-${this.centerImage}` })
   }
 
-  centerIndex = Math.round((this.props.images.length - 1) / 2)
-
   handleItemClick = (e, { name }) => {
+    const imageIndex = parseInt(name.replace("image-", ""))
+    this.changeImage(imageIndex)
+    this.setState({ activeItem: name });
+  };
+
+  changeImage = (index) => {
     const image = document.getElementById("project-image");
-    const source1 = document.getElementsByClassName("project-image-source")[0];
-    const source2 = document.getElementsByClassName("project-image-source")[1];
-    const index = parseInt(name.replace("image-", ""))
+    const [source1, source2] = document.getElementsByClassName("project-image-source")
 
     image.setAttribute("src", this.props.images[index].jpg);
     source1.setAttribute("srcset", this.props.images[index].webp);
     source2.setAttribute("srcset", this.props.images[index].jpg);
-    
-    this.setState({ activeItem: name });
-  };
+  }
 
   displayActiveCircle = (currentItem) => {
-    console.log(this.state.activeItem, currentItem )
     return this.state.activeItem === currentItem ? (
       <Icon name="circle" />
     ) : (
@@ -54,17 +55,17 @@ export default class ImageDisplay extends Component {
           <source
             className="project-image-source"
             type="image/webp"
-            srcSet={this.props.images[this.centerIndex].webp}
+            srcSet={this.props.images[this.centerImage].webp}
           />
           <source
             className="project-image-source"
             type="image/jpg"
-            srcSet={this.props.images[this.centerIndex].jpg}
+            srcSet={this.props.images[this.centerImage].jpg}
           />
           <Image
             alt="Project Example"
             id="project-image"
-            src={this.props.images[this.centerIndex].jpg}
+            src={this.props.images[this.centerImage].jpg}
             size="massive"
           />
         </picture>
