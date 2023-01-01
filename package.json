@@ -9,7 +9,7 @@
     "postinstall": "npm run build && npm run deploy && echo 'Client built!'"
   },
   "dependencies": {
-    "react-pdf": "^4.1.0"
+    "react-pdf": "^6.2.1"
   },
   "devDependencies": {
     "@testing-library/react": "^10.0.4"
